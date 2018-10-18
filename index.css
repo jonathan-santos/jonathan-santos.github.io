@@ -53,8 +53,14 @@ header {
         height: 100%;
         margin: 0;
         flex-grow: 1;
-        font-size: 1.5rem;
         line-height: 3rem;
+        font-size: 1.1rem;
+    }
+
+    @-moz-document url-prefix() {
+        header .titulo {
+            font-size: 0.5rem;
+        }
     }
 
     header .botao-hamburguer {
@@ -82,9 +88,6 @@ section {
     text-align: center;
 }
 
-    section p {
-        text-align: start;
-    }
 /* #endregion */
 
 /* #region apresentação */
@@ -101,9 +104,9 @@ section {
 }
 
     .campo {
-        padding: 0 1rem;
+        min-width: 10rem;
+        padding: 1rem;
         flex: 1;
-        border-right: 1px solid #fff;
     }
 
         .campo .icone-campo {
@@ -115,10 +118,6 @@ section {
             font-size: 2rem;
             line-height: 3rem;
         }
-
-        .campo-outros {
-            border-right: 0;
-        }
 /* #endregion */        
 
 /* #region trabalhos */
@@ -128,12 +127,13 @@ section {
     background-color: #ff6b6b;
 }
     .trabalho {
-        width: 12rem;
-        height: 10rem;
+        width: 15rem;
+        height: 12.5rem;
         margin: 0 auto;
         border: 1px solid #fff;
         padding: 1.5rem;
         position: relative;
+        box-sizing: border-box;
         text-decoration: none;
     }
 
@@ -151,21 +151,30 @@ section {
         }
 
         .trabalho .detalhes {
-            margin: 1rem auto;
-            padding-right: 1.5rem;
+            height: 100%;
+            padding: 0 1rem;
             position: absolute;
             top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.5);
             opacity: 0;
         }
-            .trabalho .detalhes p {
-                text-align: center;
+
+            .trabalho .detalhes a {
+                border: 1px solid #fff;
+                padding: 0.5rem;
+                border-radius: 100px;
+                text-decoration: none;
             }
 
-        .trabalho:hover .header {
+        .trabalho:hover .header, .trabalho:active .header {
             opacity: 0.3;
         }
 
-        .trabalho:hover .detalhes {
+        .trabalho:hover .detalhes, .trabalho:active .detalhes {
             opacity: 1;
         }
 
@@ -183,15 +192,56 @@ footer {
         width: 50%;
         margin: 0 auto;
         display: flex;
+        justify-content: center;
     }
 
-    footer a {
-        width: 2rem;
-        height: 2rem;
-        margin: 0 0.5rem;
-        border: 1px solid #fff;
-        border-radius: 50%;
-        line-height: 2rem;
-        text-decoration: none;
+        footer .redes-sociais a {
+            width: 2rem;
+            min-width: 2rem;
+            height: 2rem;
+            margin: 0 0.5rem;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            line-height: 2rem;
+            text-decoration: none;
+        }
+/* #endregion */
+
+/* #region media-queries */
+@media (max-width: 415px) {
+    .campo:not(.campo-outros) {
+        border-bottom: 1px solid #fff;
     }
+}
+
+@media (min-width: 416px) {
+    .campo-front-end, .campo-back-end {
+        border-bottom: 1px solid #fff;
+    }
+
+    .campo-front-end, .campo-games {
+        border-right: 1px solid #fff;
+    }
+}
+
+@media (min-width: 600px) {
+    .campo {
+        min-width: 0;
+        border-bottom: none;
+    }
+
+    .campo-back-end {
+        border-right: 1px solid #fff;
+    }
+}
+
+@media(max-width: 1024px) {
+    /* .trabalho  {
+        pointer-events: none;
+    }
+
+    .trabalho:hover, .trabalho:active {
+        pointer-events: initial;
+    } */
+}
 /* #endregion */
