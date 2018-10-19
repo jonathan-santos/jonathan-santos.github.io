@@ -10,18 +10,39 @@
 <body>
     <header>
         <a href='/' class='logo'>L</a>
-        <h1 class='titulo'>Jonathan Santos - Home</h1>
-        <button class='botao-hamburguer'>H</button>
-    </header>
+        <h1 class='titulo'>Jonathan Santos</h1>
+        <label for='input-menu-lateral' role='button' class='botao-hamburguer'>H</label>
+
+        <input id='input-menu-lateral' type='checkbox' hidden />
     
-    <nav>
-        <ul>
-            <li><a href='/blog'>Blog</a></li>
-            <li><a href='/potfolio'>Portfólio</a></li>
-            <li><a href='/curriculo'>Currículo</a></li>
-            <li><a href='/sobre'>Sobre</a></li>
-        </ul>
-    </nav>
+        <div class="menu-lateral">
+            <label for='input-menu-lateral' class="fundo-fechar" tabindex='-1' aria-hidden="true"></label>
+            <nav role='navigation' >
+                <ul>
+                    <li class='selected'>
+                        <a href='/'>Home</a>
+                    </li>
+                    <!-- <li>
+                        <a href='/blog'>Blog</a>
+                    </li> -->
+                    <li>
+                        <a href='/potfolio'>Portfólio</a>
+                    </li>
+                    <li>
+                        <a href='/curriculo'>Currículo</a>
+                    </li>
+                    <li>
+                        <a href='/sobre'>Sobre</a>
+                    </li>
+                    <li>
+                        <a href='/contato'>Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
 
     <main>
         <section class='apresentacao'>
@@ -92,11 +113,13 @@
                     <h3>Pedir Comida PWA</h3>
                 </div>
 
-                <div class='detalhes'>
+                <figcaption class='detalhes'>
                     <p>PWA para pedidos online desenvolvido em meu tempo na eComanda</p>
                     <a href='https://beta.pedircomida.com.br' target='_blank'>Clique para o acessar</a>
-                </div>
+                </figcaption>
             </div>
+
+            <p class='link-contato'>Ajude a aumentar esta lista, entre em contato comigo <a href='/contato' class='link-sublinhado'>aqui</a></p>
         </section>
     </main>
 
@@ -110,9 +133,8 @@
             <a href='mailto:jonathan.santosaugusto@gmail.com'>E</a>
         </div>
 
-        <p>Feito por mim utilizando HTML, CSS, JS, Amor e um pouco de café</p>
-        <p>Curiosidade de como foi feito este site? <a href='https://github.com/jonathan-santos/jonathan-santos.github.io' target='_blank'>Acesse o repositório do projeto</a></p>
+        <p>Feito por mim utilizando HTML, CSS, Amor e um pouco de café</p>
+        <p>Curiosidade de como foi feito este site? <a href='https://github.com/jonathan-santos/jonathan-santos.github.io' target='_blank' class='link-sublinhado'>Acesse o repositório do projeto</a></p>
     </footer>
-
 </body>
 </html>

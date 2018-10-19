@@ -6,6 +6,7 @@
     color: #2f6690;
 }
 
+/* #region valores padrão */
 body {
     margin: 0;
     padding: 0;
@@ -23,13 +24,33 @@ h2 {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
+
+main {
+    padding-top: 3rem;
+}
+
+section {
+    padding: 1.5rem 1rem 1rem 1rem;
+    text-align: center;
+}
+/* #endregion */
+
+/* #region classes de utilidade */
+.link-sublinhado {
+    text-decoration: underline;
+}
+/* #endregion */
 
 /* #region header */
 header {
+    width: 100%;
     height: 3rem;
+    position: fixed;
     display: flex;
     align-items: flex-start;
+    z-index: 100;
     background-color: #292f36;
     color: #fff;
     text-align: center;
@@ -45,22 +66,16 @@ header {
         line-height: 1.75rem;
         color: #fff;
         border-radius: 50%;
-        text-decoration: none;
 
     }
 
     header .titulo {
         height: 100%;
         margin: 0;
+        padding: 0 1rem;
         flex-grow: 1;
         line-height: 3rem;
         font-size: 1.1rem;
-    }
-
-    @-moz-document url-prefix() {
-        header .titulo {
-            font-size: 0.5rem;
-        }
     }
 
     header .botao-hamburguer {
@@ -69,25 +84,58 @@ header {
         margin: 0.5rem;
         border: 0.1rem solid #fff;
         box-sizing: border-box;
-        color: inherit;
-        background-color: inherit;
-        font-size: inherit;
+        line-height: 1.75rem;
+        cursor: pointer;
     }
 /* #endregion */
 
-/* #region nav */
-nav {
-    display: none;
-    background-color: #0f0;
-}
-/* #endregion */
-
-/* #region section */
-section {
-    padding: 1.5rem 1rem 1rem 1rem;
-    text-align: center;
+/* #region menu-lateral */
+#input-menu-lateral:checked ~ .menu-lateral {
+    right: 0;
 }
 
+.menu-lateral {
+    /* display: none; */
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -110%;
+    z-index: 1000;
+}
+
+    .menu-lateral .fundo-fechar {
+        width: 10%;
+        height: 100%;
+        float: left;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-lateral nav  {
+        width: 90%;
+        height: 100%;
+        left: 10%;
+        float: right;
+        background-color: #292f36;
+    }
+
+        .menu-lateral nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        .menu-lateral nav li {
+                height: 2.5rem;
+                padding: 0.75rem;
+                font-size: 1.3rem;
+                line-height: 2.5rem;
+            }
+
+                .menu-lateral nav li.selected, .menu-lateral nav li:hover,.menu-lateral  nav li:active {
+                    background-color: #2f6690;
+                }
 /* #endregion */
 
 /* #region apresentação */
@@ -129,12 +177,12 @@ section {
     .trabalho {
         width: 15rem;
         height: 12.5rem;
-        margin: 0 auto;
+        margin: 0.5rem auto;
         border: 1px solid #fff;
         padding: 1.5rem;
         position: relative;
         box-sizing: border-box;
-        text-decoration: none;
+        z-index: 1;
     }
 
         .trabalho h3 {
@@ -167,7 +215,6 @@ section {
                 border: 1px solid #fff;
                 padding: 0.5rem;
                 border-radius: 100px;
-                text-decoration: none;
             }
 
         .trabalho:hover .header, .trabalho:active .header {
@@ -177,6 +224,10 @@ section {
         .trabalho:hover .detalhes, .trabalho:active .detalhes {
             opacity: 1;
         }
+    
+    .link-contato {
+        width: 100%;
+    }
 
 /* #endregion */
 
@@ -203,7 +254,6 @@ footer {
             border: 1px solid #fff;
             border-radius: 50%;
             line-height: 2rem;
-            text-decoration: none;
         }
 /* #endregion */
 
@@ -235,13 +285,43 @@ footer {
     }
 }
 
-@media(max-width: 1024px) {
-    /* .trabalho  {
-        pointer-events: none;
+@media (min-width: 768px) {
+    header .titulo {
+        text-align: left;
     }
 
-    .trabalho:hover, .trabalho:active {
-        pointer-events: initial;
-    } */
+    header .botao-hamburguer {
+        display: none;
+    }
+
+    .menu-lateral {
+        width: auto;
+        height: auto;
+        position: relative;
+        right: 0;
+    }
+
+        .menu-lateral nav ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+            .menu-lateral nav li {
+                height: 1.5rem;
+                margin-right: 1rem;
+                line-height: 1.5rem;
+            }
+
+                .menu-lateral nav li.selected {
+                    padding-bottom: 0.5rem;
+                    border-bottom: 0.25rem solid #2f6690;
+                }
+
+                .menu-lateral nav li.selected, .menu-lateral nav li:hover, .menu-lateral nav li:active {
+                    background-color: initial;
+                    color: #2f6690;
+                    background-color: initial;
+
+                }
 }
 /* #endregion */
