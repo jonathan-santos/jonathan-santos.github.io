@@ -1,0 +1,11 @@
+{
+    "name": "Jonathan Santos - Site",
+    "short_name": "JS Site",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "orientation": "any",
+    "theme_color": "#292f36",
+    "description": "Site do Jonathan Santos",
+    "lang": "pt-BR"   
+}

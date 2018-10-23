@@ -1,9 +1,9 @@
 #palheta-de-cores {
-    color: #292f36;
+    color: #292F36;
     color: #ffffff;
-    color: #50d8d7;
+    color: #CFE4DD;
     color: #ff6b6b;
-    color: #2f6690;
+    color: #4799D8;
 }
 
 /* #region valores padrão */
@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
@@ -96,10 +97,16 @@ header {
 /* #region menu-lateral */
 #input-menu-lateral:checked ~ .menu-lateral {
     right: 0;
+    animation-duration: 0.2s;
+    animation-name: abrir-menu;
 }
 
+/* #input-menu-lateral:not(:checked, :default) ~ .menu-lateral {
+    animation-duration: 0.2s;
+    animation-name: fechar-menu;
+} */
+
 .menu-lateral {
-    /* display: none; */
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -130,17 +137,19 @@ header {
             text-align: left;
         }
 
-        .menu-lateral nav li {
-                height: 2.5rem;
-                border-bottom: 1px solid #fff;
-                padding: 0.75rem;
-                font-size: 1.3rem;
-                line-height: 2.5rem;
-            }
+        .menu-lateral nav a {
+            width: 100%;
+            height: 2.5rem;
+            padding: 0.75rem;
+            border-bottom: 1px solid #fff;
+            display:inline-block;
+            font-size: 1.3rem;
+            line-height: 2.5rem;
+        }
 
-                .menu-lateral nav li.selected, .menu-lateral nav li:hover,.menu-lateral  nav li:active {
-                    background-color: #2f6690;
-                }
+            .menu-lateral nav a.selected, .menu-lateral nav a:hover, .menu-lateral  nav a:active {
+                background-color: #4799D8;
+            }
 /* #endregion */
 
 /* #region apresentação */
@@ -157,7 +166,7 @@ header {
 .campos {
     display: flex;
     flex-wrap: wrap;
-    background-color: #50d8d7;
+    background-color: #4799D8;
 }
 
     .campo {
@@ -179,6 +188,7 @@ header {
     flex-wrap: wrap;
     background-color: #ff6b6b;
 }
+
     .trabalho {
         width: 15rem;
         height: 12.5rem;
@@ -207,27 +217,26 @@ header {
         background-color: rgba(0, 0, 0, 0.8);
         opacity: 0;
     }
+
             .trabalho .detalhes h3 {
                 margin: 0.5rem 0;
             }
 
             .trabalho .detalhes a {
-                border: 1px solid #2f6690;
+                border: 1px solid #4799D8;
                 padding: 0.5rem;
                 border-radius: 100px;
                 color: #fff;
             }
 
                 .trabalho .detalhes a:hover, .trabalho .detalhes a:active {
-                    background-color: #2F6690;
+                    background-color: #4799D8;
                 }
-
-        .trabalho:hover .header, .trabalho:active .header {
-            opacity: 0.3;
-        }
 
         .trabalho:hover .detalhes, .trabalho:active .detalhes {
             opacity: 1;
+            animation-duration: 0.5s;
+            animation-name: trabalho-selecionado;
         }
 
     .link-contato {
@@ -263,6 +272,8 @@ footer {
             width: inherit;
             border-radius: inherit;
         }
+
+            
 
 /* #endregion */
 
@@ -315,23 +326,46 @@ footer {
             justify-content: flex-end;
         }
 
-            .menu-lateral nav li {
+            .menu-lateral nav a {
+                width: inherit;
                 height: 1.5rem;
                 border-bottom: none;
                 margin-right: 1rem;
                 line-height: 1.5rem;
             }
 
-                .menu-lateral nav li.selected {
+                .menu-lateral nav a.selected {
                     padding-bottom: 0.5rem;
-                    border-bottom: 0.25rem solid #2f6690;
+                    border-bottom: 0.25rem solid #4799D8;
                 }
 
-                .menu-lateral nav li.selected, .menu-lateral nav li:hover, .menu-lateral nav li:active {
+                .menu-lateral nav a.selected, .menu-lateral nav a:hover, .menu-lateral nav a:active {
                     background-color: initial;
-                    color: #2f6690;
+                    color: #4799D8;
                     background-color: initial;
 
                 }
+}
+/* #endregion */
+
+/* #region animações */
+@keyframes abrir-menu {
+    from {
+        right: -110%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes trabalho-selecionado {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 /* #endregion */
