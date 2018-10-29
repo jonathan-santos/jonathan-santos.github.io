@@ -1,0 +1,199 @@
+/* #region valores padrão */
+html {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    width: 100%;
+    margin: 0rem 0 1rem 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+
+section {
+    padding: 1.5rem 1rem 1rem 1rem;
+    text-align: center;
+}
+/* #endregion */
+
+/* #region classes de utilidade */
+.link-sublinhado {
+    text-decoration: underline;
+}
+
+.sem-margin {
+    margin: 0 !important;
+}
+/* #endregion */
+
+/* #region header */
+header {
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    z-index: 100;
+    background-color: #292f36;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+    header .logo {
+        width: 2rem;
+        height: 2rem;
+        margin: 0.5rem;
+        border: 0.1rem solid #fff;
+        box-sizing: border-box;
+        line-height: 1.75rem;
+        color: #fff;
+        border-radius: 50%;
+
+    }
+
+    header .titulo {
+        height: 100%;
+        margin: 0;
+        padding: 0 1rem;
+        flex-grow: 1;
+        line-height: 3rem;
+        font-size: 1.1rem;
+    }
+
+    header .botao-hamburguer {
+        width: 2rem;
+        height: 2rem;
+        margin: 0.5rem;
+        border: 0.1rem solid #fff;
+        border-radius: 10%;
+        cursor: pointer;
+    }
+
+        header .botao-hamburguer img {
+            width: 1.5rem;
+            padding: 0.25rem;
+        }
+/* #endregion */
+
+/* #region menu-lateral */
+#input-menu-lateral:checked ~ .menu-lateral {
+    right: 0;
+    animation-duration: 0.2s;
+    animation-name: abrir-menu;
+}
+
+.menu-lateral {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -110%;
+    z-index: 1000;
+}
+
+    .menu-lateral .fundo-fechar {
+        width: 10%;
+        height: 100%;
+        float: left;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-lateral nav  {
+        width: 90%;
+        height: 100%;
+        left: 10%;
+        float: right;
+        background-color: #292f36;
+    }
+
+        .menu-lateral nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        .menu-lateral nav a {
+            width: 100%;
+            height: 2.5rem;
+            padding: 0.75rem;
+            border-bottom: 1px solid #fff;
+            display:inline-block;
+            font-size: 1.3rem;
+            line-height: 2.5rem;
+        }
+
+            .menu-lateral nav a.selected, .menu-lateral nav a:hover, .menu-lateral  nav a:active {
+                background-color: #4799D8;
+            }
+/* #endregion */
+
+/* #region footer */
+footer {
+    width: 100%;
+    height: 10rem;
+    padding: 2rem 1rem 1rem 1rem;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #292f36;
+    color: #fff;
+    text-align: center;
+}
+
+    footer .redes-sociais {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+        footer .redes-sociais a {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin: 0 0.5rem;
+            border-radius: 50%;
+            line-height: 2rem;
+        }
+
+        footer .redes-sociais img {
+            width: inherit;
+            border-radius: inherit;
+        }
+/* #endregion */
+
+/* #region animações */
+@keyframes abrir-menu {
+    from {
+        right: -110%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+/* #endregion */
