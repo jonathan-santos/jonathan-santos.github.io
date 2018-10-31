@@ -1,5 +1,11 @@
 @import url("/css/base.css");
 
+/* #region valores padrao */
+main {
+    background-color: #ff6b6b;
+}
+/* #endregion */
+
 /* #region apresentação */
 .apresentacao {
     background-color: #ff6b6b;

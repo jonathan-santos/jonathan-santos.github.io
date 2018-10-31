@@ -46,6 +46,15 @@ section {
 .sem-margin {
     margin: 0 !important;
 }
+
+.sem-selecao {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none;
+       -moz-user-select: none; 
+        -ms-user-select: none;
+            user-select: none;
+}
 /* #endregion */
 
 /* #region header */
@@ -65,14 +74,20 @@ header {
     header .logo {
         width: 2rem;
         height: 2rem;
+        padding: 0.2rem;
         margin: 0.5rem;
         border: 0.1rem solid #fff;
+        background-color: #4799D8;
         box-sizing: border-box;
-        line-height: 1.75rem;
+        line-height: 2rem;
         color: #fff;
         border-radius: 50%;
 
     }
+
+        header .logo img {
+            width: 1.5rem;
+        }
 
     header .titulo {
         height: 100%;
@@ -184,6 +199,18 @@ footer {
             width: inherit;
             border-radius: inherit;
         }
+/* #endregion */
+
+/* #region media queries */
+@media (max-width: 768px) {
+    main {
+        padding-bottom: 12rem;
+    }
+    
+    footer {
+        height: 12rem;
+    }
+}
 /* #endregion */
 
 /* #region animações */

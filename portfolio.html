@@ -4,68 +4,106 @@
     <meta charset='utf-8'>
     <meta name='description' content='Portfólio do site do Jonathan Augusto dos Santos'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-    <meta name='theme-color' content='#292f36'>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#4799d8">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#4799d8">
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#4799d8">
     <link rel='manifest' href='/manifest.json'>
     <link rel='stylesheet' href='/css/portfolio.css'>
     <title>Jonathan Santos - Portfólio</title>
+    <!--Style executado caso o javascript esteja desativado ou indisponível-->
+    <!-- <noscript>
+        <style>
+            .filtros {
+                display: none;
+            }
+        </style>
+    </noscript> -->
 </head>
 <body>
-        <header>
-                <a href='/' class='logo'>JS</a>
-                <h1 class='titulo'>Jonathan Santos</h1>
-                <label for='input-menu-lateral' role='button' class='botao-hamburguer'>
-                    <img src='/assets/img/menu.png' alt='ícone do menu hambúrguer'>
-                </label>
-        
-                <input id='input-menu-lateral' type='checkbox' hidden />
+    <header>
+        <a href='/' class='logo'>
+            <img src="/assets/img/logo.png" alt="Um logo de café com pipoca">
+        </a>
+
+        <h1 class='titulo'>Jonathan Santos - Portfólio</h1>
+
+        <label for='input-menu-lateral' role='button' class='botao-hamburguer'>
+            <img src='/assets/img/menu.png' alt='ícone do menu hambúrguer'>
+        </label>
+
+        <input id='input-menu-lateral' type='checkbox' hidden />
+    
+        <div class='menu-lateral'>
+            <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
             
-                <div class='menu-lateral'>
-                    <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
-                    
-                    <nav role='navigation'>
-                        <ul>
-                            <li>
-                                <a href='/' class='selected'>Home</a>
-                            </li>
-                            <li>
-                                <a href='/portfolio.html'>Portfólio</a>
-                            </li>
-                            <li>
-                                <a href='/sobre.html'>Sobre</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+            <nav role='navigation'>
+                <ul>
+                    <li>
+                        <a href='/' class='selected'>Home</a>
+                    </li>
+                    <li>
+                        <a href='/portfolio.html'>Portfólio</a>
+                    </li>
+                    <li>
+                        <a href='/sobre.html'>Sobre</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
         
-            <main>
-                Sobre
-            </main>
+    <main>
+        <!-- <div class="filtros">
+            <label class='filtro'>
+                <input type='checkbox'>
+                <span class='texto'>Alguma Coisa</span>
+                <class class='fechar sem-selecao' aria-hidden>X</span>
+            </label>
+        </div> -->
+
+        <div class="trabalhos">
+            <div class="trabalho">
+                <img src='/assets/img/pedircomidapwa.jpg' alt='Imagem do Pedir Comida PWA'>
+
+                <figcaption class='detalhes'>
+                    <h3>Pedir Comida PWA</h3>
+                    <p>PWA para pedidos online desenvolvido em meu tempo na eComanda</p>
+                    <a href='https://beta.pedircomida.com.br' target='_blank'>Clique para o acessar</a>
+                </figcaption>
+            </div>
+        </div>
+    </main>
         
-            <footer>
-                <div class='redes-sociais'>
-                    <a href='https://twitter.com/AqueledevLa' target='blank'>
-                        <img src='/assets/img/twitter.png' alt='Logo do Twitter'>
-                    </a>
-                    <a href='https://linkedin.com/in/jonathan-santos-437b09116/' target='blank'>
-                        <img src='/assets/img/linkedin.png' alt='Logo do Linkedin'>
-                    </a>
-                    <a href='https://github.com/jonathan-santos' target='blank'>
-                        <img src='/assets/img/github.png' alt='Logo do Github'>
-                    </a>
-                    <a href='https://aqueledevla.itch.io/' target='blank'>
-                        <img src='/assets/img/itchio.png' alt='Logo do Itch.io'>
-                    </a>
-                    <a href='https://meetup.com/pt-BR/members/233061469/' target='blank'>
-                        <img src='/assets/img/meetup.png' alt='Logo do Meetup'>
-                    </a>
-                    <a href='mailto:jonathan.santosaugusto@gmail.com'>
-                        <img src='/assets/img/email.png' alt='Imagem de um email'>
-                    </a>
-                </div>
-        
-                <p>Feito por mim utilizando HTML, CSS, Amor e um pouco de café</p>
-                <p>Curiosidade de como foi feito este site? <a href='https://github.com/jonathan-santos/jonathan-santos.github.io' target='_blank' class='link-sublinhado'>Acesse o repositório do projeto</a></p>
-            </footer>
+    <footer>
+        <div class='redes-sociais'>
+            <a href='https://twitter.com/AqueledevLa' target='blank'>
+                <img src='/assets/img/twitter.png' alt='Logo do Twitter'>
+            </a>
+            <a href='https://linkedin.com/in/jonathan-santos-437b09116/' target='blank'>
+                <img src='/assets/img/linkedin.png' alt='Logo do Linkedin'>
+            </a>
+            <a href='https://github.com/jonathan-santos' target='blank'>
+                <img src='/assets/img/github.png' alt='Logo do Github'>
+            </a>
+            <a href='https://aqueledevla.itch.io/' target='blank'>
+                <img src='/assets/img/itchio.png' alt='Logo do Itch.io'>
+            </a>
+            <a href='https://meetup.com/pt-BR/members/233061469/' target='blank'>
+                <img src='/assets/img/meetup.png' alt='Logo do Meetup'>
+            </a>
+            <a href='mailto:jonathan.santosaugusto@gmail.com'>
+                <img src='/assets/img/email.png' alt='Imagem de um email'>
+            </a>
+        </div>
+
+        <p>Feito por mim utilizando HTML, CSS, Amor e um pouco de café</p>
+        <p>Curiosidade de como foi feito este site? <a href='https://github.com/jonathan-santos/jonathan-santos.github.io' target='_blank' class='link-sublinhado'>Acesse o repositório do projeto</a></p>
+    </footer>
 </body>
 </html>

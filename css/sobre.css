@@ -25,8 +25,9 @@ main {
     }
 
 .texto {
-    padding: 1rem;
+    padding: 1rem 3rem;
     background-color: #4799D8;
+    text-align: center;
 }
 
     .texto p {
