@@ -211,6 +211,48 @@ footer {
         height: 12rem;
     }
 }
+
+@media (min-width: 768px) {
+    header .titulo {
+        text-align: left;
+    }
+
+    header .botao-hamburguer {
+        display: none;
+    }
+
+    .menu-lateral {
+        width: auto;
+        height: auto;
+        position: relative;
+        right: 0;
+    }
+
+        .menu-lateral nav ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+            .menu-lateral nav a {
+                width: inherit;
+                height: 1.5rem;
+                border-bottom: none;
+                margin-right: 1rem;
+                line-height: 1.5rem;
+            }
+
+                .menu-lateral nav a.selected {
+                    padding-bottom: 0.5rem;
+                    border-bottom: 0.25rem solid #4799D8;
+                }
+
+                .menu-lateral nav a.selected, .menu-lateral nav a:hover, .menu-lateral nav a:active {
+                    background-color: initial;
+                    color: #4799D8;
+                    background-color: initial;
+
+                }
+}
 /* #endregion */
 
 /* #region animações */
