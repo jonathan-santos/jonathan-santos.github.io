@@ -110,13 +110,13 @@ header {
         height: 2rem;
         margin: 0.5rem;
         border: 0.1rem solid var(--cor-texto);
-        border-radius: 10%;
+        border-radius: 100%;
         cursor: pointer;
     }
 
         header .botao-hamburguer img {
-            width: 1.5rem;
-            padding: 0.25rem;
+            width: 1.26rem;
+            padding: 0.38rem;
         }
 /* #endregion */
 
@@ -163,13 +163,28 @@ header {
             height: 2.5rem;
             padding: 0.75rem;
             border-bottom: 1px solid var(--cor-texto);
-            display:inline-block;
+            display: inline-block;
             font-size: 1.3rem;
             line-height: 2.5rem;
         }
 
+            .menu-lateral nav .primeiro-link {
+                border-top: 1px solid var(--cor-texto);
+            }
+
             .menu-lateral nav a.selected, .menu-lateral nav a:hover, .menu-lateral  nav a:active {
                 background-color: var(--cor-principal-2);
+            }
+
+        .menu-lateral .logo {
+            width: 12.5rem;
+            height: 12.5rem;
+            margin: 2.5rem auto;
+            padding: 1.5rem;
+        }
+
+            .menu-lateral .logo img {
+                width: 10rem;
             }
 /* #endregion */
 
@@ -228,6 +243,10 @@ footer {
         display: none;
     }
 
+    .menu-lateral nav .primeiro-link {
+        border: none;
+    }
+
     .menu-lateral {
         width: auto;
         height: auto;
@@ -259,6 +278,15 @@ footer {
                     background-color: initial;
 
                 }
+            .menu-lateral .logo {
+                display: none;
+            }
+}
+
+@media (min-width: 900px) {
+    section {
+        padding: 1.5rem 15% 1rem 15%;
+    }
 }
 /* #endregion */
 
