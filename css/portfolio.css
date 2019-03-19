@@ -1,12 +1,12 @@
 @import url("/css/base.css");
 
 /* #region valores padrao */
-body {
-    text-align: center;
+html {
+    background-color: var(--cor-principal-2);
 }
 
-main {
-    background-color: #4799D8;
+body {
+    text-align: center;
 }
 /* #endregion */
 
@@ -15,22 +15,22 @@ main {
     padding: 0.5rem 1rem 1rem 1rem;
     display: flex;
     flex-wrap: wrap;
-    background-color: #ff6b6b;
+    background-color: var(--cor-principal-1);
 }
 
     .filtro {
         margin: 0.5rem 0.5rem 0 0;
         padding: 0.5rem;
         border-radius: 1000px;
-        background-color: #88b8dd;
+        background-color: var(--cor-principal-2);
     }
 
         .filtro:hover, .filtro:active {
-            background-color: rgb(55, 121, 172);
+            background-color: var(--cor-principal-2);
         }
 
         .filtro:active {
-            background-color: #ff6b6b;
+            background-color: var(--cor-principal-1);
         }
 
     .filtro input {
@@ -44,7 +44,7 @@ main {
         padding: 0.1rem;
         border-radius: 100%;
         background-color: #fff;
-        color: #4799D8;
+        color: var(--cor-principal-2);
         font-weight: bold;
         line-height: 1.15rem;
     }
@@ -60,7 +60,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #4799D8;
+    background-color: var(--cor-principal-2);
 }
 
     .trabalho {
@@ -97,14 +97,14 @@ main {
             }
 
             .trabalho .detalhes a {
-                border: 1px solid #ff6b6b;
+                border: 1px solid var(--cor-principal-1);
                 padding: 0.5rem;
                 border-radius: 100px;
                 color: #fff;
             }
 
                 .trabalho .detalhes a:hover, .trabalho .detalhes a:active {
-                    background-color: #ff6b6b;
+                    background-color: var(--cor-principal-1);
                 }
 
         .trabalho:hover .detalhes, .trabalho:active .detalhes {

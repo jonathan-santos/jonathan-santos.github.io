@@ -1,14 +1,14 @@
 @import url("/css/base.css");
 
 /* #region valores padrao */
-main {
-    background-color: #ff6b6b;
+html {
+    background-color: var(--cor-principal-1);
 }
 /* #endregion */
 
 /* #region apresentação */
 .apresentacao {
-    background-color: #ff6b6b;
+    background-color: var(--cor-principal-1);
 }
 
     .apresentacao a {
@@ -20,7 +20,7 @@ main {
 .campos {
     display: flex;
     flex-wrap: wrap;
-    background-color: #4799D8;
+    background-color: var(--cor-principal-2);
 }
 
     .campo {
@@ -40,7 +40,7 @@ main {
 .trabalhos {
     display: flex;
     flex-wrap: wrap;
-    background-color: #ff6b6b;
+    background-color: var(--cor-principal-1);
 }
 
     .trabalho {
@@ -77,14 +77,14 @@ main {
             }
 
             .trabalho .detalhes a {
-                border: 1px solid #4799D8;
+                border: 1px solid var(--cor-principal-2);
                 padding: 0.5rem;
                 border-radius: 100px;
                 color: #fff;
             }
 
                 .trabalho .detalhes a:hover, .trabalho .detalhes a:active {
-                    background-color: #4799D8;
+                    background-color: var(--cor-principal-2);
                 }
 
         .trabalho:hover .detalhes, .trabalho:active .detalhes {
