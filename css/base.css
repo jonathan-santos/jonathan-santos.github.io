@@ -177,14 +177,14 @@ header {
             }
 
         .menu-lateral .logo {
-            width: 12.5rem;
-            height: 12.5rem;
+            width: 10rem;
+            height: 10rem;
             margin: 2.5rem auto;
-            padding: 1.5rem;
+            padding: 1rem;
         }
 
             .menu-lateral .logo img {
-                width: 10rem;
+                width: 8rem;
             }
 /* #endregion */
 
