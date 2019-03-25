@@ -12,9 +12,10 @@
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#4799d8">
     <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#4799d8">
+    <meta name="theme-color" content="#1a2a3a">
     <link rel='manifest' href='/manifest.json'>
     <link rel='stylesheet' href='/css/sobre.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Jonathan Santos - Sobre</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
         <h1 class='titulo'>Jonathan Santos - Sobre</h1>
 
         <label for='input-menu-lateral' role='button' class='botao-hamburguer'>
-            <img src='/assets/img/menu.png' alt='ícone do menu hambúrguer'>
+            <i class="fas fa-bars"></i>
         </label>
 
         <input id='input-menu-lateral' type='checkbox' hidden />
@@ -35,23 +36,38 @@
             <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
             
             <nav role='navigation'>
-                <ul>
-                    <li class='logo' aria-hidden="true">
+                <div class="area-logo" aria-hidden="true">
+                    <div class="logo">
                         <img src="assets/img/logo.png">
-                    </li>
+                    </div>
+                </div>
+                <ul>
                     <li class='primeiro-link'>
-                        <a href='/'>Home</a>
+                        <a href='/'>
+                            <i class='fa fa-home'></i> Home
+                        </a>
                     </li>
                     <li>
-                        <a href='/portfolio.html'>Portfólio</a>
+                        <a href='/portfolio.html'>
+                            <i class='fa fa-suitcase'></i> Portfólio
+                        </a>
                     </li>
                     <li>
-                        <a href='https://pipocacafeinada.com.br'>Blog</a>
+                        <a href='/sobre.html' class='selected'>
+                            <i class='fa fa-user'></i>
+                            Sobre
+                        </a>
                     </li>
                     <li>
-                        <a href='/sobre.html' class='selected'>Sobre</a>
+                        <a href='/contato.html'>
+                            <i class='fa fa-address-book'></i> Contato
+                        </a>
                     </li>
-                </ul>
+                    <li>
+                        <a target='_blank' href='https://pipocacafeinada.com.br'>
+                            <i class='fa fa-book'></i> Blog
+                        </a>
+                    </li>
             </nav>
         </div>
     </header>
@@ -71,23 +87,23 @@
 
     <footer>
         <div class='redes-sociais'>
-            <a href='https://twitter.com/AqueledevLa' target='blank'>
-                <img src='/assets/img/twitter.png' alt='Logo do Twitter'>
+            <a href='https://twitter.com/AqueledevLa' target='blank' class='twitter'>
+                <i class="fab fa-twitter"></i>
             </a>
-            <a href='https://linkedin.com/in/jonathan-santos-437b09116/' target='blank'>
-                <img src='/assets/img/linkedin.png' alt='Logo do Linkedin'>
+            <a href='https://linkedin.com/in/jonathan-santos-437b09116/' target='blank' class='linkedin'>
+                <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href='https://github.com/jonathan-santos' target='blank'>
-                <img src='/assets/img/github.png' alt='Logo do Github'>
+            <a href='https://github.com/jonathan-santos' target='blank' class='github'>
+                <i class="fab fa-github-alt"></i>
             </a>
-            <a href='https://aqueledevla.itch.io/' target='blank'>
-                <img src='/assets/img/itchio.png' alt='Logo do Itch.io'>
+            <a href='https://aqueledevla.itch.io/' target='blank' class='itchio'>
+                <i class="fab fa-itch-io"></i>
             </a>
-            <a href='https://meetup.com/pt-BR/members/233061469/' target='blank'>
-                <img src='/assets/img/meetup.png' alt='Logo do Meetup'>
+            <a href='https://meetup.com/pt-BR/members/233061469/' target='blank' class='meetup'>
+                <i class="fab fa-meetup"></i>
             </a>
-            <a href='mailto:jonathan.santosaugusto@gmail.com'>
-                <img src='/assets/img/email.png' alt='Imagem de um email'>
+            <a href='mailto:jonathan.santosaugusto@gmail.com' class='email'>
+                <i class="fa fa-envelope"></i>
             </a>
         </div>
 

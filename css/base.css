@@ -1,7 +1,7 @@
 html {
-    --cor-principal-1: #ea4c88;
+    --cor-principal-1: #ff2d9a;
     --cor-principal-2: #3498db;
-    --cor-secundaria-1: #2c3e50;
+    --cor-secundaria-1: #1a2a3a;
     --cor-texto: #fff;
 }
 
@@ -106,17 +106,18 @@ header {
     }
 
     header .botao-hamburguer {
-        width: 2rem;
-        height: 2rem;
-        margin: 0.5rem;
-        border: 0.1rem solid var(--cor-texto);
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 0.35rem;
+        border: 0.125rem solid var(--cor-texto);
         border-radius: 100%;
         cursor: pointer;
+        box-sizing: border-box;
     }
 
-        header .botao-hamburguer img {
-            width: 1.26rem;
-            padding: 0.38rem;
+        header .botao-hamburguer i {
+            font-size: 1.15rem;
+            line-height: 1.85rem;
         }
 /* #endregion */
 
@@ -130,6 +131,7 @@ header {
 .menu-lateral {
     width: 100vw;
     height: 100vh;
+    max-height: 100vh;
     position: fixed;
     top: 0;
     right: -110%;
@@ -151,16 +153,38 @@ header {
         background-color: var(--cor-secundaria-1);
     }
 
-        .menu-lateral nav ul {
+        .menu-lateral .area-logo {
+            box-sizing: border-box;
+            width: 100%;
+            height: 13rem;
+            padding: 1rem;
+        }
+
+            .menu-lateral .logo {
+                margin: 0.5rem auto;
+                width: 10rem;
+                height: 10rem;
+            }
+
+                .menu-lateral .logo img {
+                    width: 7.5rem;
+                    padding: 1.2rem;
+                }
+
+        .menu-lateral ul {
             margin: 0;
             padding: 0;
             list-style: none;
             text-align: left;
         }
 
-        .menu-lateral nav a {
+        .menu-lateral .primeiro-link {
+            border-top: 1px solid var(--cor-texto);
+        }
+
+        .menu-lateral li a {
             width: 100%;
-            height: 2.5rem;
+            height: 2.25rem;
             padding: 0.75rem;
             border-bottom: 1px solid var(--cor-texto);
             display: inline-block;
@@ -168,23 +192,12 @@ header {
             line-height: 2.5rem;
         }
 
-            .menu-lateral nav .primeiro-link {
-                border-top: 1px solid var(--cor-texto);
+            .menu-lateral li i {
+                margin-right: 0.5rem;
             }
 
-            .menu-lateral nav a.selected, .menu-lateral nav a:hover, .menu-lateral  nav a:active {
+            .menu-lateral li a.selected, .menu-lateral li a:hover, .menu-lateral  li a:active {
                 background-color: var(--cor-principal-2);
-            }
-
-        .menu-lateral .logo {
-            width: 10rem;
-            height: 10rem;
-            margin: 2.5rem auto;
-            padding: 1rem;
-        }
-
-            .menu-lateral .logo img {
-                width: 8rem;
             }
 /* #endregion */
 
@@ -211,15 +224,39 @@ footer {
 
         footer .redes-sociais a {
             width: 2.5rem;
+            min-width: 2.5rem;
             height: 2.5rem;
             margin: 0 0.5rem;
             border-radius: 50%;
-            line-height: 2rem;
         }
 
-        footer .redes-sociais img {
-            width: inherit;
-            border-radius: inherit;
+            footer .redes-sociais i {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+            }
+
+        footer .redes-sociais a.twitter {
+            background-color: #56ACEE;
+        }
+
+        footer .redes-sociais a.linkedin {
+            background-color: #007AB9;
+        }
+
+        footer .redes-sociais a.github {
+            background-color: #000;
+        }
+
+        footer .redes-sociais a.itchio {
+            background-color: #FA5C5B;
+        }
+
+        footer .redes-sociais a.meetup {
+            background-color: #ED1C40;
+        }
+
+        footer .redes-sociais a.email {
+            background-color: var(--cor-principal-2);
         }
 /* #endregion */
 
@@ -259,8 +296,11 @@ footer {
             justify-content: flex-end;
         }
 
+        .menu-lateral li i {
+            display: none;
+        }
+
             .menu-lateral nav a {
-                width: inherit;
                 height: 1.5rem;
                 border-bottom: none;
                 margin-right: 1rem;
@@ -278,7 +318,7 @@ footer {
                     background-color: initial;
 
                 }
-            .menu-lateral .logo {
+            .menu-lateral .area-logo {
                 display: none;
             }
 }
@@ -293,11 +333,11 @@ footer {
 /* #region animações */
 @keyframes abrir-menu {
     from {
-        right: -110%;
+        transform: translate(120%);
     }
 
     to {
-        right: 0;
+        right: translate(0);
     }
 }
 /* #endregion */

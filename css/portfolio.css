@@ -8,6 +8,16 @@ html {
 body {
     text-align: center;
 }
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--cor-principal-1)
+}
 /* #endregion */
 
 /* #region filtros */
@@ -66,12 +76,13 @@ body {
     .trabalho {
         width: 12.5rem;
         height: 10.5rem;
-        border: 1px solid rgba(255, 255, 255, 0.9);
+        margin: 0.15rem;
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        border-radius: 0.2rem;
         position: relative;
         box-sizing: border-box;
         z-index: 1;
         background-color: #000;
-        overflow: hidden;
         font-size: 0.8rem;
     }
 
@@ -114,19 +125,118 @@ body {
         }
 /* #endregion */
 
-/* #region media queries */
-@media (max-width: 400px) {
-    .trabalho {
-        width: 10rem;
-        height: 8rem;
-        font-size: 0.65rem;   
-    }
+/* #region Modal */
+.modal-area {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
-@media (max-width: 320px) {
-    .trabalho {
-        width: 15rem;
-        height: 12.5rem;
+    .modal-area:target {
+        opacity: 1;
+        pointer-events: auto;
     }
+
+    .modal-janela {
+        width: 50%;
+        padding: 1.5rem;
+        position: absolute;
+        top: 52.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--cor-secundaria-1);
+        color: var(--cor-texto);
+        border-radius: 1.5%;
+    }
+
+    .modal-janela h4 {
+        margin: 0;
+        font-size: 1.35rem;
+    }
+
+    .modal-janela p {
+        font-size: 1rem;
+    }
+
+    .modal-janela .imagens {
+        margin-bottom: 1rem;
+        padding: 0 0 0.25rem 0;
+        display: flex;
+        overflow: auto;
+    }
+    
+        .modal-janela .imagens img {
+            width: 13rem;
+            height: 22rem;
+            object-fit: cover;
+            margin: 0 0.5rem;
+        }
+
+    .modal-janela .link-trabalho {
+        border: 1px solid var(--cor-principal-1);
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        border-radius: 100px;
+        color: var(--cor-texto);
+    }
+
+        .modal-janela .link-trabalho:hover, .modal-janela .link-trabalho:active {
+            background-color: var(--cor-principal-1);
+        }
+  
+.modal-fechar {
+    margin: 0.75rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+/* #endregion */
+
+/* #region media queries */
+@media (max-width: 768px) {
+    .modal-janela {
+        width: 80%;
+        padding: 0.85rem;
+    }
+
+    .modal-janela h4 {
+        font-size: 1.1rem;
+    }
+
+    .modal-janela p {
+        font-size: 0.9rem;
+    }
+    
+    .modal-janela .imagens img {
+        width: 10rem;
+        height: 16rem;
+    }
+
+    .modal-fechar {
+        font-size: 1.5rem;
+    }
+
+    .trabalho {
+        width: 15.5rem;
+        height: 12.5rem;
+        font-size: 1.1rem;
+    }
+
+        .trabalho .capa-trabalho {
+            width: 15.5rem;
+            height: 12.35rem;
+        }
 }
 /* #endregion */
