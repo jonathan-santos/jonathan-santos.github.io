@@ -1,8 +1,11 @@
 html {
     --cor-principal-1: #ff2d9a;
+    --cor-principal-1-escuro: #b8206e;
     --cor-principal-2: #3498db;
+    --cor-principal-2-escuro: #2975a8;
     --cor-secundaria-1: #1a2a3a;
     --cor-texto: #fff;
+    --cor-texto-2: #222;
 }
 
 /* #region valores padrão */
@@ -117,7 +120,7 @@ header {
 
         header .botao-hamburguer i {
             font-size: 1.15rem;
-            line-height: 1.85rem;
+            line-height: 1.88rem;
         }
 /* #endregion */
 
@@ -301,15 +304,18 @@ footer {
         }
 
             .menu-lateral nav a {
+                width: initial;
                 height: 1.5rem;
                 border-bottom: none;
-                margin-right: 1rem;
+                margin-right: 0.5rem;
                 line-height: 1.5rem;
             }
 
                 .menu-lateral nav a.selected {
                     padding-bottom: 0.5rem;
                     border-bottom: 0.25rem solid var(--cor-secundaria-2);
+                    font-weight: bold;
+                    font-size: 1.5rem;
                 }
 
                 .menu-lateral nav a.selected, .menu-lateral nav a:hover, .menu-lateral nav a:active {

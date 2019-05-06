@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang='pt-br'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='description' content='Contato do site do Jonathan Augusto dos Santos'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <link rel='apple-touch-icon' sizes='180x180' href='/assets/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='/assets/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='/assets/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='/assets/favicon/site.webmanifest'>
+    <link rel='mask-icon' href='/assets/favicon/safari-pinned-tab.svg' color='#4799d8'>
+    <link rel='shortcut icon' href='/assets/favicon/favicon.ico'>
+    <meta name='msapplication-TileColor' content='#4799d8'>
+    <meta name='msapplication-config' content='/assets/favicon/browserconfig.xml'>
+    <meta name='theme-color' content='#1a2a3a'>
+    <link rel='manifest' href='/manifest.json'>
+    <link rel='stylesheet' href='/css/contato.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous'>
+    <title>Jonathan Santos - Contato</title>
+</head>
+<body>
+    <header>
+        <a href='/' class='logo' aria-label='início site'>
+            <img src='/assets/img/logo.png' alt='Um logo de café com pipoca'>
+        </a>
+
+        <h1 class='titulo'>Jonathan Santos</h1>
+
+        <label for='input-menu-lateral' role='button' aria-label='Menu Lateral' class='botao-hamburguer'>
+            <i class='fas fa-bars'></i>
+        </label>
+
+        <input id='input-menu-lateral' type='checkbox' hidden />
+    
+        <div class='menu-lateral'>
+            <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
+            
+            <nav role='navigation'>
+                <div class='area-logo' aria-hidden='true'>
+                    <div class='logo'>
+                        <img src='assets/img/logo.png'>
+                    </div>
+                </div>
+                <ul>
+                    <li class='primeiro-link'>
+                        <a href='/'>
+                            <i class='fa fa-home'></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href='/portfolio.html'>
+                            <i class='fa fa-suitcase'></i> Portfólio
+                        </a>
+                    </li>
+                    <li>
+                        <a href='/sobre.html'>
+                            <i class='fa fa-user'></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href='/contato.html' class='selected'>
+                            <i class='fa fa-address-book'></i> Contato
+                        </a>
+                    </li>
+                    <li>
+                        <a target='_blank' href='https://pipocacafeinada.com.br'>
+                            <i class='fa fa-book'></i> Blog
+                        </a>
+                    </li>
+            </nav>
+        </div>
+    </header>
+        
+    <main>
+        <section class='detalhes'>
+            <p>Olá, então quer entrar em contato comigo? Pois bem, aqui estão as opções:</p>
+            <ul>
+                <li>
+                    Conversar comigo diretamente em uma das minhas redes sociais listadas no fundo da página
+                </li>
+                <li>
+                    Mandar um email para mim diretamente em: <a href='mailto:jonathan.santosaugusto@gmail.com' aria-label='Email' class='email'>jonathan.santosaugusto@gmail.com</a>
+                </li>
+                <li>
+                    Ou Enviar uma mensagem usando o formulário abaixo:
+                </li>
+            </ul>
+            <p>Nota: Eu só entrarei em contato de terça a sábado a partir das 18h, devido a trabalho e se minha resposta demandar mais tempo demorarei um pouco pra responder, mas se for o caso eu aviso ;)</p>
+        </section>
+
+        <section class='formulario'>
+            <h2>Entre em contato por aqui mesmo!</h2>
+            <form action="https://mailthis.to/jonathan.santosaugusto@gmail.com" method="POST" encType="multipart/form-data">
+                <p class='atencao'>Atenção: Todos os campos são requeridos!</p>
+
+                <input type='hidden' name='_confirmation' value=''>
+                <input type='hidden' name='_honeypot' value=''>
+
+                <div>
+                    <label for='email' required>Email: </label>
+                    <input id='email' name='_replyto' type='text' placeholder='seuemail@email.com.br'>
+                </div>
+
+                <div>
+                    <label for='nome' required>Nome: </label>
+                    <input id='nome' name='name' type='text' placeholder='Seu Nome'>
+                </div>
+
+                <div>
+                    <label for='assunto' required>Assunto: </label>
+                    <input id='assunto' name='_subject' type='text' placeholder='O assunto do contato'>
+                </div>
+
+                <div>
+                    <label for='mensagem' required>Mensagem: </label>
+                    <textarea id='mensagem' name='message' rows='5' cols='52' placeholder='Escreva sua mensagem aqui!'></textarea>
+                </div>
+
+                <div>
+                    <input type='submit' value='Enviar'>
+                </div>
+            </form>
+        </section>
+    </main>
+        
+    <footer>
+        <div class='redes-sociais'>
+            <a href='https://twitter.com/AqueledevLa' target='blank' aria-label='Twitter' class='twitter'>
+                <i class='fab fa-twitter'></i>
+            </a>
+            <a href='https://linkedin.com/in/jonathan-santos-437b09116/' target='blank' aria-label='Linkedin' class='linkedin'>
+                <i class='fab fa-linkedin-in'></i>
+            </a>
+            <a href='https://github.com/jonathan-santos' target='blank' aria-label='Github' class='github'>
+                <i class='fab fa-github-alt'></i>
+            </a>
+            <a href='https://aqueledevla.itch.io/' target='blank' aria-label='Itch.io' class='itchio'>
+                <i class='fab fa-itch-io'></i>
+            </a>
+            <a href='https://meetup.com/pt-BR/members/233061469/' target='blank' aria-label='Meetup' class='meetup'>
+                <i class='fab fa-meetup'></i>
+            </a>
+            <a href='mailto:jonathan.santosaugusto@gmail.com' aria-label='Email' class='email'>
+                <i class='fa fa-envelope'></i>
+            </a>
+        </div>
+
+        <p>Feito por mim utilizando HTML, CSS, Amor e um pouco de café</p>
+        <p>Curiosidade de como esse site foi feito? <a href='https://github.com/jonathan-santos/jonathan-santos.github.io' target='_blank' class='link-sublinhado'>Acesse o repositório do projeto</a></p>
+    </footer>
+    
+</body>
+</html>

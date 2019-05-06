@@ -1,0 +1,112 @@
+@import url("/css/base.css");
+
+body {
+    background-color: var(--cor-principal-2);
+}
+
+.detalhes {
+    background-color: var(--cor-principal-1);
+    padding: 1rem 3rem;
+}
+
+    .detalhes p {
+        margin: 0.5;
+    }
+
+    .detalhes ul {
+        margin: 0 auto;
+        padding: 0;
+        text-align: start;
+    }
+
+        .detalhes li {
+            margin: 0.5rem;
+        }
+
+.formulario {
+    background-color: var(--cor-principal-2);
+}
+
+    .formulario .atencao, .formulario label {
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .formulario div {
+        margin: 0.75rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+
+    .formulario label {
+        width: 15%;
+        margin: 0 0 0.5rem 0;
+        cursor: pointer;
+    }
+
+    .formulario input[type="text"], .formulario textarea {
+        width: 100%;
+        border: 1px solid #eeeeee;
+        padding: 0.25rem;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 1rem;
+        color: var(--cor-texto-2);
+    }
+
+        .formulario input[type="text"]::placeholder, .formulario textarea::placeholder {
+            color: #666;
+        }
+
+    input[type="text"] {
+        height: 1.5rem;
+
+    }
+
+    .formulario label[for='mensagem'] {
+        align-self: flex-start;
+    }
+
+    .formulario textarea {
+        height: 6rem;
+        font-size: 1.3rem;
+    }
+
+    .formulario input[type="submit"] {
+        border: none;
+        padding: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 100px;
+        align-self: flex-start;
+        background-color: var(--cor-principal-1);
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+        .formulario input[type="submit"]:hover, .formulario input[type="submit"]:active {
+            background-color: var(--cor-principal-1-escuro);
+        }
+
+@media (min-width: 600px) {
+    .detalhes ul {
+        padding: 0 20%;
+    }
+
+    .formulario div {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formulario label {
+        margin: 0;
+    }
+
+    .formulario input[type="text"], .formulario textarea {
+        width: 100%;
+    }
+}
