@@ -46,7 +46,7 @@ body {
         cursor: pointer;
     }
 
-    .formulario input[type="text"], .formulario textarea {
+    .formulario input[type="text"], .formulario input[type="email"], .formulario textarea {
         width: 100%;
         border: 1px solid #eeeeee;
         padding: 0.25rem;
@@ -56,7 +56,7 @@ body {
         color: var(--cor-texto-2);
     }
 
-        .formulario input[type="text"]::placeholder, .formulario textarea::placeholder {
+        .formulario input[type="text"]::placeholder, .formulario input[type="email"], .formulario textarea::placeholder {
             color: #666;
         }
 
@@ -106,7 +106,7 @@ body {
         margin: 0;
     }
 
-    .formulario input[type="text"], .formulario textarea {
+    .formulario input[type="text"], .formulario input[type="email"], .formulario textarea {
         width: 100%;
     }
 }
