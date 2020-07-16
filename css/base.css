@@ -1,6 +1,6 @@
 @import url('/assets/icomoon/style.css');
 
-html {
+:root {
     --cor-principal-1: #ff2d9a;
     --cor-principal-1-escuro: #b8206e;
     --cor-principal-2: #3498db;
@@ -263,6 +263,12 @@ footer {
         footer .redes-sociais a.email {
             background-color: var(--cor-principal-2);
         }
+/* #endregion */
+
+/* #region icons */
+.icon-heart {
+    color: red;
+}
 /* #endregion */
 
 /* #region media queries */
