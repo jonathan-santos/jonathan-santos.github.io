@@ -40,24 +40,27 @@ html {
 }
 
     .trabalho {
-        width: 15rem;
+        width: 12.5rem;
         height: 12.5rem;
         margin: 0.5rem auto;
         border: 1px solid rgba(255, 255, 255, 0.9);
         position: relative;
         box-sizing: border-box;
+        border-radius: 5px;
         z-index: 1;
         background-color: #000;
         overflow: hidden;
     }
 
     .trabalho img {
-        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     
     .trabalho .detalhes {
         height: 100%;
-        padding: 0 1rem;
+        padding: 0.5rem;
         position: absolute;
         top: 0;
         left: 0;
@@ -69,19 +72,13 @@ html {
     }
 
             .trabalho .detalhes h3 {
+                font-size: 1.1rem;
                 margin: 0.5rem 0;
             }
 
-            .trabalho .detalhes a {
-                border: 1px solid var(--cor-principal-2);
-                padding: 0.5rem;
-                border-radius: 100px;
-                color: #fff;
+            .trabalho .detalhes p {
+                font-size: 0.9rem;
             }
-
-                .trabalho .detalhes a:hover, .trabalho .detalhes a:active {
-                    background-color: var(--cor-principal-2);
-                }
 
         .trabalho:hover .detalhes, .trabalho:active .detalhes {
             opacity: 1;
