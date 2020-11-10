@@ -16,6 +16,7 @@ html {
     padding: 0;
     position: relative;
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -122,11 +123,13 @@ header {
         border-radius: 100%;
         cursor: pointer;
         box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
         header .botao-hamburguer i {
             font-size: 1.15rem;
-            line-height: 1.88rem;
         }
 /* #endregion */
 
@@ -213,7 +216,6 @@ header {
 /* #region footer */
 footer {
     width: 100%;
-    height: 10rem;
     padding: 2rem 1rem 1rem 1rem;
     position: absolute;
     bottom: 0;
@@ -258,6 +260,10 @@ footer {
 
         footer .redes-sociais a.itchio {
             background-color: #FA5C5B;
+        }
+
+        footer .redes-sociais a.figma {
+            background-color: #f24e1e;
         }
 
         footer .redes-sociais a.meetup {

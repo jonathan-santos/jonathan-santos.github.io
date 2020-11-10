@@ -1,18 +1,19 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ptg991');
-  src:  url('fonts/icomoon.eot?ptg991#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ptg991') format('truetype'),
-    url('fonts/icomoon.woff?ptg991') format('woff'),
-    url('fonts/icomoon.svg?ptg991#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?6jluwc');
+  src:  url('fonts/icomoon.eot?6jluwc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6jluwc') format('truetype'),
+    url('fonts/icomoon.woff?6jluwc') format('woff'),
+    url('fonts/icomoon.svg?6jluwc#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -24,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-figma:before {
+  content: "\e901";
+}
 .icon-itchio:before {
   content: "\e900";
 }
@@ -57,9 +61,6 @@
 .icon-portfolio:before {
   content: "\f0f2";
 }
-.icon-github:before {
-  content: "\f113";
-}
 .icon-games:before {
   content: "\f11b";
 }
@@ -77,4 +78,7 @@
 }
 .icon-meetup:before {
   content: "\f2e0";
+}
+.icon-github:before {
+  content: "\eab0";
 }

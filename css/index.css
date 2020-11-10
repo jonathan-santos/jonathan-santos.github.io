@@ -7,10 +7,20 @@ html {
 /* #region apresentação */
 .apresentacao {
     background-color: var(--cor-principal-1);
+    display: flex;
+    align-items: center;
 }
 
-    .apresentacao a {
-        text-decoration: underline;
+    .apresentacao .foto {
+        min-height: 9rem;
+        min-width: 9rem;
+        margin-right: 2rem;
+        border: 2px solid var(--cor-texto);
+        border-radius: 100%;
+    }
+
+    .apresentacao .vertical {
+        align-self: center;
     }
 /* #endregion */
 
