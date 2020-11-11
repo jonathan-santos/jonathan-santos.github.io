@@ -12,15 +12,29 @@ html {
 }
 
     .apresentacao .foto {
-        min-height: 9rem;
-        min-width: 9rem;
+        width: 9rem;
+        height: 9rem;
         margin-right: 2rem;
         border: 2px solid var(--cor-texto);
         border-radius: 100%;
+        object-fit: cover;
     }
 
     .apresentacao .vertical {
         align-self: center;
+    }
+
+    @media (max-width: 450px) {
+        .apresentacao {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .apresentacao .foto {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
     }
 /* #endregion */
 
