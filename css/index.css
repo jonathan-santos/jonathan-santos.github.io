@@ -38,8 +38,8 @@ html {
     }
 /* #endregion */
 
-/* #region campos */
-.campos {
+/* #region competencias */
+.competencias {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--cor-principal-2);
@@ -56,11 +56,97 @@ html {
         }
 /* #endregion */
 
+/* #region historico */
+.historico {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-principal-1);
+}
+
+    .historico input {
+        /* opacity: 0; */
+        display: none
+    }
+
+        .historico #profissional:checked ~ p label[for='profissional'],
+        .historico #educacional:checked ~ p label[for='educacional'] {
+            opacity: 100%;
+        }
+
+        .historico #profissional:not(:checked) ~ .profissional {
+            display: none;
+        }
+
+        .historico #educacional:not(:checked) ~ .educacional {
+            display: none;
+        }
+
+    .historico label {
+        border: 1.5px solid var(--cor-texto);
+        border-radius: 20px;
+        padding: 0.25rem 0.5rem;
+        opacity: 70%;
+        cursor: pointer;
+    }
+
+        .historico label:hover {
+            background-color: var(--cor-principal-1-escuro);
+        }
+
+    .historico .linha-vertical {
+        position: absolute;
+        top: 4.25rem;
+        left: 14.95rem;
+        
+        height: calc(100% - 10rem);
+        width: 2px;
+        background-color: var(--cor-texto);
+    }
+
+    .historico .ano {
+        width: calc(50% - 1.5rem);
+        text-align: end;
+        margin: 0 0 1rem 3.15rem;
+        border-top: 1.5px solid var(--cor-texto);
+        padding-top: 0.5rem;
+        padding-right: 1.5rem;
+    }
+
+        .historico .ano:first-of-type {
+            margin-top: 0;
+        }
+
+    .experiencia {
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .experiencia .imagem {
+        width: 6rem;
+        height: 6rem;
+        margin-right: 1rem;
+        border: 2px solid var(--cor-texto);
+        border-radius: 100%;
+        object-fit: contain;
+    }
+
+    .experiencia .informacoes {
+        text-align: start;
+    }
+
+    .experiencia .titulo {
+        margin: 0;
+    }
+/* #endregion */
+
 /* #region trabalhos */
 .trabalhos {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--cor-principal-1);
+    background-color: var(--cor-principal-2);
 }
 
     .trabalho {
