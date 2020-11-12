@@ -57,18 +57,19 @@ body {
         border: 1px solid #eeeeee;
         padding: 0.25rem;
         border-radius: 5px;
+        box-sizing: border-box;
         background-color: white;
         font-size: 1rem;
         color: var(--cor-texto-2);
     }
 
-        .formulario input[type="text"]::placeholder, .formulario input[type="email"], .formulario textarea::placeholder {
-            color: #666;
+        .formulario input[type="text"]::placeholder, .formulario input[type="email"]::placeholder, .formulario textarea::placeholder {
+            color: rgba(0, 0, 0, 0.4);
         }
 
-    input[type="text"] {
-        height: 1.5rem;
-
+    input[type="text"],
+    input[type="email"] {
+        height: 2.5rem;
     }
 
     .formulario label[for='mensagem'] {
@@ -109,5 +110,11 @@ body {
 @media (min-width: 600px) {
     .detalhes ul {
         padding: 0 20%;
+    }
+}
+
+@media (min-width: 900px) {
+    form {
+        margin-bottom: 1rem;
     }
 }

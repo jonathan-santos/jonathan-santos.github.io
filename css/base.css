@@ -37,7 +37,6 @@ h2 {
 
 a {
     color: inherit;
-    text-decoration: none;
 }
 
 main {
@@ -55,11 +54,6 @@ textarea {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* #endregion */
-
-/* #region classes de utilidade */
-.link-sublinhado {
-    text-decoration: underline;
-}
 
 .sem-margin {
     margin: 0 !important;
@@ -202,6 +196,7 @@ header {
             display: inline-block;
             font-size: 1.3rem;
             line-height: 2.5rem;
+            text-decoration: none;
         }
 
             .menu-lateral li i {
@@ -227,9 +222,10 @@ footer {
 }
 
     footer .redes-sociais {
-        width: 50%;
+        max-width: 90%;
         margin: 0 auto;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -237,8 +233,9 @@ footer {
             width: 2.5rem;
             min-width: 2.5rem;
             height: 2.5rem;
-            margin: 0 0.5rem;
+            margin: 0 0.5rem 0.5rem 0.5rem;
             border-radius: 50%;
+            text-decoration: none;
         }
 
             footer .redes-sociais i {
@@ -282,13 +279,13 @@ footer {
 /* #endregion */
 
 /* #region media queries */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     main {
-        padding-bottom: 12rem;
+        padding-bottom: 16rem;
     }
     
     footer {
-        height: 12rem;
+        height: 16rem;
     }
 }
 
@@ -321,7 +318,7 @@ footer {
             display: none;
         }
 
-            .menu-lateral nav a {
+            .menu-lateral li a {
                 width: initial;
                 height: 1.5rem;
                 border-bottom: none;

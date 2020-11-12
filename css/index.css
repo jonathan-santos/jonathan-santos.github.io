@@ -62,8 +62,12 @@ html {
     .competencias .linguagens {
         width: 100%;
         margin: 0.5rem 0 1rem 0;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
+
+        .competencias .linguagens a {
+            text-decoration: none;
+        }
     
         .competencias .linguagens i {
             margin-right: 0.5rem;
@@ -80,72 +84,86 @@ html {
         }
 /* #endregion */
 
-/* #region historico */
-.historico {
+/* #region experiencias */
+.experiencias {
     position: relative;
     display: flex;
     flex-direction: column;
     background-color: var(--cor-principal-1);
 }
 
-    .historico input {
+    .experiencias input {
         /* opacity: 0; */
         display: none
     }
 
-        .historico #profissional:checked ~ h2 label[for='profissional'],
-        .historico #educacional:checked ~ h2 label[for='educacional'] {
-            opacity: 100%;
-        }
+    .experiencias .filtros {
+        margin-bottom: 1.5rem;
+    }
 
-        .historico #profissional:not(:checked) ~ .profissional {
-            display: none;
-        }
-
-        .historico #educacional:not(:checked) ~ .educacional {
-            display: none;
-        }
-
-    .historico label {
+    .experiencias label {
         border: 1.5px solid var(--cor-texto);
         border-radius: 20px;
         padding: 0.25rem 0.5rem;
         opacity: 70%;
         font-size: 1rem;
         cursor: pointer;
+        transition: background-color 0.25s;
     }
 
-        .historico label:hover {
+        .experiencias label:hover {
             background-color: var(--cor-principal-1-escuro);
         }
 
-    .historico .linha-vertical {
-        position: absolute;
-        top: 4.25rem;
-        left: 14.95rem;
-        
-        height: calc(100% - 10rem);
-        width: 2px;
-        background-color: var(--cor-texto);
+        .experiencias #profissional:checked ~ .filtros label[for='profissional'],
+        .experiencias #educacional:checked ~ .filtros label[for='educacional'] {
+            opacity: 100%;
+        }
+
+    .experiencias .ano,
+    .experiencias .experiencia {
+        display: none;
     }
 
-    .historico .ano {
-        width: calc(50% - 1.5rem);
+    .experiencias #profissional:checked ~ .lista .experiencia.profissional,
+    .experiencias #educacional:checked ~  .lista .experiencia.educacional {
+        display: flex;
+    }
+
+    .experiencias #profissional:checked ~ .lista .ano.profissional,
+    .experiencias #educacional:checked ~  .lista .ano.educacional {
+        display: block;
+    }
+
+    .experiencias .lista {
+        padding-left: 2.5rem;
+    }
+
+        .experiencias .lista-interno {
+            border-left: 1.5px solid var(--cor-texto);
+        }
+
+        .experiencias .lista-interno > * {
+            margin-left: -3.15rem;
+        }
+
+    .experiencias .ano {
+        width: calc(52.5% - 1.5rem);
         text-align: end;
-        margin: 0 0 1rem 3.15rem;
+        margin: 0 0 1rem 0rem;
         border-top: 1.5px solid var(--cor-texto);
         padding-top: 0.5rem;
         padding-right: 1.5rem;
     }
 
-        .historico .ano:first-of-type {
+        .experiencias .ano:first-of-type {
             margin-top: 0;
         }
 
     .experiencia {
         margin-bottom: 3rem;
-        display: flex;
-        align-items: center;
+        align-items: start;
+        /* justify-content: center; */
         z-index: 1;
     }
 
@@ -165,6 +183,10 @@ html {
     .experiencia .titulo {
         margin: 0;
     }
+
+    @media (max-width: 500px) {
+
+    }
 /* #endregion */
 
 /* #region trabalhos */
@@ -175,8 +197,8 @@ html {
 }
 
     .trabalho {
-        width: 12.5rem;
-        height: 12.5rem;
+        width: 15rem;
+        height: 15rem;
         margin: 0.5rem auto;
         border: 1px solid rgba(255, 255, 255, 0.9);
         position: relative;
