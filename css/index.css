@@ -45,6 +45,30 @@ html {
     background-color: var(--cor-principal-2);
 }
 
+    .competencias h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .competencias h2 {
+        width: 100%;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+        .competencias h2:last-of-type {
+            margin-bottom: 1.25rem;
+        }
+
+    .competencias .linguagens {
+        width: 100%;
+        margin: 0.5rem 0 1rem 0;
+        font-size: 1.5rem;
+    }
+    
+        .competencias .linguagens i {
+            margin-right: 0.5rem;
+        }
+
     .campo {
         min-width: 10rem;
         padding: 1rem;
@@ -69,8 +93,8 @@ html {
         display: none
     }
 
-        .historico #profissional:checked ~ p label[for='profissional'],
-        .historico #educacional:checked ~ p label[for='educacional'] {
+        .historico #profissional:checked ~ h2 label[for='profissional'],
+        .historico #educacional:checked ~ h2 label[for='educacional'] {
             opacity: 100%;
         }
 
@@ -87,6 +111,7 @@ html {
         border-radius: 20px;
         padding: 0.25rem 0.5rem;
         opacity: 70%;
+        font-size: 1rem;
         cursor: pointer;
     }
 
