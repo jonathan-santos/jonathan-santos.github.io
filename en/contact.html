@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='description' content='Jonathan Santos personal website - Contact'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <link rel='apple-touch-icon' sizes='180x180' href='/assets/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='/assets/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='/assets/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='/assets/favicon/site.webmanifest'>
+    <meta name='theme-color' content='#1a2a3a'>
+    <link rel='stylesheet' href='/css/base.css'>
+    <link rel='stylesheet' href='/css/contato.css'>
+    <title>Jonathan Santos - Contact</title>
+</head>
+<body>
+    <header>
+        <a href='/en/' class='logo' aria-label='início site'>
+            <img src='/assets/img/logo.png' alt='Um logo de café com pipoca'>
+        </a>
+
+        <h1 class='titulo'>Jonathan Santos</h1>
+
+        <label for='input-menu-lateral' role='button' aria-label='Menu Lateral' class='botao-hamburguer'>
+            <i class='icon-hamburguer-menu'></i>
+        </label>
+
+        <input id='input-menu-lateral' type='checkbox' hidden />
+    
+        <div class='menu-lateral'>
+            <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
+
+            <nav role='navigation'>
+                <div class='area-logo' aria-hidden='true'>
+                    <div class='logo'>
+                        <img src='assets/img/logo.png' alt='A logo of a popcorn with coffee'>
+                    </div>
+                </div>
+                <ul>
+                    <li class='primeiro-link'>
+                        <a href='/en/'>
+                            <i class='icon-home'></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href='/en/contact.html' class='selected'>
+                            <i class='icon-contacts'></i> Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href='https://portfolio.jhow.io' rel='noopener' target='_blank'>
+                            <i class='icon-portfolio'></i> Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href='https://pipocacafeinada.com.br' rel='noopener' target='_blank'>
+                            <i class='icon-blog'></i> Blog
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        
+    <main>
+        <section class='detalhes'>
+            <p>So you want to get in contact with me? <br> Alright then, here are the options:</p>
+
+            <ul class='options'>
+                <li>
+                    Talk to me directly in one of the social media listed in the <a href='#footer'>bottom of the page</a>
+                </li>
+                <li>
+                    Send a email direcly to: <a href='mailto:jonathan.santosaugusto@gmail.com' aria-label='Email' class='email'>jonathan.santosaugusto@gmail.com</a>
+                </li>
+                <li>
+                    Send a message using the formulary bellow:
+                </li>
+            </ul>
+        </section>
+
+        <section class='formulario'>
+            <h2>Contact me here!</h2>
+
+            <form action='https://formspree.io/jonathan.santosaugusto@gmail.com' method='POST'>
+                <p class='atencao'>Atention: All fields are required!</p>
+
+                <div>
+                    <label for='email' required>Email: </label>
+                    <input id='email' name='email' type='email' placeholder='yourname@email.com.br'>
+                </div>
+
+                <div>
+                    <label for='nome' required>Name: </label>
+                    <input id='nome' name='name' type='text' placeholder='Your name'>
+                </div>
+
+                <div>
+                    <label for='assunto' required>Subject: </label>
+                    <input id='assunto' name='subject' type='text' placeholder='The subject of the contact'>
+                </div>
+
+                <div>
+                    <label for='mensagem' required>Message: </label>
+                    <textarea id='mensagem' name='message' rows='5' cols='52' placeholder='Write your message here!'></textarea>
+                </div>
+
+                <div>
+                    <input type='submit' value='Submit'>
+                </div>
+            </form>
+        </section>
+    </main>
+        
+    <footer id='footer'>
+        <div class='redes-sociais'>
+            <a href='https://twitter.com/pipocaCafeinada' rel='noopener' target='blank' aria-label='Twitter' class='twitter'>
+                <i class='icon-twitter'></i>
+            </a>
+            <a href='https://linkedin.com/in/jonathan-santos-dev' rel='noopener' target='blank' aria-label='Linkedin' class='linkedin'>
+                <i class='icon-linkedin'></i>
+            </a>
+            <a href='https://github.com/jonathan-santos' rel='noopener' target='blank' aria-label='Github' class='github'>
+                <i class='icon-github'></i>
+            </a>
+            <a href='https://caffeinatedpopcorn.itch.io' rel='noopener' target='blank' aria-label='Itch.io' class='itchio'>
+                <i class='icon-itchio'></i>
+            </a>
+            <a href='https://figma.com/@jhow' rel='noopener' target='blank' aria-label='Figma' class='figma'>
+                <i class='icon-figma'></i>
+            </a>
+            <a href='https://meetup.com/pt-BR/members/233061469/' rel='noopener' target='blank' aria-label='Meetup' class='meetup'>
+                <i class='icon-meetup'></i>
+            </a>
+            <a href='mailto:jonathan.santosaugusto@gmail.com' rel='noopener' aria-label='Email' class='email'>
+                <i class='icon-email'></i>
+            </a>
+        </div>
+
+        <p>Website built using HTML and CSS by hand, <i class='icon-heart'></i> and a bit of coffee</p>
+        <p>Curious about how this website was made? <a href='https://github.com/jonathan-santos/jonathan-santos.github.io' target='_blank'>Access the repository of the project</a></p>
+    </footer>
+    
+</body>
+</html>
