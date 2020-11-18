@@ -1,12 +1,12 @@
 /* #region valores padrao */
 html {
-    background-color: var(--cor-principal-1);
+    background-color: var(--cor-primaria);
 }
 /* #endregion */
 
 /* #region apresentação */
 .apresentacao {
-    background-color: var(--cor-principal-1);
+    background-color: var(--cor-primaria);
     display: flex;
     align-items: center;
 }
@@ -15,7 +15,7 @@ html {
         width: 9rem;
         height: 9rem;
         margin-right: 2rem;
-        border: 2px solid var(--cor-texto);
+        border: 2px solid var(--cor-texto-claro);
         border-radius: 100%;
         object-fit: cover;
     }
@@ -42,7 +42,7 @@ html {
 .competencias {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--cor-principal-2);
+    background-color: var(--cor-secundaria);
 }
 
     .competencias h2 {
@@ -89,7 +89,7 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: var(--cor-principal-1);
+    background-color: var(--cor-primaria);
 }
 
     .experiencias input {
@@ -102,7 +102,7 @@ html {
     }
 
     .experiencias label {
-        border: 1.5px solid var(--cor-texto);
+        border: 1.5px solid var(--cor-texto-claro);
         border-radius: 20px;
         padding: 0.25rem 0.5rem;
         opacity: 70%;
@@ -112,7 +112,7 @@ html {
     }
 
         .experiencias label:hover {
-            background-color: var(--cor-principal-1-escuro);
+            background-color: var(--cor-primaria-escuro);
         }
 
         .experiencias #profissional:checked ~ .filtros label[for='profissional'],
@@ -140,7 +140,7 @@ html {
     }
 
         .experiencias .lista-interno {
-            border-left: 1.5px solid var(--cor-texto);
+            border-left: 1.5px solid var(--cor-texto-claro);
         }
 
         .experiencias .lista-interno > * {
@@ -151,7 +151,7 @@ html {
         width: calc(52.5% - 1.5rem);
         text-align: end;
         margin: 0 0 1rem 0rem;
-        border-top: 1.5px solid var(--cor-texto);
+        border-top: 1.5px solid var(--cor-texto-claro);
         padding-top: 0.5rem;
         padding-right: 1.5rem;
     }
@@ -171,7 +171,7 @@ html {
         width: 6rem;
         height: 6rem;
         margin-right: 1rem;
-        border: 2px solid var(--cor-texto);
+        border: 2px solid var(--cor-texto-claro);
         border-radius: 100%;
         object-fit: contain;
     }
@@ -193,7 +193,7 @@ html {
 .trabalhos {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--cor-principal-2);
+    background-color: var(--cor-secundaria);
 }
 
     .trabalho {

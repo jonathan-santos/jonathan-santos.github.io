@@ -1,42 +1,46 @@
-@import url('/assets/icomoon/style.css');
-
 :root {
-    --cor-principal-1: #ff2d9a;
-    --cor-principal-1-escuro: #b8206e;
-    --cor-principal-2: #3498db;
-    --cor-principal-2-escuro: #2975a8;
-    --cor-secundaria-1: #1a2a3a;
-    --cor-texto: #fff;
-    --cor-texto-2: #222;
+    font-size: 60%;
+
+    --cor-primaria: #ff2d9a;
+    --cor-primaria-escuro: #b8206e;
+    --cor-secundaria: #3498db;
+    --cor-secundaria-escuro: #2975a8;
+    --cor-fundo-claro: #fff;
+    --cor-fundo-semi-claro: #eee;
+    --cor-fundo-escuro: #1a2a3a;
+    --cor-texto-claro: #fff;
+    --cor-texto-escuro: #222;
 }
 
-/* #region valores padrão */
-html {
+/* #region valores padrão para tags */
+*, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+html {
     position: relative;
     min-height: 100vh;
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    color: var(--cor-texto);
+body,
+input,
+button,
+textarea,
+a {
+    color: var(--cor-texto-claro);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-h1 {
-    margin: 0;
-}
-
-h2 {
-    width: 100%;
-    margin: 0rem 0 1rem 0;
-}
-
-a {
-    color: inherit;
+button {
+    background: none;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
 main {
@@ -49,24 +53,6 @@ section {
     padding: 1.5rem 1rem 1rem 1rem;
     text-align: center;
 }
-
-textarea {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-/* #endregion */
-
-.sem-margin {
-    margin: 0 !important;
-}
-
-.sem-selecao {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none; 
-     -khtml-user-select: none;
-       -moz-user-select: none; 
-        -ms-user-select: none;
-            user-select: none;
-}
 /* #endregion */
 
 /* #region header */
@@ -77,8 +63,8 @@ header {
     display: flex;
     align-items: flex-start;
     z-index: 100;
-    background-color: var(--cor-secundaria-1);
-    color: var(--cor-texto);
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
     text-align: center;
     font-size: 1.2rem;
 }
@@ -89,7 +75,7 @@ header {
         padding: 0.2rem;
         margin: 0.5rem;
         border: 0.1rem solid #fff;
-        background-color: var(--cor-principal-2);
+        background-color: var(--cor-secundaria);
         box-sizing: border-box;
         line-height: 2rem;
         border-radius: 50%;
@@ -113,7 +99,7 @@ header {
         width: 2.2rem;
         height: 2.2rem;
         margin: 0.35rem;
-        border: 0.125rem solid var(--cor-texto);
+        border: 0.125rem solid var(--cor-texto-claro);
         border-radius: 100%;
         cursor: pointer;
         box-sizing: border-box;
@@ -156,7 +142,7 @@ header {
         height: 100%;
         left: 10%;
         float: right;
-        background-color: var(--cor-secundaria-1);
+        background-color: var(--cor-fundo-escuro);
     }
 
         .menu-lateral .area-logo {
@@ -185,14 +171,14 @@ header {
         }
 
         .menu-lateral .primeiro-link {
-            border-top: 1px solid var(--cor-texto);
+            border-top: 1px solid var(--cor-texto-claro);
         }
 
         .menu-lateral li a {
             width: 100%;
             height: 2.25rem;
             padding: 0.75rem;
-            border-bottom: 1px solid var(--cor-texto);
+            border-bottom: 1px solid var(--cor-texto-claro);
             display: inline-block;
             font-size: 1.3rem;
             line-height: 2.5rem;
@@ -204,7 +190,7 @@ header {
             }
 
             .menu-lateral li a.selected, .menu-lateral li a:hover, .menu-lateral  li a:active {
-                background-color: var(--cor-principal-2);
+                background-color: var(--cor-secundaria);
             }
 /* #endregion */
 
@@ -216,10 +202,14 @@ footer {
     bottom: 0;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: var(--cor-secundaria-1);
-    color: var(--cor-texto);
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
     text-align: center;
 }
+
+    footer .icon-heart {
+        color: red;
+    }
 
     footer .redes-sociais {
         max-width: 90%;
@@ -268,14 +258,8 @@ footer {
         }
 
         footer .redes-sociais a.email {
-            background-color: var(--cor-principal-2);
+            background-color: var(--cor-secundaria);
         }
-/* #endregion */
-
-/* #region icons */
-.icon-heart {
-    color: red;
-}
 /* #endregion */
 
 /* #region media queries */
@@ -335,7 +319,7 @@ footer {
 
                 .menu-lateral nav a.selected, .menu-lateral nav a:hover, .menu-lateral nav a:active {
                     background-color: initial;
-                    color: var(--cor-principal-2);
+                    color: var(--cor-secundaria);
                     background-color: initial;
 
                 }

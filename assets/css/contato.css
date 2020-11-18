@@ -1,9 +1,9 @@
 body {
-    background-color: var(--cor-principal-2);
+    background-color: var(--cor-secundaria);
 }
 
 .detalhes {
-    background-color: var(--cor-principal-1);
+    background-color: var(--cor-primaria);
     padding: 1rem 3rem;
 }
 
@@ -27,7 +27,7 @@ body {
         }
 
 .formulario {
-    background-color: var(--cor-principal-2);
+    background-color: var(--cor-secundaria);
 }
 
     .formulario .atencao, .formulario label {
@@ -60,7 +60,7 @@ body {
         box-sizing: border-box;
         background-color: white;
         font-size: 1rem;
-        color: var(--cor-texto-2);
+        color: var(--cor-texto-escuro);
     }
 
         .formulario input[type="text"]::placeholder, .formulario input[type="email"]::placeholder, .formulario textarea::placeholder {
@@ -86,7 +86,7 @@ body {
         padding: 0.5rem 1rem;
         border-radius: 100px;
         align-self: center;
-        background-color: var(--cor-principal-1);
+        background-color: var(--cor-primaria);
         color: white;
         font-size: 1rem;
         font-weight: bold;
@@ -94,7 +94,7 @@ body {
     }
 
         .formulario input[type="submit"]:hover, .formulario input[type="submit"]:active {
-            background-color: var(--cor-principal-1-escuro);
+            background-color: var(--cor-primaria-escuro);
         }
 
 @media (max-width: 600px) {
