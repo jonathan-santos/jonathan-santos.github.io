@@ -3,20 +3,8 @@
     background-color: var(--cor-primaria);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-
-    .apresentacao .foto {
-        width: 9rem;
-        height: 9rem;
-        margin-right: 2rem;
-        border: 2px solid var(--cor-texto-claro);
-        border-radius: 100%;
-        object-fit: cover;
-    }
-
-    .apresentacao .vertical {
-        align-self: center;
-    }
 
     @media (max-width: 450px) {
         .apresentacao {
@@ -24,12 +12,28 @@
             flex-direction: column;
             justify-content: center;
         }
+    }
 
+.apresentacao .foto {
+    width: 16rem;
+    height: 16rem;
+    margin-right: 2rem;
+    border: 0.2rem solid var(--cor-texto-claro);
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+    @media (max-width: 450px) {
         .apresentacao .foto {
             margin-right: 0;
-            margin-bottom: 1rem;
+            margin-bottom: 1.6rem;
         }
     }
+
+.apresentacao .titulo,
+.apresentacao .texto {
+    margin-bottom: 1.6rem;
+}
 /* #endregion */
 
 /* #region competencias */
@@ -39,84 +43,119 @@
     background-color: var(--cor-secundaria);
 }
 
-    .competencias h2 {
-        margin-bottom: 0.5rem;
+.competencias .titulo {
+    width: 100%;
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.competencias .linguagens {
+    width: 100%;
+    margin-bottom: 2.4rem;
+}
+
+    .competencias .linguagens > * {
+        text-decoration: none;
     }
 
-    .competencias h2 {
-        width: 100%;
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
+    .competencias .linguagens i {
+        margin-right: 0.8rem;
+        font-size: 2.8rem;
     }
 
-        .competencias h2:last-of-type {
-            margin-bottom: 1.25rem;
-        }
+.competencias .campo .icone {
+    font-size: 4.8rem;
+}
 
-    .competencias .linguagens {
-        width: 100%;
-        margin: 0.5rem 0 1rem 0;
-        font-size: 1.75rem;
+.competencias .campo .nome {
+    margin: 1.2rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .competencias .campo {
+        flex-basis: 100%;
+        padding: 1.6rem 8rem;
     }
 
-        .competencias .linguagens a {
-            text-decoration: none;
-        }
-    
-        .competencias .linguagens i {
-            margin-right: 0.5rem;
-        }
+    .competencias .campo:not(.campo-design) {
+        border-bottom: 0.2rem solid var(--cor-fundo-claro);
+    }
+}
 
-    .campo {
-        min-width: 10rem;
-        padding: 1rem;
-        flex: 1;
+@media (min-width: 601px) and (max-width: 768px) {
+    .competencias .campo {
+        flex-basis: 50%;
+        padding: 1.6rem;
     }
 
-        .campo i {
-            font-size: 3rem;
-        }
+    .campo-front-end, .campo-back-end {
+        border-bottom: 0.2rem solid var(--cor-fundo-claro);
+    }
+
+    .campo-front-end, .campo-jogos {
+        border-right: 0.2rem solid var(--cor-fundo-claro);
+    }
+}
+
+@media (min-width: 769px) {
+    .competencias .campo {
+        flex-basis: 25%;
+        border-bottom: none;
+        padding: 1.6rem;
+    }
+
+    .competencias .campo:not(.campo-design) {
+        border-right: 0.2rem solid var(--cor-fundo-claro);
+    }
+}
+
 /* #endregion */
 
 /* #region experiencias */
 .experiencias {
-    position: relative;
     display: flex;
     flex-direction: column;
     background-color: var(--cor-primaria);
 }
 
-    .experiencias input {
-        /* opacity: 0; */
-        display: none
+.experiencias .titulo {
+    margin-bottom: 0.8rem;
+}
+
+.experiencias .filtros {
+    margin-bottom: 1.6rem;
+}
+
+.experiencias .filtro {
+    border: 0.15rem solid var(--cor-texto-claro);
+    border-radius: 2rem;
+    padding: 0.4rem 0.8rem;
+    opacity: 70%;
+    font-size: 1.4rem;
+    transition: all 0.25s;
+}
+
+    .experiencias .filtro:hover {
+        background-color: var(--cor-primaria-escuro);
     }
 
-    .experiencias .filtros {
-        margin-bottom: 1.5rem;
+    .experiencias #profissional:checked ~ .filtros .filtro[for='profissional'],
+    .experiencias #educacional:checked ~ .filtros .filtro[for='educacional'] {
+        opacity: 100%;
+        font-weight: 600;
     }
 
-    .experiencias label {
-        border: 1.5px solid var(--cor-texto-claro);
-        border-radius: 20px;
-        padding: 0.25rem 0.5rem;
-        opacity: 70%;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.25s;
-    }
+.lista .ano,
+.lista .experiencia {
+    display: none;
+}
 
-        .experiencias label:hover {
-            background-color: var(--cor-primaria-escuro);
-        }
-
-        .experiencias #profissional:checked ~ .filtros label[for='profissional'],
-        .experiencias #educacional:checked ~ .filtros label[for='educacional'] {
-            opacity: 100%;
-        }
-
-    .experiencias .ano,
-    .experiencias .experiencia {
-        display: none;
+    .experiencias #profissional:checked ~ .lista .ano.profissional,
+    .experiencias #educacional:checked ~  .lista .ano.educacional {
+        display: block;
     }
 
     .experiencias #profissional:checked ~ .lista .experiencia.profissional,
@@ -124,86 +163,97 @@
         display: flex;
     }
 
-    .experiencias #profissional:checked ~ .lista .ano.profissional,
-    .experiencias #educacional:checked ~  .lista .ano.educacional {
-        display: block;
+.experiencias .lista {
+    padding-left: 3.8rem;
+}
+
+    .experiencias .lista-interno {
+        border-left: 0.15rem solid var(--cor-texto-claro);
     }
 
-    .experiencias .lista {
-        padding-left: 2.5rem;
+    .experiencias .lista-interno > .experiencia {
+        margin-left: -4.25rem;
     }
 
-        .experiencias .lista-interno {
-            border-left: 1.5px solid var(--cor-texto-claro);
+.lista .ano {
+    width: calc(57.5% - 0.1rem);
+    margin: 1.6rem 0;
+    border-top: 0.15rem solid var(--cor-texto-claro);
+    padding: 0.4rem 2.4rem 0 0;
+    font-size: 1.8rem;
+    text-align: end;
+}
+
+    @media (min-width: 768px) {
+        .experiencias .ano {
+            width: calc(53.5% - 0.1rem);
         }
-
-        .experiencias .lista-interno > * {
-            margin-left: -3.15rem;
-        }
-
-    .experiencias .ano {
-        width: calc(52.5% - 1.5rem);
-        text-align: end;
-        margin: 0 0 1rem 0rem;
-        border-top: 1.5px solid var(--cor-texto-claro);
-        padding-top: 0.5rem;
-        padding-right: 1.5rem;
     }
 
-        .experiencias .ano:first-of-type {
-            margin-top: 0;
-        }
-
-    .experiencia {
-        margin-bottom: 3rem;
-        align-items: start;
-        /* justify-content: center; */
-        z-index: 1;
+    .lista .ano:first-of-type {
+        margin-top: 0;
     }
 
-    .experiencia .imagem {
-        width: 6rem;
-        height: 6rem;
+.lista .experiencia {
+    margin-bottom: 3.2rem;
+    align-items: start;
+    z-index: 1;
+}
+
+    .lista .experiencia .imagem {
+        width: 8.4rem;
+        height: 8.4rem;
         margin-right: 1rem;
         border: 2px solid var(--cor-texto-claro);
         border-radius: 100%;
         object-fit: contain;
     }
 
-    .experiencia .informacoes {
+        .lista .experiencia .imagem:last-of-type {
+            margin-bottom: -0.4rem;
+        }
+
+    .lista .experiencia .informacoes {
         text-align: start;
     }
 
-    .experiencia .titulo {
-        margin: 0;
+    .lista .experiencia .titulo {
+        margin-bottom: 0.8rem;
     }
 
-    @media (max-width: 500px) {
-
-    }
+        .lista .experiencia .titulo a {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
 /* #endregion */
 
 /* #region trabalhos */
 .trabalhos {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     background-color: var(--cor-secundaria);
 }
 
-    .trabalho {
-        width: 15rem;
-        height: 15rem;
-        margin: 0.5rem auto;
-        border: 1px solid rgba(255, 255, 255, 0.9);
-        position: relative;
-        box-sizing: border-box;
-        border-radius: 5px;
-        z-index: 1;
-        background-color: #000;
-        overflow: hidden;
-    }
+.trabalhos .titulo {
+    flex-basis: 100%;
+    margin-bottom: 1.6rem;
+}
 
-    .trabalho img {
+.trabalho {
+    width: 30rem;
+    height: 30rem;
+    margin: 0.8rem auto;
+    border: 0.2rem solid var(--cor-fundo-claro);
+    position: relative;
+    border-radius: 1.2rem;
+    z-index: 1;
+    background-color: var(--cor-fundo-escuro);
+    overflow: hidden;
+}
+
+    .trabalho .imagem {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -220,66 +270,22 @@
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.8);
         opacity: 0;
+        transition: all 0.5s;
     }
 
-            .trabalho .detalhes h3 {
-                font-size: 1.1rem;
-                margin: 0.5rem 0;
-            }
-
-            .trabalho .detalhes p {
-                font-size: 0.9rem;
-            }
-
-        .trabalho:hover .detalhes, .trabalho:active .detalhes {
-            opacity: 1;
-            animation-duration: 0.5s;
-            animation-name: trabalho-selecionado;
+        .trabalho .detalhes .nome {
+            margin-bottom: 1.6rem;
+            font-size: 2rem;
+            font-weight: 600;
         }
 
-    .link-portfolio {
-        width: 100%;
-    }
+        .trabalho:hover .detalhes,
+        .trabalho:active .detalhes {
+            opacity: 1;
+        }
 
-/* #endregion */
-
-/* #region media-queries */
-@media (max-width: 415px) {
-    .campo:not(.campo-outros) {
-        border-bottom: 1px solid #fff;
-    }
-}
-
-@media (min-width: 416px) {
-    .campo-front-end, .campo-back-end {
-        border-bottom: 1px solid #fff;
-    }
-
-    .campo-front-end, .campo-games {
-        border-right: 1px solid #fff;
-    }
-}
-
-@media (min-width: 600px) {
-    .campo {
-        min-width: 0;
-        border-bottom: none;
-    }
-
-    .campo-back-end {
-        border-right: 1px solid #fff;
-    }
-}
-/* #endregion */
-
-/* #region animações */
-@keyframes trabalho-selecionado {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+.link-portfolio {
+    flex-basis: 100%;
+    margin-top: 0.8rem;
 }
 /* #endregion */

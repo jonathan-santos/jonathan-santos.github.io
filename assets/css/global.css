@@ -43,6 +43,8 @@ button,
 textarea,
 a {
     color: var(--cor-texto-claro);
+    font-size: 1.6rem;
+    font-weight: 500;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -53,17 +55,25 @@ button, label {
     cursor: pointer;
     transition: all 0.5s;
 }
+/* #endregion */
 
-main {
+/* #region conteudo-principal */
+.conteudo-principal {
     min-height: 100%;
     padding-top: var(--tamanho-barra-navegacao);
     padding-bottom: var(--tamanho-rodape);
 }
 
-section {
+.conteudo-principal > .secao {
     padding: 1.5rem 1rem 1rem 1rem;
     text-align: center;
 }
+
+    @media (min-width: 900px) {
+        .conteudo-principal > .secao {
+            padding: 1.5rem 15% 1rem 15%;
+        }
+    }
 /* #endregion */
 
 /* #region .barra-navegacao */
@@ -353,12 +363,4 @@ section {
     .rodape .rede.email {
         background-color: var(--cor-secundaria);
     }
-/* #endregion */
-
-/* #region media queries */
-@media (min-width: 900px) {
-    section {
-        padding: 1.5rem 15% 1rem 15%;
-    }
-}
 /* #endregion */

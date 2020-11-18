@@ -68,21 +68,21 @@
         </div>
     </header>
 
-    <main>
-        <section class='apresentacao'>
-            <img src='/assets/img/foto.jpg' alt='Jonathan Santos photo' class='foto'>
+    <main class='conteudo-principal'>
+        <section class='secao apresentacao'>
+            <img src='../assets/img/foto.jpg' alt='Jonathan Santos photo' class='foto'>
 
-            <div class='vertical'>
-                <h1>Full-stack Web developer e Gamedev</h1>
+            <div class='informacoes'>
+                <h1 class='titulo'>Full-stack developer / <br> Gamedev</h1>
     
-                <p>Hello there! I'm Jonathan, a person who is in love with technology and loves to learn and develop new things. I have experience in the development of Front-End and Back-End Web applications, mobile apps, mobile/desktop games, robotics, and even teaching of these subjects to children and teenagers.</p>
+                <p class='texto'>Hello there! I'm Jonathan, a person who is in love with technology and loves to learn and develop new things. I have experience in the development of Front-End and Back-End Web applications, mobile apps, mobile/desktop games, robotics, and even teaching of these subjects to children and teenagers.</p>
 
-                <p>I'm also a open-source enthusiast and beyond software development, I also do 3D Modeling/Animation, image/vector editing, prototyping in Figma, and I'm always happy to help in what I can.</p>
+                <p class='texto'>I'm also a open-source enthusiast and beyond software development, I also do 3D Modeling/Animation, image/vector editing, prototyping in Figma, and I'm always happy to help in what I can.</p>
             </div>
         </section>
 
-        <section class='competencias'>
-            <h2>Programming languages</h2>
+        <section class='secao competencias'>
+            <h2 class='titulo'>Programming languages</h2>
 
             <div class='linguagens'>
                 <a href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=javascript' rel='noopeneer' target='blank'><i class='icon-javascript'></i></a>
@@ -93,48 +93,50 @@
                 <a href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=c%2B%2B' rel='noopeneer' target='blank'><i class='icon-cplusplus'></i></a>
             </div>
 
-            <h2>Technologies</h2>
+            <h2 class='titulo'>Technologies</h2>
 
             <div class='campo campo-front-end'>
-                <i class='icone-campo icon-frontend'></i>
+                <i class='icone icon-frontend'></i>
 
-                <h4>Web Front-End</h4>
+                <h4 class='nome'>Front-End</h4>
 
-                <p>React.js, React Native, Webpack, 11ty, Sass</p>
+                <p class='lista'>React, React Native, Webpack, 11ty, Sass</p>
             </div>
             
             <div class='campo campo-back-end'>
-                <i class='icone-campo icon-backend'></i>
+                <i class='icone icon-backend'></i>
 
-                <h4>Web Back-End</h4>
+                <h4 class='nome'>Back-End</h4>
 
-                <p>Node.js, Asp.Net Core, Postres, MongoDB, Linux, Docker</p>
+                <p class='lista'>Node, Asp.Net Core, Postres, MongoDB, Linux, Docker</p>
             </div>
 
-            <div class='campo campo-games'>
-                <i class='icone-campo icon-games'></i>
+            <div class='campo campo-jogos'>
+                <i class='icone icon-games'></i>
 
-                <h4>Gamedev</h4>
+                <h4 class='nome'>Gamedev</h4>
 
-                <p>Godot, Unity, Construct, Raylib, OpenGL, creator of <a href='https://github.com/jonathan-santos/canvasrama'>Canvasrama</a></p>
+                <p class='lista'>Godot, Unity, Construct, Raylib, OpenGL, creator of <a href='https://github.com/jonathan-santos/canvasrama'>Canvasrama</a></p>
             </div>
 
-            <div class='campo campo-outros'>
-                <i class='icone-campo icon-magic'></i>
+            <div class='campo campo-design'>
+                <i class='icone icon-magic'></i>
 
-                <h4>Design</h4>
+                <h4 class='nome'>Design</h4>
 
-                <p>Figma, Blender, Krita, audacity</p>
+                <p class='lista'>Figma, Blender, Krita, audacity</p>
             </div>
         </section>
 
-        <section class='experiencias'>
-            <input type='checkbox' checked name='profissional' id='profissional'>
-            <input type='checkbox' checked name='educacional' id='educacional'>
+        <section class='secao experiencias'>
+            <input id='profissional' name='profissional' type='checkbox' checked hidden aria-hidden="true">
+            <input id='educacional' name='educacional' type='checkbox' checked hidden aria-hidden="true">
 
-            <h2>My experience</h2>
+            <h2 class='titulo'>My experience</h2>
+
             <div class='filtros'>
-                <label for='profissional'>professional</label> <label for='educacional'>educational</label>
+                <label class='filtro' for='profissional'>professional</label>
+                <label class='filtro' for='educacional'>educational</label>
             </div>
 
             <div class='lista'>
@@ -251,33 +253,36 @@
                 </div>
         </section>
 
-        <section class='trabalhos'>
-            <h2>Previous works</h2>
+        <section class='secao trabalhos'>
+            <h2 class='titulo'>Previous works</h2>
 
             <a class='trabalho' href='https://portfolio.jhow.io/projects/pedir-comida/' target='_blank' rel='noopener'>
-                <img src='https://portfolio.jhow.io/assets/pedir-comida-pwa-1.png' alt='Imagem do Pedir Comida PWA'>
+                <img class='imagem' src='https://portfolio.jhow.io/assets/pedir-comida-pwa-1.png' alt='Imagem do Pedir Comida PWA'>
 
                 <figcaption class='detalhes'>
-                    <h3>Pedir Comida PWA</h3>
-                    <p>Project I participated at my time in eComanda, made with React, Typescript. My first PWA</p>
+                    <h3 class='nome'>Pedir Comida PWA</h3>
+
+                    <p class='texto'>Project I participated at my time in eComanda, made with React, Typescript. My first PWA</p>
                 </figcaption>
             </a>
 
             <a class='trabalho' href='https://portfolio.jhow.io/projects/portfolio-generator/' target='_blank' rel='noopener'>
-                <img src='https://portfolio.jhow.io/assets/portfolio-generator-1.png' alt='Imagem do portfolio generator'>
+                <img class='imagem' src='https://portfolio.jhow.io/assets/portfolio-generator-1.png' alt='Imagem do portfolio generator'>
 
                 <figcaption class='detalhes'>
-                    <h3>Portfolio generator</h3>
-                    <p>A portfolio website gererator built with 11ty</p>
+                    <h3 class='nome'>Portfolio generator</h3>
+
+                    <p class='texto'>A portfolio website gererator built with 11ty</p>
                 </figcaption>
             </a>
 
             <a class='trabalho' href='https://portfolio.jhow.io/projects/reclameet/' target='_blank' rel='noopener'>
-                <img src='https://portfolio.jhow.io/assets/reclameet-1.png' alt='Imagem do Reclameet'>
+                <img class='imagem' src='https://portfolio.jhow.io/assets/reclameet-1.png' alt='Imagem do Reclameet'>
 
                 <figcaption class='detalhes'>
-                    <h3>Reclameet</h3>
-                    <p>A simple Twitter copy created with HTML, CSS and JS vanilla and with a server created with Node + Express</p>
+                    <h3 class='nome'>Reclameet</h3>
+
+                    <p class='texto'>A simple Twitter copy created with HTML, CSS and JS vanilla and with a server created with Node + Express</p>
                 </figcaption>
             </a>
             
