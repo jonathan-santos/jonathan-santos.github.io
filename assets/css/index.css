@@ -1,9 +1,3 @@
-/* #region valores padrao */
-html {
-    background-color: var(--cor-primaria);
-}
-/* #endregion */
-
 /* #region apresentação */
 .apresentacao {
     background-color: var(--cor-primaria);

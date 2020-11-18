@@ -1,15 +1,26 @@
 :root {
     font-size: 60%;
 
-    --cor-primaria: #ff2d9a;
-    --cor-primaria-escuro: #b8206e;
-    --cor-secundaria: #3498db;
-    --cor-secundaria-escuro: #2975a8;
-    --cor-fundo-claro: #fff;
-    --cor-fundo-semi-claro: #eee;
-    --cor-fundo-escuro: #1a2a3a;
-    --cor-texto-claro: #fff;
-    --cor-texto-escuro: #222;
+    --cor-primaria: #FF2D9A;
+    --cor-primaria-escuro: #B8206E;
+    --cor-secundaria: #3498DB;
+    --cor-secundaria-escuro: #2975A8;
+    --cor-fundo-claro: #FFFFFF;
+    --cor-fundo-semi-claro: #EEEEEE;
+    --cor-fundo-escuro: #1A2A3A;
+    --cor-texto-claro: #FFFFFF;
+    --cor-texto-escuro: #222222;
+
+    --cor-twitter: #56ACEE;
+    --cor-linkedin: #007AB9;
+    --cor-github: #000000;
+    --cor-itchio: #FA5C5B;
+    --cor-figma: #f24e1e;
+    --cor-meetup: #ED1C40;
+    --cor-email: var(--cor-secundaria);
+
+    --tamanho-barra-navegacao: 4.8rem;
+    --tamanho-rodape: 24rem;
 }
 
 /* #region valores padrão para tags */
@@ -45,8 +56,8 @@ button, label {
 
 main {
     min-height: 100%;
-    padding-top: 3rem;
-    padding-bottom: 10rem;
+    padding-top: var(--tamanho-barra-navegacao);
+    padding-bottom: var(--tamanho-rodape);
 }
 
 section {
@@ -60,7 +71,7 @@ section {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 4.8rem;
+    height: var(--tamanho-barra-navegacao);
     padding: 1.6rem 0.8rem;
     background-color: var(--cor-fundo-escuro);
     font-size: 2.4rem;
@@ -255,85 +266,96 @@ section {
 }
 /* #endregion */
 
-/* #region footer */
-footer {
-    width: 100%;
-    padding: 2rem 1rem 1rem 1rem;
+/* #region rodapé */
+.rodape {
     position: absolute;
     bottom: 0;
-    box-sizing: border-box;
-    overflow: hidden;
+    width: 100%;
+    height: var(--tamanho-rodape);
+    padding: 2rem;
     background-color: var(--cor-fundo-escuro);
     color: var(--cor-texto-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    @media (min-width: 768px) {
+        :root {
+            --tamanho-rodape: 16rem;
+        }
+    }
+
+.rodape .texto {
+    margin-top: 0.8rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 
-    footer .icon-heart {
+    .rodape .texto .icon-heart {
         color: red;
     }
 
-    footer .redes-sociais {
-        max-width: 90%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.rodape .redes-sociais {
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
-        footer .redes-sociais a {
-            width: 2.5rem;
-            min-width: 2.5rem;
-            height: 2.5rem;
-            margin: 0 0.5rem 0.5rem 0.5rem;
-            border-radius: 50%;
-            text-decoration: none;
-        }
-
-            footer .redes-sociais i {
-                font-size: 1.5rem;
-                line-height: 2.5rem;
-            }
-
-        footer .redes-sociais a.twitter {
-            background-color: #56ACEE;
-        }
-
-        footer .redes-sociais a.linkedin {
-            background-color: #007AB9;
-        }
-
-        footer .redes-sociais a.github {
-            background-color: #000;
-        }
-
-        footer .redes-sociais a.itchio {
-            background-color: #FA5C5B;
-        }
-
-        footer .redes-sociais a.figma {
-            background-color: #f24e1e;
-        }
-
-        footer .redes-sociais a.meetup {
-            background-color: #ED1C40;
-        }
-
-        footer .redes-sociais a.email {
-            background-color: var(--cor-secundaria);
-        }
-/* #endregion */
-
-/* #region media queries */
-@media (max-width: 600px) {
-    main {
-        padding-bottom: 16rem;
-    }
-    
-    footer {
-        height: 16rem;
+@media (max-width: 768px) {
+    .rodape .quebra-linha {
+        flex-basis: 100%;
     }
 }
 
+.rodape .rede {
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem;
+    border-radius: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .rodape .rede i {
+        font-size: 2.4rem;
+    }
+
+    .rodape .rede.twitter {
+        background-color: var(--cor-twitter);
+    }
+
+    .rodape .rede.linkedin {
+        background-color: var(--cor-linkedin);
+    }
+
+    .rodape .rede.github {
+        background-color: var(--cor-github);
+    }
+
+    .rodape .rede.itchio {
+        background-color: var(--cor-itchio);
+    }
+
+    .rodape .rede.figma {
+        background-color: var(--cor-figma);
+    }
+
+    .rodape .rede.meetup {
+        background-color: var(--cor-meetup);
+    }
+
+    .rodape .rede.email {
+        background-color: var(--cor-secundaria);
+    }
+/* #endregion */
+
+/* #region media queries */
 @media (min-width: 900px) {
     section {
         padding: 1.5rem 15% 1rem 15%;
