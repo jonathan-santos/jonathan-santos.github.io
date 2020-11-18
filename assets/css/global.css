@@ -20,7 +20,7 @@
     --cor-email: var(--cor-secundaria);
 
     --tamanho-barra-navegacao: 4.8rem;
-    --tamanho-rodape: 24rem;
+    --tamanho-rodape: 25rem;
 }
 
 /* #region valores padrão para tags */
@@ -38,8 +38,8 @@ html {
 }
 
 body,
-input,
 button,
+input,
 textarea,
 a {
     color: var(--cor-texto-claro);
@@ -54,6 +54,15 @@ button, label {
     outline: none;
     cursor: pointer;
     transition: all 0.5s;
+}
+
+a {
+    transition: opacity 0.25s;
+}
+
+a:hover,
+a:active {
+    opacity: 0.8;
 }
 /* #endregion */
 

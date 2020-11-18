@@ -1,120 +1,105 @@
 body {
-    background-color: var(--cor-secundaria);
+     background-color: var(--cor-secundaria );
 }
 
 .detalhes {
     background-color: var(--cor-primaria);
-    padding: 1rem 3rem;
+    padding: 1.6rem;
 }
 
+.detalhes .introducao {
+    margin: 1.8rem;
+    font-size: 1.8rem;
+}
 
-    .detalhes p {
-        margin: 0.5rem;
+.detalhes .opcoes {
+    padding: 0 3.6rem;
+    list-style: decimal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    @media (min-width: 768px) {
+        .detalhes .opcao {
+           width: 50%;
+        }
     }
 
-        .detalhes p:first-child {
-            margin-bottom: 1rem;
-        }
-
-    .detalhes .options {
-        margin: 0 auto;
-        /* padding: 0 15%; */
-
-    }
-
-        .detalhes li {
-            margin: 0.5rem;
-        }
+.detalhes .opcao {
+    margin-bottom: 1.6rem;
+    text-align: center;
+}
 
 .formulario {
     background-color: var(--cor-secundaria);
 }
 
-    .formulario .atencao, .formulario label {
-        font-weight: bold;
-        margin: 0;
-    }
-
-    .formulario .atencao {
-        margin-bottom: 1rem;
-    }
-
-    .formulario div {
-        margin: 0.75rem 0 0 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-items: flex-start;
-    }
-
-    .formulario label {
-        margin: 0 0 0.5rem 0;
-        cursor: pointer;
-    }
-
-    .formulario input[type="text"], .formulario input[type="email"], .formulario textarea {
-        width: 100%;
-        border: 1px solid #eeeeee;
-        padding: 0.25rem;
-        border-radius: 5px;
-        box-sizing: border-box;
-        background-color: white;
-        font-size: 1rem;
-        color: var(--cor-texto-escuro);
-    }
-
-        .formulario input[type="text"]::placeholder, .formulario input[type="email"]::placeholder, .formulario textarea::placeholder {
-            color: rgba(0, 0, 0, 0.4);
-        }
-
-    input[type="text"],
-    input[type="email"] {
-        height: 2.5rem;
-    }
-
-    .formulario label[for='mensagem'] {
-        align-self: flex-start;
-    }
-
-    .formulario textarea {
-        height: 6rem;
-    }
-
-    .formulario input[type="submit"] {
-        border: none;
-        padding: 1rem;
-        padding: 0.5rem 1rem;
-        border-radius: 100px;
-        align-self: center;
-        background-color: var(--cor-primaria);
-        color: white;
-        font-size: 1rem;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-        .formulario input[type="submit"]:hover, .formulario input[type="submit"]:active {
-            background-color: var(--cor-primaria-escuro);
-        }
-
-@media (max-width: 600px) {
-    .detalhes {
-        padding: 1rem;
-    }
-
-        .detalhes ul {
-            text-align: start;
-        }
+.formulario .campo {
+    margin: 0.75rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
 }
 
-@media (min-width: 600px) {
-    .detalhes ul {
-        padding: 0 20%;
-    }
+.formulario .atencao,
+.formulario label {
+    font-weight: bold;
 }
 
-@media (min-width: 900px) {
-    form {
-        margin-bottom: 1rem;
-    }
+.formulario .atencao {
+    margin-bottom: 1rem;
 }
+
+.formulario label {
+    margin: 0 0 0.5rem 0;
+    cursor: pointer;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    border: 0.1rem solid var(--cor-fundo-claro);
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 1.6rem;
+    color: var(--cor-texto-escuro);
+}
+
+    .formulario input::placeholder,
+    .formulario textarea::placeholder {
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+.formulario input {
+    height: 3.2rem;
+}
+
+.formulario label[for='mensagem'] {
+    align-self: flex-start;
+}
+
+.formulario textarea {
+    height: 10rem;
+}
+
+.formulario .botao {
+    margin-top: 1.6rem;
+    border: none;
+    padding: 1.6rem;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    align-self: center;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+    .formulario .botao:hover,
+    .formulario .botao:active {
+        background-color: var(--cor-primaria-escuro);
+    }
