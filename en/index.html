@@ -15,7 +15,7 @@
     <title>Jonathan Santos - Home</title>
 </head>
 <body>
-    <header>
+    <header class='barra-navegacao'>
         <a href='/en/' class='logo' aria-label='Main page'>
             <img src='/assets/img/logo.png' alt='A logo of a popcorn with coffee'>
         </a>
@@ -31,31 +31,36 @@
         <div class='menu-lateral'>
             <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
 
-            <nav role='navigation'>
-                <div class='area-logo' aria-hidden='true'>
-                    <div class='logo'>
-                        <img src='/assets/img/logo.png' alt='A logo of a popcorn with coffee'>
-                    </div>
+            <nav class='conteudo' role='navigation'>
+                <div class='logo'>
+                    <img src='../assets/img/logo.png' alt='A logo of a popcorn with coffee'>
                 </div>
-                <ul>
-                    <li class='primeiro-link'>
-                        <a href='/en/' class='selected'>
-                            <i class='icon-home'></i> Home
+                <ul class='links'>
+                    <li>
+                        <a href='/en/' class='link selecionado'>
+                            <i class='icon-home'></i>
+                            <span>Home</span>
                         </a>
                     </li>
+
                     <li>
-                        <a href='/en/contact.html'>
-                            <i class='icon-contacts'></i> Contact
+                        <a href='/en/contact.html' class='link'>
+                            <i class='icon-contacts'></i> 
+                            <span>Contact</span>
                         </a>
                     </li>
+
                     <li>
-                        <a href='https://portfolio.jhow.io/en/' rel='noopener' target='_blank'>
-                            <i class='icon-portfolio'></i> Portfolio
+                        <a href='https://portfolio.jhow.io/en/' class='link' rel='noopener' target='_blank'>
+                            <i class='icon-portfolio'></i> 
+                            <span>Portfolio</span>
                         </a>
                     </li>
+
                     <li>
-                        <a href='https://pipocacafeinada.com.br/en/' rel='noopener' target='_blank'>
-                            <i class='icon-blog'></i> Blog
+                        <a href='https://pipocacafeinada.com.br/en/' class='link' rel='noopener' target='_blank'>
+                            <i class='icon-blog'></i> 
+                            <span>Blog</span>
                         </a>
                     </li>
                 </ul>

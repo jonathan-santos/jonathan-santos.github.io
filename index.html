@@ -15,47 +15,53 @@
     <title>Jonathan Santos - Home</title>
 </head>
 <body>
-    <header >
+    <header class='barra-navegacao'>
         <a href='/' class='logo' aria-label='início site'>
             <img src='/assets/img/logo.png' alt='Um logo de café com pipoca'>
         </a>
 
         <h1 class='titulo'>Jonathan Santos</h1>
 
-        <label for='input-menu-lateral' role='button' aria-label='Menu Lateral' class='botao-hamburguer'>
+        <label for='input-menu-lateral' class='botao-hamburguer' role='button' aria-hidden='true' >
             <i class='icon-hamburguer-menu'></i>
         </label>
 
         <input id='input-menu-lateral' type='checkbox' hidden />
     
         <div class='menu-lateral'>
-            <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
+            <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1'></label>
 
-            <nav role='navigation'>
-                <div class='area-logo' aria-hidden='true'>
-                    <div class='logo'>
-                        <img src='assets/img/logo.png'>
-                    </div>
+            <nav class='conteudo' role='navigation'>
+                <div class='logo'>
+                    <img src='/assets/img/logo.png'>
                 </div>
-                <ul>
-                    <li class='primeiro-link'>
-                        <a href='/' class='selected'>
-                            <i class='icon-home'></i> Home
+
+                <ul class='links'>
+                    <li>
+                        <a href='/' class='link selecionado'>
+                            <i class='icon-home'></i>
+                            <span>Home</span>
                         </a>
                     </li>
+
                     <li>
-                        <a href='/contato.html'>
-                            <i class='icon-contacts'></i> Contato
+                        <a href='/contato.html' class='link'>
+                            <i class='icon-contacts'></i>
+                            <span>Contato</span>
                         </a>
                     </li>
+
                     <li>
-                        <a href='https://portfolio.jhow.io' rel='noopener' target='_blank'>
-                            <i class='icon-portfolio'></i> Portfólio
+                        <a href='https://portfolio.jhow.io' class='link' rel='noopener' target='_blank'>
+                            <i class='icon-portfolio'></i>
+                            <span>Portfólio</span>
                         </a>
                     </li>
+
                     <li>
-                        <a href='https://pipocacafeinada.com.br' rel='noopener' target='_blank'>
-                            <i class='icon-blog'></i> Blog
+                        <a href='https://pipocacafeinada.com.br' class='link' rel='noopener' target='_blank'>
+                            <i class='icon-blog'></i>
+                            <span>Blog</span>
                         </a>
                     </li>
                 </ul>
