@@ -82,6 +82,14 @@ a:active {
 /* #endregion */
 
 /* #region modo escuro */
+/* Para evitar o texto do botão ficar separado em 2 linhas no modo desktop */
+@media (min-width: 768px) {
+    .barra-navegacao .modo-claro,
+    .barra-navegacao .modo-escuro {
+        width: 10.5rem;
+    }
+}
+
 #modo-escuro:checked ~ .barra-navegacao .modo-escuro {
     display: initial;
 }
@@ -197,7 +205,7 @@ a:active {
     }
 /* #endregion */
 
-/* #region menu-lateral */
+/* #region menu-lateral/links */
 #input-menu-lateral:checked ~ .menu-lateral {
     right: 0;
     animation-duration: 0.2s;
@@ -298,8 +306,9 @@ a:active {
     .menu-lateral .link {
         width: initial;
         height: 1.5rem;
-        border-bottom: none;
-        margin-right: 0.5rem;
+        padding: 0.8rem 0;
+        border: none;
+        margin-right: 1.6rem;
         line-height: 1.5rem;
     }
 
@@ -323,8 +332,13 @@ a:active {
             }
 
         .menu-lateral .link i {
-            display: none;
+            margin-right: 0.4rem;
+            font-size: 1.8rem;
         }
+
+            .menu-lateral .link:not(.com-icone) i {
+                display: none;
+            }
 }
 
 @keyframes abrir-menu {
