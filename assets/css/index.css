@@ -17,7 +17,7 @@
     margin: 0.4rem;
     border-radius: 1.2rem;
     padding: 1.6rem;
-    background-color: var(--cor-fundo-claro);
+    background-color: var(--cor-fundo-variavel);
     color: var(--cor-primaria-escura);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -130,7 +130,7 @@
 }
 
 .competencias .campo .lista {
-    color: var(--cor-texto-escuro);
+    color: var(--cor-texto-variavel);
 }
 
 .competencias .campo-front-end {
@@ -364,5 +364,6 @@
 .link-portfolio {
     flex-basis: 100%;
     margin-top: 0.8rem;
+    color: var(--cor-primaria-escura);
 }
 /* #endregion */

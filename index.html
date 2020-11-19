@@ -15,6 +15,8 @@
     <title>Jonathan Santos - Home</title>
 </head>
 <body>
+    <input id='modo-escuro' name='modo-escuro' type='checkbox' hidden aria-hidden='true'>
+
     <header class='barra-navegacao'>
         <a href='/' class='logo' aria-label='início site'>
             <img src='/assets/img/logo.png' alt='Um logo de café com pipoca'>
@@ -70,6 +72,14 @@
                             <i class='icon-language'></i>
                             <span>English</span>
                         </a>
+                    </li>
+
+                    <li class='escolha-modo-escuro' aria-hidden='true'>
+                        <label for='modo-escuro' class='link'>
+                            <i class='icon-light'></i>
+                            <span class='modo-escuro' hidden>Modo escuro</span>
+                            <span class='modo-claro'>Modo claro</span>
+                        </label>
                     </li>
                 </ul>
             </nav>
@@ -315,7 +325,7 @@
                     </figcaption>
                 </a>
                 
-                <p class='link-portfolio'>Mais no meu <a href='https://portfolio.jhow.io' rel='noopener' target='blank'>portfólio</a></p>
+                <p class='link-portfolio'><a href='https://portfolio.jhow.io' rel='noopener' target='blank'></a>Mais no meu portfólio</a></p>
             </div>
         </section>
     </main>

@@ -6,8 +6,12 @@
     --cor-fundo-claro: #FFFFFF;
     --cor-fundo-semi-claro: #EEEEEE;
     --cor-fundo-escuro: #1A2A3A;
+    --cor-fundo-semi-escuro: #2B3B4B;
     --cor-texto-claro: #FFFFFF;
     --cor-texto-escuro: #333;
+
+    --cor-texto-variavel: var(--cor-texto-escuro);
+    --cor-fundo-variavel: var(--cor-fundo-claro);
 
     --cor-javascript: #DDC508;
     --cor-typescript: #007ACC;
@@ -46,7 +50,6 @@ html, body {
     position: relative;
     min-height: 100vh;
     scroll-behavior: smooth;
-    background-color: var(--cor-fundo-semi-claro);
 }
 
 body,
@@ -78,11 +81,45 @@ a:active {
 }
 /* #endregion */
 
+/* #region modo escuro */
+#modo-escuro:checked ~ .barra-navegacao .modo-escuro {
+    display: initial;
+}
+
+#modo-escuro:checked ~ .barra-navegacao .modo-claro {
+    display: none;
+}
+
+#modo-escuro:checked ~ .conteudo-principal {
+    --cor-primaria: #2975A8;
+    --cor-primaria-escura: #3498DB;
+    --cor-texto-variavel: var(--cor-texto-claro);
+    --cor-fundo-variavel: var(--cor-fundo-semi-escuro);
+    background-color: var(--cor-fundo-escuro);
+}
+
+@media (prefers-color-scheme: dark) {
+    .barra-navegacao .escolha-modo-escuro {
+        display: none;
+    }
+
+    #modo-escuro:checked ~ .conteudo-principal {
+        --cor-primaria: #2975A8;
+        --cor-primaria-escura: #3498DB;
+        --cor-texto-variavel: var(--cor-texto-claro);
+        --cor-fundo-variavel: var(--cor-fundo-semi-escuro);
+        background-color: var(--cor-fundo-escuro);
+    }
+}
+  
+/* #endregion */
+
 /* #region conteudo-principal */
 .conteudo-principal {
     min-height: 100%;
     padding-top: var(--tamanho-barra-navegacao);
     padding-bottom: var(--tamanho-rodape);
+    background-color: var(--cor-fundo-claro);
 }
 
 .conteudo-principal > .secao {
@@ -95,6 +132,10 @@ a:active {
             padding: 1.5rem 15% 1rem 15%;
         }
     }
+
+.conteudo-principal > .secao:last-of-type {
+    border-bottom: 0.1rem solid var(--cor-texto-variavel);
+}
 /* #endregion */
 
 /* #region .barra-navegacao */
@@ -209,7 +250,7 @@ a:active {
 
 .menu-lateral .link {
     width: 100%;
-    height: 6rem;
+    height: 4.8rem;
     padding: 1.6rem;
     border-bottom: 0.1rem solid var(--cor-texto-claro);
     text-decoration: none;
@@ -219,12 +260,12 @@ a:active {
 }
 
     .menu-lateral .link i {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         margin-right: 1.6rem;
     }
 
     .menu-lateral .link span {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .menu-lateral .link.selecionado,
