@@ -1,10 +1,8 @@
 :root {
     font-size: 60%;
 
-    --cor-primaria: #FF2D9A;
-    --cor-primaria-escuro: #B8206E;
-    --cor-secundaria: #3498DB;
-    --cor-secundaria-escuro: #2975A8;
+    --cor-primaria: #3498DB;
+    --cor-primaria-escura: #2975A8;
     --cor-fundo-claro: #FFFFFF;
     --cor-fundo-semi-claro: #EEEEEE;
     --cor-fundo-escuro: #1A2A3A;
@@ -29,7 +27,7 @@
     --cor-itchio: #FA5C5B;
     --cor-figma: #f24e1e;
     --cor-meetup: #ED1C40;
-    --cor-email: var(--cor-secundaria);
+    --cor-email: var(--cor-primaria);
 
     --tamanho-barra-navegacao: 4.8rem;
     --tamanho-rodape: 25rem;
@@ -124,7 +122,7 @@ a:active {
 }
 
 .barra-navegacao .logo {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
 }
 
     .barra-navegacao .logo img {
@@ -232,7 +230,7 @@ a:active {
     .menu-lateral .link.selecionado,
     .menu-lateral .link:hover,
     .menu-lateral  .link:active {
-        background-color: var(--cor-secundaria);
+        background-color: var(--cor-primaria);
     }
 
 @media (min-width: 768px) {
@@ -268,13 +266,13 @@ a:active {
         .menu-lateral .link:hover,
         .menu-lateral .link:active {
             background-color: initial;
-            color: var(--cor-secundaria);
+            color: var(--cor-primaria);
             background-color: initial;
         }
 
         .menu-lateral .link.selecionado {
             padding-bottom: 0.5rem;
-            border-bottom: 0.25rem solid var(--cor-secundaria-2);
+            border-bottom: 0.25rem solid var(--cor-primaria-2);
             font-weight: bold;
             
         }
@@ -384,6 +382,6 @@ a:active {
     }
 
     .rodape .rede.email {
-        background-color: var(--cor-secundaria);
+        background-color: var(--cor-primaria);
     }
 /* #endregion */
