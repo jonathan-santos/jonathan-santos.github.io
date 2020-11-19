@@ -9,7 +9,7 @@
     --cor-fundo-semi-claro: #EEEEEE;
     --cor-fundo-escuro: #1A2A3A;
     --cor-texto-claro: #FFFFFF;
-    --cor-texto-escuro: #222222;
+    --cor-texto-escuro: #333;
 
     --cor-javascript: #DDC508;
     --cor-typescript: #007ACC;
@@ -25,7 +25,7 @@
 
     --cor-twitter: #56ACEE;
     --cor-linkedin: #007AB9;
-    --cor-github: #000000;
+    --cor-github: #24292E;
     --cor-itchio: #FA5C5B;
     --cor-figma: #f24e1e;
     --cor-meetup: #ED1C40;
@@ -33,6 +33,7 @@
 
     --tamanho-barra-navegacao: 4.8rem;
     --tamanho-rodape: 25rem;
+    --espacamento-entre-secoes: 7rem;
 }
 
 /* #region valores padrão para tags */
@@ -43,10 +44,11 @@
     text-rendering: optimizeLegibility;
 }
 
-html {
+html, body {
     position: relative;
     min-height: 100vh;
     scroll-behavior: smooth;
+    background-color: var(--cor-fundo-semi-claro);
 }
 
 body,

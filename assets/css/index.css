@@ -1,9 +1,4 @@
 /* #region estrutura da página */
-body {
-    background-color: var(--cor-fundo-semi-claro);
-    --espacamento-entre-secoes: 7rem;
-}
-
 .secao.apresentacao {
     margin-bottom: calc(var(--espacamento-entre-secoes) * -1);
     padding-bottom: calc(var(--espacamento-entre-secoes) - 1rem);

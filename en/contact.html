@@ -73,49 +73,45 @@
         <section class='secao detalhes'>
             <p class='introducao'>So you want to get in contact with me? <br> Alright then, here are the options:</p>
 
-            <ul class='options'>
-                <li>
-                    Talk to me directly in one of the social media listed in the <a href='#footer'>bottom of the page</a>
-                </li>
-                <li>
-                    Send a email direcly to: <a href='mailto:jonathan.santosaugusto@gmail.com' aria-label='Email' class='email'>jonathan.santosaugusto@gmail.com</a>
-                </li>
-                <li>
-                    Send a message using the formulary bellow:
-                </li>
+            <ul class='opcoes'>
+                <li class='opcao'>Talk to me directly in one of the social media listed in the <a href='#footer'>bottom of the page</a></li>
+
+                <li class='opcao'>Send a email direcly to: <a href='mailto:jonathan.santosaugusto@gmail.com' aria-label='Email' class='email'>jonathan.santosaugusto@gmail.com</a></li>
+
+                <li class='opcao'>Send a message using the formulary bellow:</li>
             </ul>
         </section>
 
         <section class='secao formulario'>
-            <h2>Contact me here!</h2>
+            <div class="conteudo">
+                <h2 class='titulo'>Contact me here!</h2>
 
-            <form action='https://formspree.io/jonathan.santosaugusto@gmail.com' method='POST'>
-                <p class='atencao'>Atention: All fields are required!</p>
+                <form action='https://formspree.io/jonathan.santosaugusto@gmail.com' method='POST'>
+                    <p class='atencao'>*Atention: All fields are required!</p>
 
-                <div>
-                    <label for='email' required>Email: </label>
-                    <input id='email' name='email' type='email' placeholder='yourname@email.com.br'>
-                </div>
+                    <div class='campo'>
+                        <label for='email' required>Email: </label>
+                        <input id='email' name='email' type='email' placeholder='yourname@email.com.br'>
+                    </div>
 
-                <div>
-                    <label for='nome' required>Name: </label>
-                    <input id='nome' name='name' type='text' placeholder='Your name'>
-                </div>
+                    <div class='campo'>
+                        <label for='nome' required>Name: </label>
+                        <input id='nome' name='name' type='text' placeholder='Your name'>
+                    </div>
 
-                <div>
-                    <label for='assunto' required>Subject: </label>
-                    <input id='assunto' name='subject' type='text' placeholder='The subject of the contact'>
-                </div>
+                    <div class='campo'>
+                        <label for='assunto' required>Subject: </label>
+                        <input id='assunto' name='subject' type='text' placeholder='The subject of the contact'>
+                    </div>
 
-                <div>
-                    <label for='mensagem' required>Message: </label>
-                    <textarea id='mensagem' name='message' rows='5' cols='52' placeholder='Write your message here!'></textarea>
-                </div>
+                    <div class='campo'>
+                        <label for='mensagem' required>Message: </label>
+                        <textarea id='mensagem' name='message' rows='5' cols='52' placeholder='Write your message here!'></textarea>
+                    </div>
 
-                <div>
-                    <input type='submit' value='Submit'>
-                </div>
-            </form>
+                    <button class='botao' type='submit'>Submit</button>
+                </form>
+            </div>
         </section>
     </main>
         

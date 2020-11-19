@@ -1,9 +1,22 @@
-body {
-     background-color: var(--cor-secundaria );
+/* #region estrutura da página */
+.secao.detalhes {
+    margin-bottom: calc(var(--espacamento-entre-secoes) * -1);
+    padding-bottom: calc(var(--espacamento-entre-secoes) - 1rem);
 }
 
+.secao.formulario .conteudo {
+    margin: 0.4rem;
+    border-radius: 1.2rem;
+    padding: 2.4rem;
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-escuro);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* #endregion */
+
+/* #region detalhes */
 .detalhes {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     padding: 1.6rem;
 }
 
@@ -30,9 +43,12 @@ body {
     margin-bottom: 1.6rem;
     text-align: center;
 }
+/* #endregion */
 
-.formulario {
-    background-color: var(--cor-secundaria);
+/* #region formulário */
+.formulario .titulo {
+    color: var(--cor-secundaria-escuro);
+    font-size: 2.2rem;
 }
 
 .formulario .campo {
@@ -43,8 +59,8 @@ body {
     justify-items: flex-start;
 }
 
-.formulario .atencao,
-.formulario label {
+.formulario .atencao {
+    margin: 1.6rem 0;
     font-weight: bold;
 }
 
@@ -60,46 +76,41 @@ body {
 .formulario input,
 .formulario textarea {
     width: 100%;
-    border: 0.1rem solid var(--cor-fundo-claro);
-    padding: 0.25rem;
+    margin-bottom: 0.8rem;
+    border: 0.1rem solid rgba(51, 51, 51, 0.5);
+    padding: 0.8rem;
     border-radius: 0.5rem;
-    box-sizing: border-box;
-    background-color: white;
-    font-size: 1.6rem;
+    background-color: var(--cor-fundo-claro);
     color: var(--cor-texto-escuro);
 }
 
     .formulario input::placeholder,
     .formulario textarea::placeholder {
-        color: rgba(0, 0, 0, 0.4);
+        color: rgba(51, 51, 51, 0.5);
     }
 
 .formulario input {
-    height: 3.2rem;
-}
-
-.formulario label[for='mensagem'] {
-    align-self: flex-start;
+    height: 4rem;
 }
 
 .formulario textarea {
-    height: 10rem;
+    height: 12rem;
 }
 
 .formulario .botao {
     margin-top: 1.6rem;
     border: none;
-    padding: 1.6rem;
-    padding: 0.5rem 1rem;
-    border-radius: 100px;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
     align-self: center;
-    background-color: var(--cor-primaria);
-    color: white;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claro);
+    font-size: 1.8rem;
     font-weight: 600;
-    cursor: pointer;
 }
 
     .formulario .botao:hover,
     .formulario .botao:active {
-        background-color: var(--cor-primaria-escuro);
+        background-color: var(--cor-secundaria-escuro);
     }
+/* #endregion */
