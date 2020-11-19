@@ -11,6 +11,18 @@
     --cor-texto-claro: #FFFFFF;
     --cor-texto-escuro: #222222;
 
+    --cor-javascript: #DDC508;
+    --cor-typescript: #007ACC;
+    --cor-python: #3776AB;
+    --cor-csharp: #8A2BE2;
+    --cor-c: #00599C;
+    --cor-cpp: #00599C;
+
+    --cor-front-end: #FF1E56;
+    --cor-back-end: #3C873A;
+    --cor-jogos: #872BFF;
+    --cor-design: #EA7600;
+
     --cor-twitter: #56ACEE;
     --cor-linkedin: #007AB9;
     --cor-github: #000000;
@@ -40,8 +52,7 @@ html {
 body,
 button,
 input,
-textarea,
-a {
+textarea {
     color: var(--cor-texto-claro);
     font-size: 1.6rem;
     font-weight: 500;
@@ -56,7 +67,8 @@ button, label {
     transition: all 0.5s;
 }
 
-a {
+a, i {
+    color: inherit;
     transition: opacity 0.25s;
 }
 

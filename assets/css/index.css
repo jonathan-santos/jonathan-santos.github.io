@@ -1,6 +1,36 @@
+/* #region estrutura da página */
+body {
+    background-color: var(--cor-fundo-semi-claro);
+    --espacamento-entre-secoes: 7rem;
+}
+
+.secao.apresentacao {
+    margin-bottom: calc(var(--espacamento-entre-secoes) * -1);
+    padding-bottom: calc(var(--espacamento-entre-secoes) - 1rem);
+}
+
+.secao.experiencias {
+    margin-top: calc(var(--espacamento-entre-secoes) * -1);
+    padding-top: calc(var(--espacamento-entre-secoes) + 1rem);
+
+    margin-bottom: calc(var(--espacamento-entre-secoes) * -1);
+    padding-bottom: calc(var(--espacamento-entre-secoes) - 1rem);
+}
+
+.secao.competencias .conteudo,
+.secao.trabalhos .conteudo {
+    margin: 0.4rem;
+    border-radius: 1.2rem;
+    padding: 1.6rem;
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-secundaria-escuro);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* #endregion */
+
 /* #region apresentação */
 .apresentacao {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,10 +67,9 @@
 /* #endregion */
 
 /* #region competencias */
-.competencias {
+.competencias .conteudo {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--cor-secundaria);
 }
 
 .competencias .titulo {
@@ -50,18 +79,49 @@
     font-weight: 600;
 }
 
+    .competencias .titulo:last-of-type {
+        width: 100%;
+        margin-bottom: 0.8rem;
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
 .competencias .linguagens {
     width: 100%;
     margin-bottom: 2.4rem;
 }
 
-    .competencias .linguagens > * {
-        text-decoration: none;
-    }
+.competencias .linguagem {
+    text-decoration: none;
+}
 
-    .competencias .linguagens i {
+    .competencias .linguagem .icone {
         margin-right: 0.8rem;
         font-size: 2.8rem;
+    }
+
+    .competencias .linguagem.javascript {
+        color: var(--cor-javascript);   
+    }
+
+    .competencias .linguagem.typescript {
+        color: var(--cor-typescript);   
+    }
+
+    .competencias .linguagem.python {
+        color: var(--cor-python);   
+    }
+
+    .competencias .linguagem.csharp {
+        color: var(--cor-csharp);   
+    }
+
+    .competencias .linguagem.c {
+        color: var(--cor-c);   
+    }
+
+    .competencias .linguagem.cpp {
+        color: var(--cor-cpp);   
     }
 
 .competencias .campo .icone {
@@ -74,6 +134,26 @@
     font-weight: 600;
 }
 
+.competencias .campo .lista {
+    color: var(--cor-texto-escuro);
+}
+
+.competencias .campo-front-end {
+    color: var(--cor-front-end);
+}
+
+.competencias .campo-back-end {
+    color: var(--cor-back-end);
+}
+
+.competencias .campo-jogos {
+    color: var(--cor-jogos);
+}
+
+.competencias .campo-design {
+    color: var(--cor-design);
+}
+
 @media (max-width: 600px) {
     .competencias .campo {
         flex-basis: 100%;
@@ -81,7 +161,7 @@
     }
 
     .competencias .campo:not(.campo-design) {
-        border-bottom: 0.2rem solid var(--cor-fundo-claro);
+        border-bottom: 0.2rem solid rgba(0, 0, 0, 0.25);
     }
 }
 
@@ -92,11 +172,11 @@
     }
 
     .campo-front-end, .campo-back-end {
-        border-bottom: 0.2rem solid var(--cor-fundo-claro);
+        border-bottom: 0.2rem solid rgba(0, 0, 0, 0.25);
     }
 
     .campo-front-end, .campo-jogos {
-        border-right: 0.2rem solid var(--cor-fundo-claro);
+        border-right: 0.2rem solid rgba(0, 0, 0, 0.25);
     }
 }
 
@@ -108,7 +188,7 @@
     }
 
     .competencias .campo:not(.campo-design) {
-        border-right: 0.2rem solid var(--cor-fundo-claro);
+        border-right: 0.2rem solid rgba(0, 0, 0, 0.25);
     }
 }
 
@@ -118,7 +198,7 @@
 .experiencias {
     display: flex;
     flex-direction: column;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
 }
 
 .experiencias .titulo {
@@ -228,26 +308,27 @@
 /* #endregion */
 
 /* #region trabalhos */
-.trabalhos {
+.trabalhos .conteudo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: var(--cor-secundaria);
 }
 
 .trabalhos .titulo {
     flex-basis: 100%;
     margin-bottom: 1.6rem;
+    font-size: 2.4rem;
+    font-weight: 600;
 }
 
 .trabalho {
     width: 30rem;
     height: 30rem;
-    margin: 0.8rem auto;
-    border: 0.2rem solid var(--cor-fundo-claro);
+    margin: 1.6rem;
+    border: 0.3rem solid var(--cor-fundo-escuro);
     position: relative;
-    border-radius: 1.2rem;
+    border-radius: 5%;
     z-index: 1;
     background-color: var(--cor-fundo-escuro);
     overflow: hidden;
@@ -265,6 +346,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        color: var(--cor-texto-claro);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -273,15 +355,15 @@
         transition: all 0.5s;
     }
 
+        .trabalho:hover .detalhes,
+        .trabalho:active .detalhes {
+            opacity: 1;
+        }
+
         .trabalho .detalhes .nome {
             margin-bottom: 1.6rem;
             font-size: 2rem;
             font-weight: 600;
-        }
-
-        .trabalho:hover .detalhes,
-        .trabalho:active .detalhes {
-            opacity: 1;
         }
 
 .link-portfolio {
