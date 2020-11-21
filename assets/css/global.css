@@ -82,19 +82,12 @@ a:active {
 /* #endregion */
 
 /* #region modo escuro */
-/* Para evitar o texto do botão ficar separado em 2 linhas no modo desktop */
-@media (min-width: 768px) {
-    .barra-navegacao .modo-claro,
-    .barra-navegacao .modo-escuro {
-        width: 10.5rem;
-    }
+#modo-escuro:not(:checked) ~ .barra-navegacao .modo-escuro,
+#modo-escuro:checked ~ .barra-navegacao .modo-claro {
+    display: flex;
 }
 
 #modo-escuro:checked ~ .barra-navegacao .modo-escuro {
-    display: initial;
-}
-
-#modo-escuro:checked ~ .barra-navegacao .modo-claro {
     display: none;
 }
 
@@ -107,7 +100,8 @@ a:active {
 }
 
 @media (prefers-color-scheme: dark) {
-    .barra-navegacao .escolha-modo-escuro {
+    .barra-navegacao .escolha-modo-escuro,
+    .barra-navegacao .escolha-modo-claro {
         display: none;
     }
 
@@ -267,12 +261,27 @@ a:active {
     justify-content: flex-start;
 }
 
-    .menu-lateral .link i {
+    .menu-lateral .escolha-modo-escuro .modo-escuro,
+    .menu-lateral .escolha-modo-escuro .modo-claro {
+        align-items: center;
+    }
+
+    .menu-lateral .link .icone {
         font-size: 2.4rem;
         margin-right: 1.6rem;
     }
+    
+        .menu-lateral .link .icone.icon-language {
+            font-size: 2.2rem;
+        }
 
-    .menu-lateral .link span {
+        .menu-lateral .link .icone.icon-light-off,
+        .menu-lateral .link .icone.icon-light-on {
+            font-size: 2.6rem;
+            margin-right: 1rem;
+        }
+
+    .menu-lateral .link .texto {
         font-size: 1.8rem;
     }
 
@@ -281,6 +290,8 @@ a:active {
     .menu-lateral  .link:active {
         background-color: var(--cor-primaria);
     }
+
+
 
 @media (min-width: 768px) {
     .menu-lateral {
@@ -296,6 +307,7 @@ a:active {
 
     .menu-lateral .links {
         display: flex;
+        align-items: center;
         justify-content: flex-end;
     }
 
@@ -309,36 +321,46 @@ a:active {
         padding: 0.8rem 0;
         border: none;
         margin-right: 1.6rem;
-        line-height: 1.5rem;
     }
+
+        .menu-lateral .link .texto {
+            width: max-content;
+        }
+
+        .menu-lateral .link.com-icone {
+            margin-right: 0.8rem;
+        }
+
+        .menu-lateral .link .icone {
+            margin-right: 0.6rem;
+        }
+
+            .menu-lateral .link:not(.com-icone) .icone {
+                display: none;
+            }
+
+            .menu-lateral .link .icone.icon-language {
+                font-size: 1.8rem;
+            }
+
+            .menu-lateral .link .icone.icon-light-off,
+            .menu-lateral .link .icone.icon-light-on {
+                font-size: 2.2rem;
+                margin-right: 0;
+            }
 
         .menu-lateral .link.selecionado,
         .menu-lateral .link:hover,
         .menu-lateral .link:active {
+            font-weight: bold;
             background-color: initial;
             color: var(--cor-primaria);
             background-color: initial;
         }
 
-        .menu-lateral .link.selecionado {
-            padding-bottom: 0.5rem;
-            border-bottom: 0.25rem solid var(--cor-primaria-2);
-            font-weight: bold;
-            
+        .menu-lateral .link.selecionado .texto {
+            font-size: 2rem;
         }
-
-            .menu-lateral .link.selecionado span {
-                font-size: 2.2rem;
-            }
-
-        .menu-lateral .link i {
-            margin-right: 0.4rem;
-            font-size: 1.8rem;
-        }
-
-            .menu-lateral .link:not(.com-icone) i {
-                display: none;
-            }
 }
 
 @keyframes abrir-menu {
