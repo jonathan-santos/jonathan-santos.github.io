@@ -1,0 +1,4 @@
+Sitemap: https://jhow.io/sitemap.xml
+
+User-agent: *
+Disallow:
