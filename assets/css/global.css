@@ -1,8 +1,10 @@
 :root {
     font-size: 60%;
 
-    --cor-primaria: #3498DB;
-    --cor-primaria-escura: #2975A8;
+    --cor-primaria: #0074D9;
+    --cor-primaria-escura: #001F3F;
+    --cor-principal: var(--cor-primaria);
+    --cor-principal-escura: var(--cor-primaria-escura);
     --cor-fundo-claro: #FFFFFF;
     --cor-fundo-semi-claro: #EEEEEE;
     --cor-fundo-escuro: #1A2A3A;
@@ -20,10 +22,10 @@
     --cor-c: #00599C;
     --cor-cpp: #00599C;
 
-    --cor-front-end: #FF1E56;
-    --cor-back-end: #3C873A;
-    --cor-jogos: #872BFF;
-    --cor-design: #EA7600;
+    --cor-front-end: #E86229;
+    --cor-back-end: #3D9970;
+    --cor-jogos: #3D8FCC;
+    --cor-design: #F012BE;
 
     --cor-twitter: #56ACEE;
     --cor-linkedin: #007AB9;
@@ -31,7 +33,7 @@
     --cor-itchio: #FA5C5B;
     --cor-figma: #f24e1e;
     --cor-meetup: #ED1C40;
-    --cor-email: var(--cor-primaria);
+    --cor-email: var(--cor-principal);
 
     --tamanho-barra-navegacao: 4.8rem;
     --tamanho-rodape: 25rem;
@@ -59,7 +61,7 @@ input,
 textarea {
     color: var(--cor-texto-claro);
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -94,8 +96,8 @@ a:focus {
 }
 
 #modo-escuro:checked ~ .conteudo-principal {
-    --cor-primaria: #2975A8;
-    --cor-primaria-escura: #3498DB;
+    --cor-principal: var(--cor-primaria-escura);
+    --cor-principal-escura: var(--cor-primaria);
     --cor-texto-variavel: var(--cor-texto-claro);
     --cor-fundo-variavel: var(--cor-fundo-semi-escuro);
     background-color: var(--cor-fundo-escuro);
@@ -108,8 +110,8 @@ a:focus {
     }
 
     #modo-escuro:checked ~ .conteudo-principal {
-        --cor-primaria: #2975A8;
-        --cor-primaria-escura: #3498DB;
+        --cor-principal: var(--cor-primaria-escura);
+        --cor-principal-escura: var(--cor-primaria);
         --cor-texto-variavel: var(--cor-texto-claro);
         --cor-fundo-variavel: var(--cor-fundo-semi-escuro);
         background-color: var(--cor-fundo-escuro);
@@ -167,7 +169,7 @@ a:focus {
 }
 
 .barra-navegacao .logo {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-principal);
 }
 
     .barra-navegacao .logo img {
@@ -297,7 +299,7 @@ a:focus {
     .menu-lateral .link:hover,
     .menu-lateral  .link:active,
     .menu-lateral  .link:focus {
-        background-color: var(--cor-primaria);
+        background-color: var(--cor-principal);
     }
 
 
@@ -362,15 +364,15 @@ a:focus {
         .menu-lateral .link:hover,
         .menu-lateral .link:active,
         .menu-lateral  .link:focus {
-            font-weight: bold;
+            font-weight: 600;
             background-color: initial;
-            color: var(--cor-primaria);
+            color: var(--cor-principal);
             background-color: initial;
         }
         
         .menu-lateral .link:focus {
             padding-bottom: 0.8rem;
-            border-bottom: 0.2rem solid var(--cor-primaria);
+            border-bottom: 0.2rem solid var(--cor-principal);
         }
 
         .menu-lateral .link.selecionado .texto {
@@ -486,6 +488,6 @@ a:focus {
     }
 
     .rodape .rede.email {
-        background-color: var(--cor-primaria);
+        background-color: var(--cor-principal);
     }
 /* #endregion */

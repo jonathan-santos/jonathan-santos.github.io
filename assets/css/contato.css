@@ -16,7 +16,7 @@
 
 /* #region instrucoes */
 .instrucoes {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-principal);
     padding: 1.6rem;
 }
 
@@ -56,7 +56,7 @@
 
 /* #region formulário */
 .formulario .titulo {
-    color: var(--cor-primaria-escura);
+    color: var(--cor-texto-variavel);
     font-size: 2.2rem;
 }
 
@@ -70,7 +70,7 @@
 
 .formulario .atencao {
     margin: 1.6rem 0;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .formulario .atencao {
@@ -122,7 +122,7 @@
     padding: 0.8rem 1.6rem;
     border-radius: 2rem;
     align-self: center;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-principal);
     color: var(--cor-texto-claro);
     font-size: 1.8rem;
     font-weight: 600;
@@ -131,7 +131,7 @@
     .formulario .botao:hover,
     .formulario .botao:active,
     .formulario .botao:focus {
-        background-color: var(--cor-primaria-escura);
+        background-color: var(--cor-principal-escura);
         font-size: 1.9rem;
     }
 /* #endregion */
