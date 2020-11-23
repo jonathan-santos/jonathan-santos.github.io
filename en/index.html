@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='description' content='Jonathan Santos personal website'>
+    <meta http-equiv="Content-Language" content="en">
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
     <link rel='apple-touch-icon' sizes='180x180' href='../assets/favicon/apple-touch-icon.png'>
     <link rel='icon' type='image/png' sizes='32x32' href='../assets/favicon/favicon-32x32.png'>
@@ -18,8 +19,8 @@
     <input id='modo-escuro' name='modo-escuro' type='checkbox' hidden aria-hidden='true'>
 
     <header class='barra-navegacao'>
-        <a href='/en/' class='logo' aria-label='Main page'>
-            <img src='/assets/img/logo.png' alt='A logo of a popcorn with coffee'>
+        <a href='/en/' class='logo' aria-hidden='true' tabindex='-1'>
+            <img src='/assets/img/logo.png' alt='An image of popcorn with coffee'>
         </a>
 
         <h1 class='titulo'>Jonathan Santos</h1>
@@ -34,9 +35,10 @@
             <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
 
             <nav class='conteudo' role='navigation'>
-                <div class='logo'>
-                    <img src='../assets/img/logo.png' alt='A logo of a popcorn with coffee'>
+                <div class='logo' aria-hidden='true'>
+                    <img src='../assets/img/logo.png' alt='An image of popcorn with coffee'>
                 </div>
+
                 <ul class='links'>
                     <li>
                         <a href='/en/' class='link selecionado'>
@@ -67,13 +69,13 @@
                     </li>
 
                     <li>
-                        <a href='../' class='link com-icone'>
+                        <a href='../' class='link com-icone' aria-label='Change language to portuguese'>
                             <i class='icone icon-language'></i>
-                            <span class='texto'>Português</span>
+                            <span class='texto' lang='pt-br'>Português<span>
                         </a>
                     </li>
 
-                    <li class='escolha-modo-escuro' aria-hidden='true'>
+                    <div class='escolha-modo-escuro' aria-hidden='true'>
                         <label for='modo-escuro' class='link com-icone'>
                             <div class='modo-escuro'>
                                 <i class='icone icon-light-off'></i>
@@ -85,7 +87,7 @@
                                 <span class='texto'>Light mode</span>
                             </div>
                         </label>
-                    </li>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -98,9 +100,9 @@
             <div class='informacoes'>
                 <h1 class='titulo'>Full-stack developer / <br> Gamedev</h1>
     
-                <p class='texto'>Hello there! I'm Jonathan Santos (also known as Jhow by some), a person who is in love with technology and loves to learn and develop new things. I have experience in the development of Front-End and Back-End Web applications, mobile apps, mobile/desktop games, robotics, and even teaching of these subjects to children and teenagers.</p>
+                <p class='texto'>Hello there! I'm Jonathan Santos (also known as <span aria-label='Joe'>Jhow</span> by some), a person who is in love with technology, and loves to learn and develop new things. I have experience in the development of Front-End and Back-End Web applications, mobile apps, mobile/desktop games, robotics, and even teaching of these subjects to children and teenagers.</p>
 
-                <p class='texto'>I'm also a open-source enthusiast and beyond software development, I also do 3D Modeling/Animation, image/vector editing, prototyping in Figma, and I'm always happy to help in what I can.</p>
+                <p class='texto'>I'm also an open-source enthusiast, and beyond software development, I also do 3D Modeling/Animation, image/vector editing, prototyping in Figma, and I'm always happy to help in what I can.</p>
             </div>
         </section>
 

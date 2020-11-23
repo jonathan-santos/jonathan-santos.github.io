@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='description' content='Site do Jonathan Santos'>
+    <meta http-equiv="Content-Language" content="pt-br">
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
     <link rel='apple-touch-icon' sizes='180x180' href='./assets/favicon/apple-touch-icon.png'>
     <link rel='icon' type='image/png' sizes='32x32' href='./assets/favicon/favicon-32x32.png'>
@@ -12,14 +13,14 @@
     <link rel='stylesheet' href='./assets/css/global.css'>
     <link rel='stylesheet' href='./assets/css/index.css'>
     <link rel='stylesheet' href='./assets/icomoon/style.css'>
-    <title>Jonathan Santos - Home</title>
+    <title>Jonathan Santos - Início</title>
 </head>
 <body>
     <input id='modo-escuro' name='modo-escuro' type='checkbox' hidden aria-hidden='true'>
 
     <header class='barra-navegacao'>
-        <a href='/' class='logo' aria-label='início site'>
-            <img src='/assets/img/logo.png' alt='Um logo de café com pipoca'>
+        <a href='/' class='logo' aria-hidden='true' tabindex='-1'>
+            <img src='/assets/img/logo.png' alt='uma imagem de pipoca com café'>
         </a>
 
         <h1 class='titulo'>Jonathan Santos</h1>
@@ -34,15 +35,15 @@
             <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1'></label>
 
             <nav class='conteudo' role='navigation'>
-                <div class='logo'>
-                    <img src='/assets/img/logo.png' alt='Um logo de café com pipoca'>
+                <div class='logo' aria-hidden='true'>
+                    <img src='../assets/img/logo.png' alt='uma imagem de pipoca com café'>
                 </div>
 
                 <ul class='links'>
                     <li>
                         <a href='/' class='link selecionado'>
                             <i class='icone icon-home'></i>
-                            <span class='texto'>Home</span>
+                            <span class='texto'>Início</span>
                         </a>
                     </li>
 
@@ -68,13 +69,13 @@
                     </li>
 
                     <li>
-                        <a href='./en/' class='link com-icone'>
+                        <a href='./en/' class='link com-icone' aria-label='Trocar língua para inglês'>
                             <i class='icone icon-language'></i>
-                            <span class='texto'>English</span>
+                            <span class='texto' lang='en'>English</span>
                         </a>
                     </li>
 
-                    <li class='escolha-modo-escuro' aria-hidden='true'>
+                    <div class='escolha-modo-escuro' aria-hidden='true'>
                         <label for='modo-escuro' class='link com-icone'>
                             <div class='modo-escuro'>
                                 <i class='icone icon-light-off'></i>
@@ -86,7 +87,7 @@
                                 <span class='texto'>Modo claro</span>
                             </div>
                         </label>
-                    </li>
+                    </div>
                 </ul>
             </nav>
         </div>

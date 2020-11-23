@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='description' content='Jonathan Santos personal website - Contact'>
+    <meta http-equiv="Content-Language" content="en">
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
     <link rel='apple-touch-icon' sizes='180x180' href='../assets/favicon/apple-touch-icon.png'>
     <link rel='icon' type='image/png' sizes='32x32' href='../assets/favicon/favicon-32x32.png'>
@@ -18,8 +19,8 @@
     <input id='modo-escuro' name='modo-escuro' type='checkbox' hidden aria-hidden='true'>
 
     <header class='barra-navegacao'>
-        <a href='/en/' class='logo' aria-label='início site'>
-            <img src='/assets/img/logo.png' alt='A logo of a popcorn with coffee'>
+        <a href='/en/' class='logo' aria-hidden='true' tabindex='-1'>
+            <img src='/assets/img/logo.png' alt='An image of popcorn with coffee'>
         </a>
 
         <h1 class='titulo'>Jonathan Santos</h1>
@@ -34,8 +35,8 @@
             <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
 
             <nav class='conteudo' role='navigation'>
-                <div class='logo'>
-                    <img src='../assets/img/logo.png' alt='A logo of a popcorn with coffee'>
+                <div class='logo' aria-hidden='true'>
+                    <img src='../assets/img/logo.png' alt='An image of popcorn with coffee'>
                 </div>
 
                 <ul class='links'>
@@ -68,13 +69,13 @@
                     </li>
 
                     <li>
-                        <a href='../contato.html' class='link com-icone'>
+                        <a href='../contato.html' class='link com-icone' aria-label='Change language to portuguese'>
                             <i class='icone icon-language'></i>
-                            <span class='texto'>Português</span>
+                            <span class='texto' lang='pt-br' id='mudar-lingua'>Português<span>
                         </a>
                     </li>
 
-                    <li class='escolha-modo-escuro' aria-hidden='true'>
+                    <div class='escolha-modo-escuro' aria-hidden='true'>
                         <label for='modo-escuro' class='link com-icone'>
                             <div class='modo-escuro'>
                                 <i class='icone icon-light-off'></i>
@@ -86,7 +87,7 @@
                                 <span class='texto'>Light mode</span>
                             </div>
                         </label>
-                    </li>
+                    </div>
                 </ul>
             </nav>
         </div>
