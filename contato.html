@@ -96,13 +96,13 @@
     </header>
         
     <main class='conteudo-principal'>
-        <section class='secao detalhes'>
+        <section class='secao instrucoes'>
             <p class='introducao'>Então quer entrar em contato comigo? <br> Pois bem, aqui estão as opções:</p>
 
             <ul class='opcoes'>
-                <li class='opcao'>Conversar comigo diretamente em uma das minhas redes sociais listadas no <a href='#footer'>fundo da página</a></li>
+                <li class='opcao'>Conversar comigo diretamente em uma das minhas redes sociais listadas no <a href='#rodape'>fundo da página</a></li>
 
-                <li class='opcao'>Mandar um email para mim diretamente em: <a href='mailto:jonathan.santosaugusto@gmail.com' aria-label='Email' class='email'>jonathan.santosaugusto@gmail.com</a></li>
+                <li class='opcao'>Mandar um email para mim diretamente em: <a href='mailto:jonathan.santosaugusto@gmail.com' class='email'>jonathan.santosaugusto@gmail.com</a></li>
                 
                 <li class='opcao'>Enviar uma mensagem usando o formulário abaixo:</li>
             </ul>
@@ -117,22 +117,22 @@
     
                     <div class='campo'>
                         <label for='email' required>Email: </label>
-                        <input id='email' name='email' type='email' placeholder='seuemail@email.com.br' required>
+                        <input id='email' name='email' type='email' placeholder='Seu email' required>
                     </div>
     
                     <div class='campo'>
                         <label for='nome' required>Nome: </label>
-                        <input id='nome' name='name' type='text' placeholder='Seu Nome' required>
+                        <input id='nome' name='name' type='text' placeholder='Seu Nome' autocomplete='off' required>
                     </div>
     
                     <div class='campo'>
                         <label for='assunto' required>Assunto: </label>
-                        <input id='assunto' name='subject' type='text' placeholder='O assunto do contato' required>
+                        <input id='assunto' name='subject' type='text' placeholder='O assunto do contato' autocomplete='off' required>
                     </div>
     
                     <div class='campo'>
                         <label for='mensagem'>Mensagem: </label>
-                        <textarea id='mensagem' name='message' rows='6' cols='52' placeholder='Escreva sua mensagem aqui!' required></textarea>
+                        <textarea id='mensagem' name='message' rows='6' cols='52' placeholder='Escreva sua mensagem aqui!' autocomplete='off' required></textarea>
                     </div>
     
                     <button class='botao' type='submit'>Enviar</button>
@@ -141,7 +141,7 @@
         </div>
     </main>
         
-    <footer class='rodape'>
+    <footer id='rodape' class='rodape'>
         <nav>
             <ul class='redes-sociais'>
                 <li>

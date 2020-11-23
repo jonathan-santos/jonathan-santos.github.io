@@ -1,5 +1,5 @@
 /* #region estrutura da página */
-.secao.detalhes {
+.secao.instrucoes {
     margin-bottom: calc(var(--espacamento-entre-secoes) * -1);
     padding-bottom: calc(var(--espacamento-entre-secoes) - 1rem);
 }
@@ -14,35 +14,36 @@
 }
 /* #endregion */
 
-/* #region detalhes */
-.detalhes {
+/* #region instrucoes */
+.instrucoes {
     background-color: var(--cor-primaria);
     padding: 1.6rem;
 }
 
-.detalhes .introducao {
+.instrucoes .introducao {
     margin: 1.8rem;
     font-size: 1.8rem;
 }
 
-.detalhes .opcoes {
+.instrucoes .opcoes {
     padding: 0 3.6rem;
     list-style: decimal;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-    @media (min-width: 768px) {
-        .detalhes .opcao {
-           width: 50%;
-        }
-    }
-
-.detalhes .opcao {
+.instrucoes .opcao {
     margin-bottom: 1.6rem;
     text-align: center;
 }
+
+    @media (min-width: 768px) {
+        .instrucoes .opcao {
+        width: 50%;
+        }
+    }
 /* #endregion */
 
 /* #region formulário */
