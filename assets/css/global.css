@@ -406,12 +406,17 @@ a:active {
     }
 
 .rodape .redes-sociais {
-    max-width: 90%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    list-style: none;
 }
+
+    .rodape .redes-sociais > * {
+        display: inline;
+    }
+
 
 @media (max-width: 768px) {
     .rodape .quebra-linha {

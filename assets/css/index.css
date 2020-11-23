@@ -131,23 +131,47 @@
 
 .competencias .campo .lista {
     color: var(--cor-texto-variavel);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.competencias .campo-front-end {
+    .competencias .campo .lista > * {
+        margin-bottom: 0.4rem;
+    }
+
+    .competencias .campo-front-end {
     color: var(--cor-front-end);
 }
+
+    .competencias .campo-front-end .lista > *::marker {
+        color: red;
+    }
 
 .competencias .campo-back-end {
     color: var(--cor-back-end);
 }
 
+    .competencias .campo-back-end .lista > *::marker {
+        color: var(--cor-back-end);
+    }
+
 .competencias .campo-jogos {
     color: var(--cor-jogos);
 }
 
+    .competencias .campo-jogos .lista > *::marker {
+        color: var(--cor-jogos);
+    }
+
 .competencias .campo-design {
     color: var(--cor-design);
 }
+
+    .competencias .campo-design .lista > *::marker {
+        color: var(--cor-design);
+    }
 
 @media (max-width: 600px) {
     .competencias .campo {
