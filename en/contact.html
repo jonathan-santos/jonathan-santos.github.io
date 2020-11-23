@@ -25,16 +25,16 @@
 
         <h1 class='titulo'>Jonathan Santos</h1>
 
-        <label for='input-menu-lateral' role='button' aria-label='Menu Lateral' class='botao-hamburguer'>
+        <label for='input-menu-lateral' class='botao-hamburguer' aria-hidden='true' tabindex='-1'>
             <i class='icon-menu'></i>
         </label>
 
-        <input id='input-menu-lateral' type='checkbox' hidden />
+        <input id='input-menu-lateral' type='checkbox' hidden aria-hidden='true' />
     
         <div class='menu-lateral'>
             <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
 
-            <nav class='conteudo' role='navigation'>
+            <nav class='conteudo'>
                 <div class='logo' aria-hidden='true'>
                     <img src='../assets/img/logo.png' alt='An image of popcorn with coffee'>
                 </div>
@@ -58,6 +58,7 @@
                         <a href='https://portfolio.jhow.io' class='link' rel='noreferrer' target='_blank'>
                             <i class='icone icon-portfolio'></i> 
                             <span class='texto'>Portfolio</span>
+                            <i class='icon-new-window' aria-label=', opens in a new window'></i>
                         </a>
                     </li>
 
@@ -65,6 +66,7 @@
                         <a href='https://pipocacafeinada.com.br' class='link' rel='noreferrer' target='_blank'>
                             <i class='icone icon-blog'></i> 
                             <span class='texto'>Blog</span>
+                            <i class='icon-new-window' aria-label=', opens in a new window'></i>
                         </a>
                     </li>
 

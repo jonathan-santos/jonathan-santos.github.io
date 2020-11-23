@@ -25,16 +25,16 @@
 
         <h1 class='titulo'>Jonathan Santos</h1>
 
-        <label for='input-menu-lateral' class='botao-hamburguer' role='button' aria-hidden='true' >
+        <label for='input-menu-lateral' class='botao-hamburguer' aria-hidden='true' tabindex='-1'>
             <i class='icon-menu'></i>
         </label>
 
-        <input id='input-menu-lateral' type='checkbox' hidden />
+        <input id='input-menu-lateral' type='checkbox' hidden aria-hidden='true' />
     
         <div class='menu-lateral'>
-            <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1'></label>
+            <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
 
-            <nav class='conteudo' role='navigation'>
+            <nav class='conteudo'>
                 <div class='logo' aria-hidden='true'>
                     <img src='../assets/img/logo.png' alt='uma imagem de pipoca com café'>
                 </div>
@@ -58,13 +58,15 @@
                         <a href='https://portfolio.jhow.io' class='link' rel='noreferrer' target='_blank'>
                             <i class='icone icon-portfolio'></i>
                             <span class='texto'>Portfólio</span>
+                            <i class='icon-new-window' aria-label=', abre um site externo em uma nova janela'></i>
                         </a>
                     </li>
 
                     <li>
                         <a href='https://pipocacafeinada.com.br' class='link' rel='noreferrer' target='_blank'>
                             <i class='icone icon-blog'></i>
-                            <span class='texto'>Blog</span>
+                            <span class='texto' aria-label='Blógui'>Blog</span>
+                            <i class='icon-new-window' aria-label=', abre um site externo em uma nova janela'></i>
                         </a>
                     </li>
 
@@ -98,7 +100,7 @@
             <img src='/assets/img/foto.jpg' alt='Foto do Jonathan Santos' class='foto'>
 
             <div class='informacoes'>
-                <h1 class='titulo'>Desenvolvedor Full-stack / <br> Desenvolvedor de jogos digitais</h1>
+                <p class='titulo'>Desenvolvedor Full-stack / <br> Desenvolvedor de jogos digitais</p>
     
                 <p class='texto'>Olá, me chamo Jonathan Santos (vulgo Jhow), sou uma pessoa apaixonada por tecnologia que adora aprender e criar coisas novas. Tenho experiência em desenvolvimento de aplicações Web Front-End e Back-End, desenvolvimento de aplicativos Mobile multi-plataforma, desenvolvimento de jogos Desktop e Mobile, Robótica e até ensino desses assuntos para crianças e adolescentes.</p>
                     
@@ -111,30 +113,29 @@
                 <h2 class='titulo'>Linguagens de programação</h2>
     
                 <div class='linguagens'>
-                    <a class='linguagem javascript' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=javascript' rel='noreferrer' target='_blank'>
+                    <a class='linguagem javascript' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=javascript' rel='noreferrer' target='_blank' aria-label='Meus projetos feitos com Java íscripti, abre um site externo em uma nova janela'>
                         <i class='icone icon-javascript'></i>
                     </a>
     
-                    <a class='linguagem typescript' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=typescript' rel='noreferrer' target='_blank'>
+                    <a class='linguagem typescript' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=typescript' rel='noreferrer' target='_blank' aria-label='Meus projetos feitos com táip scripti, abre um site externo em uma nova janela'>
                         <i class='icone icon-typescript'></i>
                     </a>
     
-                    <a class='linguagem python' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=python' rel='noreferrer' target='_blank'>
+                    <a class='linguagem python' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=python' rel='noreferrer' target='_blank' aria-label='Meus projetos feitos com páiton, abre um site externo em uma nova janela'>
                         <i class='icone icon-python'></i>
                     </a>
     
-                    <a class='linguagem csharp' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=c%23' rel='noreferrer' target='_blank'>
+                    <a class='linguagem csharp' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=c%23' rel='noreferrer' target='_blank' aria-label='Meus projetos feitos com C Sharp, abre um site externo em uma nova janela'>
                         <i class='icone icon-csharp'></i>
                     </a>
     
-                    <a class='linguagem c' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=c' rel='noreferrer' target='_blank'>
+                    <a class='linguagem c' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=c' rel='noreferrer' target='_blank' aria-label='Meus projetos feitos com C, abre um site externo em uma nova janela'>
                         <i class='icone icon-c'></i>
                     </a>
     
-                    <a class='linguagem cpp' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=c%2B%2B' rel='noreferrer' target='_blank'>
+                    <a class='linguagem cpp' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=c%2B%2B' rel='noreferrer' target='_blank' aria-label='Meus projetos feitos com C mais mais, abre um site externo em uma nova janela'>
                         <i class='icone icon-cplusplus'></i>
                     </a>
-    
                 </div>
     
                 <h2 class='titulo'>Tecnologias</h2>
@@ -160,7 +161,7 @@
     
                     <h3 class='nome'>Jogos</h4>
     
-                    <p class='lista'>Godot, Unity, Construct, Raylib, OpenGL e criador do <a href='https://github.com/jonathan-santos/canvasrama'>Canvasrama</a></p>
+                    <p class='lista'>Godot, Unity, Construct, Raylib, OpenGL</p>
                 </div>
     
                 <div class='campo campo-design'>
@@ -179,7 +180,7 @@
 
             <h2 class='titulo'>Minha experiência</h2>
 
-            <div class='filtros'>
+            <div class='filtros' aria-hidden='true'>
                 <label class='filtro' for='profissional'>profissional</label>
                 <label class='filtro' for='educacional'>educacional</label>
             </div>
@@ -189,12 +190,18 @@
                     <h3 class='ano profissional'>2020</h3>
 
                     <div class='experiencia profissional'>
-                        <a href='http://megahack.com.br/' rel='noreferrer' target='_blank'>
+                        <a href='http://megahack.com.br/' rel='noreferrer' target='_blank' tabindex='-1'  aria-hidden='true'>
                             <img src='assets/img/megahack.png' alt='' class='imagem' style='background-color: black'>
                         </a>
 
                         <div class='informacoes'>
-                            <h4 class='titulo'><a href='http://megahack.com.br/' rel='noreferrer' target='_blank'>Megahack 5.0</a> (Novembro)</h4>
+                            <h4 class='titulo'>
+                                <a href='http://megahack.com.br/' rel='noreferrer' target='_blank'>
+                                    Megahack 5.0
+                                    <i class='icon-new-window' aria-label=', abre um site externo em uma nova janela'></i>
+                                </a>
+                                - (Novembro)
+                            </h4>
                             <p class='descricao'>Eu participei do Megahack realizado online, participando do desafio do Mercado Pago</p>
                         </div>
                     </div>
@@ -202,12 +209,19 @@
                     <h3 class='ano profissional'>2018</h3>
 
                     <div class='experiencia profissional'>
-                        <a href='https://br.linkedin.com/company/supergeeks-brasil' rel='noreferrer' target='_blank'>
+                        <a href='https://br.linkedin.com/company/supergeeks-brasil' rel='noreferrer' target='_blank' tabindex='-1'  aria-hidden='true'>
                             <img src='assets/img/supergeeks.png' alt='' class='imagem'>
                         </a>
 
                         <div class='informacoes'>
-                            <h4 class='titulo'><a href='https://br.linkedin.com/company/supergeeks-brasil' rel='noreferrer' target='_blank'>Supergeeks</a> - Instrutor (Novembro/2018 - Julho/2020)</h4>
+                            <h4 class='titulo'>
+                                <a href='https://br.linkedin.com/company/supergeeks-brasil' rel='noreferrer' target='_blank'>
+                                    <span aria-label='Super guiquis'>Supergeeks</span>
+                                    <i class='icon-new-window' aria-label=', abre um site externo em uma nova janela'></i>
+                                </a>
+                                - Instrutor (Novembro/2018 - Julho/2020)
+                            </h4>
+
                             <p>Fui contratado como instrutor para crianças e adolescentes para a Supergeeks, onde ensinei sobre Programação, desenvolvimento Web, desenvolvimento de Games, IA, computação gráfica, robótica e mais. Fiquei até Julho de 2020<p>
                         </div>
                     </div>
@@ -215,47 +229,74 @@
                     <h3 class='ano profissional educacional'>2017</h3>
 
                     <div class='experiencia profissional'>
-                        <a href='https://pt-br.facebook.com/events/107860659744974/' rel='noreferrer' target='_blank'>
+                        <a href='https://pt-br.facebook.com/events/107860659744974/' rel='noreferrer' target='_blank' tabindex='-1'  aria-hidden='true'>
                             <img src='assets/img/bluehack.png' alt='' class='imagem' style='background-color: white'>
                         </a>
 
                         <div class='informacoes'>
-                            <h4 class='titulo'><a href='https://pt-br.facebook.com/events/107860659744974/' rel='noreferrer' target='_blank'>Bluehack 2017</a> - Março</h4>
-                            <p>Eu partipei da Bluehack 2017 e junto de meu time fiquei em 4º lugar, com o desenvolvimento de um serviço de atendimento por chatbot com o <a href='https://portfolio.jhow.io/projects/servidor-bluehack-automachat/' rel='noreferrer' target='_blank'>automachat</a><p>
+                            <h4 class='titulo'>
+                                <a href='https://pt-br.facebook.com/events/107860659744974/' rel='noreferrer' target='_blank'>
+                                    <span aria-label='Blue hack 2017'>Bluehack 2017</span>
+                                    <i class='icon-new-window' aria-label=', abre um site externo em uma nova janela'></i>
+                                </a>
+                                - Março
+                            </h4>
+                            <p>Eu partipei da Bluehack 2017 e junto de meu time fiquei em 4º lugar, com o desenvolvimento de um serviço de atendimento por chatbot com o <a href='https://portfolio.jhow.io/projects/servidor-bluehack-automachat/' rel='noreferrer' target='_blank' tabindex='-1'>automachat</a><p>
                         </div>
                     </div>
 
                     <div class='experiencia educacional'>
-                        <a href='https://www.linkedin.com/school/mastertech.tech/' rel='noreferrer' target='_blank'>
+                        <a href='https://www.linkedin.com/school/mastertech.tech/' rel='noreferrer' target='_blank' tabindex='-1'  aria-hidden='true'>
                             <img src='assets/img/mastertech.png' alt='' class='imagem' style='background-color: white'>
                         </a>
 
                         <div class='informacoes'>
-                            <h4 class='titulo'><a href='https://www.linkedin.com/school/mastertech.tech/' rel='noreferrer' target='_blank'>Mastertech</a> - Bootcamp Front-End Web (Maio/2017 - Junho/2017)</h4>
+                            <h4 class='titulo'>
+                                <a href='https://www.linkedin.com/school/mastertech.tech/' rel='noreferrer' target='_blank'>
+                                    Mastertech
+                                    <i class='icon-new-window' aria-label=', abre um site externo em uma nova janela'></i>
+                                </a>
+                                - Bootcamp Front-End Web (Maio/2017 - Junho/2017)
+                            </h4>
+
                             <p>Durante o meu tempo na eComanda eu participei do primeiro bootcamp de Front-End Web da Mastertech, onde aprendi toda a base do desenvolvimento Front-End, incluindo HTML, CSS, Sass, Github, Npm, AngularJS, Bootstrap, Firebase e mais<p>
                         </div>
                     </div>
 
                     <div class='experiencia profissional'>
-                        <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem' rel='noreferrer' target='_blank'>
+                        <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem' rel='noreferrer' target='_blank' tabindex='-1'  aria-hidden='true'>
                             <img src='assets/img/ecomanda.png' alt='' class='imagem' style='background-color: white'>
                         </a>
 
                         <div class='informacoes'>
-                            <h4 class='titulo'><a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem' rel='noreferrer' target='_blank'>eComanda</a> - Desenvolvedor de software (Janeiro/2017 - Setembro/2018)</h4>
-                            <p>Após o término da ETEC, eu fui efetivado como desenvolvedor de software na eComanda, onde eu desenvolvi mais aplicações com Xamarin.Forms, me tornei um dos desenvolvedores Web, onde participei na criação e manutenção do <a href='https://beta.pedircomida.com.br' rel='noreferrer' target='_blank'>Pedir Comida PWA</a> e trabalhei no desenvolvimento de servidores da empresa com Asp.Net Core<p>
+                            <h4 class='titulo'>
+                                <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem' rel='noreferrer' target='_blank'>
+                                    eComanda
+                                    <i class='icon-new-window' aria-label=', abre um site externo em uma nova janela'></i>
+                                </a>
+                                - Desenvolvedor de software (Janeiro/2017 - Setembro/2018)
+                            </h4>
+
+                            <p>Após o término da ETEC, eu fui efetivado como desenvolvedor de software na eComanda, onde eu desenvolvi mais aplicações com Xamarin.Forms, me tornei um dos desenvolvedores Web, onde participei na criação e manutenção do <a href='https://beta.pedircomida.com.br' rel='noreferrer' target='_blank' tabindex='-1'>Pedir Comida PWA</a> e trabalhei no desenvolvimento de servidores da empresa com Asp.Net Core<p>
                         </div>
                     </div>
 
                     <h3 class='ano profissional'>2016</h3>
 
                     <div class='experiencia profissional'>
-                        <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem' rel='noreferrer' target='_blank'>
+                        <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem' rel='noreferrer' target='_blank' tabindex='-1'  aria-hidden='true'>
                             <img src='assets/img/ecomanda.png' alt='' class='imagem' style='background-color: white'>
                         </a>
 
                         <div class='informacoes'>
-                            <h4 class='titulo'><a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem' rel='noreferrer' target='_blank'>eComanda</a> - Estagiário em desenvolvimento de software (Outubro/2016 - Dezembro/2016)</h4>
+                            <h4 class='titulo'>
+                                <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem' rel='noreferrer' target='_blank'>
+                                    eComanda
+                                    <i class='icon-new-window' aria-label=', abre um site externo em uma nova janela'></i>
+                                </a>
+                                 - Estagiário em desenvolvimento de software (Outubro/2016 - Dezembro/2016)
+                            </h4>
+
                             <p>Durante o último semestre na ETEC eu consegui o meu primeiro emprego na eComanda, como estagiário em desenvolvimento de software. Aqui eu desenvolvi aplicativos para a empresa usando Xamarin.Forms e C# e auxiliei em outras tarefas de desenvolvimento como testes e manutenção do blog de Wordpress<p>
                         </div>
                     </div>
@@ -263,35 +304,53 @@
                     <h3 class='ano educacional'>2015</h3>
 
                     <div class='experiencia educacional'>
-                        <a href='https://www.cps.sp.gov.br/category/etec/' rel='noreferrer' target='_blank'>
+                        <a href='https://www.cps.sp.gov.br/category/etec/' rel='noreferrer' target='_blank' tabindex='-1'  aria-hidden='true'>
                             <img src='assets/img/etec.jpg' alt='' class='imagem' style='background-color: white'>
                         </a>
 
                         <div class='informacoes'>
-                            <h4 class='titulo'><a href='https://www.cps.sp.gov.br/category/etec/' rel='noreferrer' target='_blank'>ETEC</a> - Programação de jogos digitais (Agosto/2015 - Dezembro/2017)</h4>
+                            <h4 class='titulo'>
+                                <a href='https://www.cps.sp.gov.br/category/etec/' rel='noreferrer' target='_blank'>
+                                    ETEC
+                                    <i class='icon-new-window' aria-label=', abre um site externo em uma nova janela'></i>
+                                </a>
+                                - Programação de jogos digitais (Agosto/2015 - Dezembro/2017)
+                            </h4>
+
                             <p>O curso técnico de programação de jogos digitais da ETEC foi o meu primeiro contato com o mundo da programação. Aqui eu aprendi a programar com Java, Javascript e C#, aprendi a usar o Unity e Blender e tive a minha primeira experiência com Desenvolvimento Web e Mobile<p>
                         </div>
                     </div>
 
                     <div class='experiencia educacional'>
-                        <a href='https://crescerrotary.org.br/' rel='noreferrer' target='_blank'>
+                        <a href='https://crescerrotary.org.br/' rel='noreferrer' target='_blank' tabindex='-1'  aria-hidden='true'>
                             <img src='assets/img/crescer.png' alt='' class='imagem' style='background-color: white'>
                         </a>
 
                         <div class='informacoes'>
-                            <h4 class='titulo'><a href='https://crescerrotary.org.br/' rel='noreferrer' target='_blank'>C.R.E.S.C.E.R.</a> - Ensino profissionalizante de jovens (Janeiro/2015 - Abril/2015)</h4>
+                            <h4 class='titulo'><a href='https://crescerrotary.org.br/' rel='noreferrer' target='_blank'>
+                                <span aria-label='Crescer'>C.R.E.S.C.E.R.</span>
+                                <i class='icon-new-window' aria-label=', abre um site externo em uma nova janela'></i>
+                            </a>
+                            - Ensino profissionalizante de jovens (Janeiro/2015 - Abril/2015)
+                            </h4>
                         </div>
                     </div>
 
                     <h3 class='ano educacional'>2013</h3>
 
                     <div class='experiencia educacional'>
-                        <a href='http://www.educacao.sp.gov.br/cgrh/escolas/caran-apparecido-goncalves-professor/' rel='noreferrer' target='_blank'>
+                        <a href='http://www.educacao.sp.gov.br/cgrh/escolas/caran-apparecido-goncalves-professor/' rel='noreferrer' target='_blank' tabindex='-1'  aria-hidden='true'>
                             <img src='assets/img/caran.JPG' alt='' class='imagem' style='background-color: white'>
                         </a>
 
                         <div class='informacoes'>
-                            <h4 class='titulo'><a href='http://www.educacao.sp.gov.br/cgrh/escolas/caran-apparecido-goncalves-professor/' rel='noreferrer' target='_blank'>E. E. Caran Apparecido Golçalves</a> - Ensino médio (Janeiro/2013 - Dezembro/2016)</h4>
+                            <h4 class='titulo'>
+                                <a href='http://www.educacao.sp.gov.br/cgrh/escolas/caran-apparecido-goncalves-professor/' rel='noreferrer' target='_blank'>
+                                    E. E. Caran Apparecido Golçalves
+                                    <i class='icon-new-window' aria-label=', abre um site externo em uma nova janela'></i>
+                                </a>
+                                - Ensino médio (Janeiro/2013 - Dezembro/2016)
+                            </h4>
                         </div>
                     </div>
                 </div>
@@ -302,43 +361,47 @@
             <div class='conteudo'>
                 <h2 class='titulo'>Trabalhos anteriores</h2>
 
-                <a class='trabalho' href='https://portfolio.jhow.io/projects/pedir-comida/' target='_blank' rel='noreferrer'>
+                <a class='trabalho' href='https://portfolio.jhow.io/projects/pedir-comida/' target='_blank' rel='noreferrer' aria-labelledby='pedir-comida-pwa'>
                     <img class='imagem' src='https://portfolio.jhow.io/assets/pedir-comida-pwa-0.png' alt='Imagem do Pedir Comida PWA'>
 
-                    <figcaption class='detalhes'>
+                    <figcaption id='pedir-comida-pwa' class='detalhes'>
                         <h3 class='nome'>Pedir Comida PWA</h3>
-
+                        <span aria-label=', '></span>
                         <p class='texto'>Projeto que participei no meu tempo na eComanda, feito com React JS e Typescript, meu primeiro PWA</p>
+                        <span aria-label=', abre um site externo em uma nova janela'></span>
                     </figcaption>
                 </a>
 
-                <a class='trabalho' href='https://portfolio.jhow.io/projects/pague-ze/' target='_blank' rel='noreferrer'>
+                <a class='trabalho' href='https://portfolio.jhow.io/projects/pague-ze/' target='_blank' rel='noreferrer' aria-labelledby='pague-ze'>
                     <img class='imagem' src='https://portfolio.jhow.io/assets/pague-ze-0.png' alt='Imagem do Pague Zé'>
 
-                    <figcaption class='detalhes'>
+                    <figcaption id='pague-ze' class='detalhes'>
                         <h3 class='nome'>Pague Zé</h3>
-
+                        <span aria-label=', '></span>
                         <p class='texto'>Projeto que criei durante o Megahack 5.0, feito com React.js e CSS escrito á mão por mim</p>
+                        <span aria-label=', abre um site externo em uma nova janela'></span>
                     </figcaption>
                 </a>
 
-                <a class='trabalho' href='https://portfolio.jhow.io/projects/unicornio-adivinha-app/' target='_blank' rel='noreferrer'>
+                <a class='trabalho' href='https://portfolio.jhow.io/projects/unicornio-adivinha-app/' target='_blank' rel='noreferrer' aria-labelledby='unicornio-adivinha-app'>
                     <img class='imagem' src='https://portfolio.jhow.io/assets/unicornio-adivinha-app-0.webp' alt='Imagem do Unicórnio Adivinha App'>
 
-                    <figcaption class='detalhes'>
+                    <figcaption id='unicornio-adivinha-app' class='detalhes'>
                         <h3 class='nome'>Unicórnio Adivinha App</h3>
-
+                        <span aria-label=', '></span>
                         <p class='texto'>App feito totalmente por mim usando React Native e com prototipação de design usando o Figma. Reconhece as emoções de uma pessoa a partir de uma foto</p>
+                        <span aria-label=', abre um site externo em uma nova janela'></span>
                     </figcaption>
                 </a>
 
-                <a class='trabalho' href='https://portfolio.jhow.io/projects/portfolio-generator/' target='_blank' rel='noreferrer'>
+                <a class='trabalho' href='https://portfolio.jhow.io/projects/portfolio-generator/' target='_blank' rel='noreferrer' aria-labelledby='portfolio-generator'>
                     <img class='imagem' src='https://portfolio.jhow.io/assets/portfolio-generator-0.png' alt='Imagem do portfolio generator'>
 
-                    <figcaption class='detalhes'>
-                        <h3 class='nome'>Portfolio generator</h3>
-
+                    <figcaption id='portfolio-generator' class='detalhes'>
+                        <h3 class='nome'>Portfolio <span aria-label='dienereitor'>generator</span></h3>
+                        <span aria-label=', '></span>
                         <p class='texto'>Um gerador de portfólios constrúido com Eleventy e um tema feito a mão por mim</p>
+                        <span aria-label=', abre um site externo em uma nova janela'></span>
                     </figcaption>
                 </a>
                 
@@ -351,40 +414,40 @@
 
     <footer class='rodape'>
         <div class='redes-sociais'>
-            <a href='https://twitter.com/pipocaCafeinada' rel='noreferrer' target='_blank' aria-label='Twitter' class='rede twitter'>
+            <a href='https://twitter.com/pipocaCafeinada' rel='noreferrer' target='_blank' aria-label='Meu Twitter, , abre um site externo em uma nova janela' class='rede twitter'>
                 <i class='icon-twitter'></i>
             </a>
             
-            <a href='https://linkedin.com/in/jonathan-santos-dev' rel='noreferrer' target='_blank' aria-label='Linkedin' class='rede linkedin'>
+            <a href='https://linkedin.com/in/jonathan-santos-dev' rel='noreferrer' target='_blank' aria-label='Meu Linkedin, abre um site externo em uma nova janela' class='rede linkedin'>
                 <i class='icon-linkedin'></i>
             </a>
 
-            <a href='https://github.com/jonathan-santos' rel='noreferrer' target='_blank' aria-label='Github' class='rede github'>
+            <a href='https://github.com/jonathan-santos' rel='noreferrer' target='_blank' aria-label='Meu Guitirâbi, abre um site externo em uma nova janela' class='rede github'>
                 <i class='icon-github'></i>
             </a>
             
-            <a href='https://caffeinatedpopcorn.itch.io' rel='noreferrer' target='_blank' aria-label='Itch.io' class='rede itchio'>
+            <a href='https://caffeinatedpopcorn.itch.io' rel='noreferrer' target='_blank' aria-label='Meu Itch.io, abre um site externo em uma nova janela' class='rede itchio'>
                 <i class='icon-itchio'></i>
             </a>
             
             <div class='quebra-linha'></div>
             
-            <a href='https://figma.com/@jhow' rel='noreferrer' target='_blank' aria-label='Figma' class='rede figma'>
+            <a href='https://figma.com/@jhow' rel='noreferrer' target='_blank' aria-label='Meu perfil do Figma, abre um site externo em uma nova janela' class='rede figma'>
                 <i class='icon-figma'></i>
             </a>
 
-            <a href='https://meetup.com/pt-BR/members/233061469/' rel='noreferrer' target='_blank' aria-label='Meetup' class='rede meetup'>
+            <a href='https://meetup.com/pt-BR/members/233061469/' rel='noreferrer' target='_blank' aria-label='Meu perfil Meetup, abre um site externo em uma nova janela' class='rede meetup'>
                 <i class='icon-meetup'></i>
             </a>
             
-            <a href='mailto:jonathan.santosaugusto@gmail.com' rel='noreferrer' aria-label='Email' class='rede email'>
+            <a href='mailto:jonathan.santosaugusto@gmail.com' rel='noreferrer' aria-label='Meu Email' class='rede email'>
                 <i class='icon-email'></i>
             </a>
         </div>
 
         <p class='texto'>Site feito por mim utilizando HTML e CSS escritos á mão, <i class='icon-heart'></i> e um pouco de café</p>
 
-        <p class='texto'>Curiosidade de como esse site foi feito? <a href='https://github.com/jonathan-santos/jonathan-santos.github.io' rel='noreferrer' target='_blank'>Acesse o repositório do projeto</a></p>
+        <p class='texto'>Curiosidade de como esse site foi feito? <a href='https://github.com/jonathan-santos/jonathan-santos.github.io' rel='noreferrer' target='_blank' aria-label='Repositório do projeto do site que está acessando, abre um site externo em uma nova janela'>Acesse o repositório do projeto</a></p>
     </footer>
 </body>
 </html>

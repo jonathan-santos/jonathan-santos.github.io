@@ -213,7 +213,8 @@
     transition: all 0.25s;
 }
 
-    .experiencias .filtro:hover {
+    .experiencias .filtro:hover,
+    .experiencias .filtro:focus {
         background-color: var(--cor-primaria-escura);
     }
 
