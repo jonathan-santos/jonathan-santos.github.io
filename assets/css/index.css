@@ -87,11 +87,18 @@
 }
 
 .competencias .linguagem {
+    margin-right: 0.8rem;
     text-decoration: none;
 }
 
+    .competencias .linguagem:active .icone,
+    .competencias .linguagem:focus .icone {
+        border: 0.15rem solid var(--cor-texto-variavel);
+        border-radius: 0.5rem;
+        padding: 0.2rem;
+    }
+
     .competencias .linguagem .icone {
-        margin-right: 0.8rem;
         font-size: 2.8rem;
     }
 
@@ -218,6 +225,12 @@
     display: flex;
     flex-direction: column;
     background-color: var(--cor-primaria);
+}
+
+.experiencias a:focus,
+.experiencias a:hover {
+    padding: 0.2rem;
+    border: 0.2rem solid var(--cor-texto-claro);
 }
 
 .experiencias .titulo {
@@ -354,6 +367,10 @@
     overflow: hidden;
 }
 
+    .trabalho:focus {
+        border: 0.4rem solid var(--cor-primaria);
+    }
+
     .trabalho .imagem {
         width: 100%;
         height: 100%;
@@ -376,7 +393,8 @@
     }
 
         .trabalho:hover .detalhes,
-        .trabalho:active .detalhes {
+        .trabalho:active .detalhes,
+        .trabalho:focus .detalhes {
             opacity: 1;
         }
 
@@ -391,4 +409,11 @@
     margin-top: 0.8rem;
     color: var(--cor-primaria-escura);
 }
+
+    .link-portfolio a:hover,
+    .link-portfolio a:active,
+    .link-portfolio a:focus {
+        padding: 0.2rem;
+        border: 0.2rem solid var(--cor-primaria-escura);
+    }
 /* #endregion */

@@ -20,6 +20,14 @@
     padding: 1.6rem;
 }
 
+.instrucoes a:hover,
+.instrucoes a:active,
+.instrucoes a:focus {
+    padding: 0.2rem;
+    border: 0.2rem solid var(--cor-texto-claro);
+}
+
+
 .instrucoes .introducao {
     margin: 1.8rem;
     font-size: 1.8rem;
@@ -91,6 +99,15 @@
         opacity: 0.5;
     }
 
+    .formulario input:hover,
+    .formulario input:active,
+    .formulario input:focus,
+    .formulario textarea:hover,
+    .formulario textarea:active,
+    .formulario textarea:focus {
+        border-width: 0.2rem;
+    }
+
 .formulario input {
     height: 4rem;
 }
@@ -112,7 +129,9 @@
 }
 
     .formulario .botao:hover,
-    .formulario .botao:active {
+    .formulario .botao:active,
+    .formulario .botao:focus {
         background-color: var(--cor-primaria-escura);
+        font-size: 1.9rem;
     }
 /* #endregion */
