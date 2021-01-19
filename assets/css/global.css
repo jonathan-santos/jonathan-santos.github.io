@@ -625,6 +625,10 @@ a:focus {
     content: "\f2b9";
 }
 
+.icon-cv:before {
+    content: "\e923";
+}
+
 .icon-meetup:before {
     content: "\f2e0";
 }
