@@ -97,7 +97,8 @@
 }
 
     .competencias .linguagem:active .icone,
-    .competencias .linguagem:focus .icone {
+    .competencias .linguagem:focus .icone,
+    .competencias .linguagem:hover .icone {
         border: 0.15rem solid var(--cor-texto-variavel);
         border-radius: 0.5rem;
         padding: 0.2rem;
@@ -236,7 +237,14 @@
 .experiencias a:hover {
     padding: 0.2rem;
     border: 0.2rem solid var(--cor-texto-claro);
+    opacity: 100;
 }
+
+    .experiencias a:focus .imagem,
+    .experiencias a:hover .imagem {
+        border-width: 0.3rem;
+        filter: brightness(75%);
+    }
 
 .experiencias .titulo {
     margin-bottom: 0.8rem;
@@ -401,6 +409,7 @@
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.8);
         opacity: 0;
+        transition: opacity 0.35s;
     }
 
         .trabalho:hover .detalhes,

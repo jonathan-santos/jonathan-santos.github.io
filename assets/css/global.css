@@ -167,6 +167,14 @@ a:focus {
     padding: 0.25rem;
 }
 
+    .barra-navegacao .logo:hover,
+    .barra-navegacao .logo:focus,
+    .barra-navegacao .botao-hamburguer:hover,
+    .barra-navegacao .botao-hamburguer:focus {
+        border-width: 0.3rem;
+        filter: brightness(75%);
+    }
+
 .barra-navegacao .logo {
     background-color: var(--cor-principal);
 }
