@@ -11,6 +11,7 @@
     --cor-fundo-semi-escuro: #2B3B4B;
     --cor-texto-claro: #FFFFFF;
     --cor-texto-escuro: #333;
+    --cor-desabilitado: #999;
 
     --cor-texto-variavel: var(--cor-texto-escuro);
     --cor-fundo-variavel: var(--cor-fundo-claro);
@@ -334,7 +335,7 @@ a:focus {
     .menu-lateral .link {
         width: initial;
         height: 1.5rem;
-        border: 0.2rem solid transparent;
+        border: 0.3rem solid transparent;
         border-radius: 0.8rem;
         padding: 1.6rem 0.4rem;
         margin-right: 0.4rem;
@@ -407,11 +408,16 @@ a:focus {
         }
     }
 
+.rodape a {
+    padding: 0.4rem;
+    border: 0.3rem solid transparent;
+    border-radius: 0.8rem;
+}
+
 .rodape a:hover,
 .rodape a:active,
 .rodape a:focus {
-    padding: 0.2rem;
-    border: 0.2rem solid var(--cor-texto-claro);
+    border-color: var(--cor-texto-claro)
 }
 
 .rodape .texto {
@@ -435,7 +441,6 @@ a:focus {
     .rodape .redes-sociais > * {
         display: inline;
     }
-
 
 @media (max-width: 768px) {
     .rodape .quebra-linha {
