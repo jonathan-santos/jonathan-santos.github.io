@@ -45,7 +45,7 @@
           <li>
             <a href='/' class='link'>
               <i class='icone icon-home'></i>
-              
+
               <span class='texto'>Início</span>
             </a>
           </li>
@@ -60,40 +60,36 @@
 
           <li>
             <a href='https://drive.google.com/file/d/1KXNOMKRBc0easj4gXDCmsjiEWr4qERus/view?usp=sharing' class='link'
-              rel='noreferrer' target='_blank'>
+              rel='noreferrer' target='_blank' aria-label='Currículo, abre um site externo em uma nova janela'>
               <i class='icone icon-cv'></i>
 
-              <span class='texto' aria-label='Currículo'>CV</span>
-
-              <i class='icon-new-window' aria-label=', abre um site externo em uma nova janela'></i>
+              <span class='texto'>CV</span>
             </a>
           </li>
 
           <li>
-            <a href='https://portfolio.jhow.io' class='link' rel='noreferrer' target='_blank'>
+            <a href='https://portfolio.jhow.io' class='link' rel='noreferrer' target='_blank'
+              aria-label='Portfólio, abre um site externo em uma nova janela'>
               <i class='icone icon-portfolio'></i>
 
               <span class='texto'>Portfólio</span>
-              
-              <i class='icon-new-window' aria-label=', abre em uma nova guia'></i>
             </a>
           </li>
 
           <li>
-            <a href='https://blog.jhow.io/pt/' class='link' rel='noreferrer' target='_blank'>
+            <a href='https://blog.jhow.io/pt/' class='link' rel='noreferrer' target='_blank'
+              aria-label='Blog, abre um site externo em uma nova janela'>
               <i class='icone icon-blog'></i>
 
               <span class='texto'>Blog</span>
-
-              <i class='icon-new-window' aria-label=', abre em uma nova guia'></i>
             </a>
           </li>
 
           <li>
-            <a href='../en/contact' class='link com-icone' aria-label='Trocar língua para inglês'>
+            <a href='../en/contact' class='link com-icone' lang='en' aria-label='Change language to english'>
               <i class='icone icon-language'></i>
 
-              <span class='texto' lang='en'>English</span>
+              <span class='texto'>English</span>
             </a>
           </li>
 
@@ -147,13 +143,13 @@
 
           <div class='campo'>
             <label for='nome' required>Nome: </label>
-            
+
             <input id='nome' name='name' type='text' placeholder='Seu Nome' autocomplete='off' required>
           </div>
 
           <div class='campo'>
             <label for='mensagem'>Mensagem: </label>
-            
+
             <textarea id='mensagem' name='message' rows='6' cols='52' placeholder='Escreva sua mensagem aqui!'
               autocomplete='off' required></textarea>
           </div>
@@ -168,29 +164,29 @@
     <nav>
       <ul class='redes-sociais'>
         <li>
-          <a href='https://twitter.com/pipocaCafeinada' rel='noreferrer' target='_blank' aria-label='Twitter'
-            class='rede twitter'>
+          <a href='https://twitter.com/pipocaCafeinada' rel='noreferrer' target='_blank'
+            aria-label='Twitter, abre um site externo em uma nova janela' class='rede twitter'>
             <i class='icon-twitter'></i>
           </a>
         </li>
 
         <li>
-          <a href='https://linkedin.com/in/jonathan-santos-dev' rel='noreferrer' target='_blank' aria-label='Linkedin'
-            class='rede linkedin'>
+          <a href='https://linkedin.com/in/jonathan-santos-dev' rel='noreferrer' target='_blank'
+            aria-label='Linkedin, abre um site externo em uma nova janela' class='rede linkedin'>
             <i class='icon-linkedin'></i>
           </a>
         </li>
 
         <li>
-          <a href='https://github.com/jonathan-santos' rel='noreferrer' target='_blank' aria-label='Github'
-            class='rede github'>
+          <a href='https://github.com/jonathan-santos' rel='noreferrer' target='_blank'
+            aria-label='Github, abre um site externo em uma nova janela' class='rede github'>
             <i class='icon-github'></i>
           </a>
         </li>
 
         <li>
-          <a href='https://caffeinatedpopcorn.itch.io' rel='noreferrer' target='_blank' aria-label='Itch.io'
-            class='rede itchio'>
+          <a href='https://caffeinatedpopcorn.itch.io' rel='noreferrer' target='_blank'
+            aria-label='Itch.io, abre um site externo em uma nova janela' class='rede itchio'>
             <i class='icon-itchio'></i>
           </a>
         </li>
@@ -198,31 +194,34 @@
         <div class='quebra-linha' aria-hidden='true'></div>
 
         <li>
-          <a href='https://figma.com/@jhow' rel='noreferrer' target='_blank' aria-label='Figma' class='rede figma'>
+          <a href='https://figma.com/@jhow' rel='noreferrer' target='_blank'
+            aria-label='Figma, abre um site externo em uma nova janela' class='rede figma'>
             <i class='icon-figma'></i>
           </a>
         </li>
 
         <li>
-          <a href='https://meetup.com/pt-BR/members/233061469/' rel='noreferrer' target='_blank' aria-label='Meetup'
-            class='rede meetup'>
+          <a href='https://meetup.com/pt-BR/members/233061469/' rel='noreferrer' target='_blank'
+            aria-label='Meetup, abre um site externo em uma nova janela' class='rede meetup'>
             <i class='icon-meetup'></i>
           </a>
         </li>
 
         <li>
-          <a href='mailto:jonathan.santosaugusto@gmail.com' rel='noreferrer' aria-label='Email' class='rede email'>
+          <a href='mailto:jonathan.santosaugusto@gmail.com' rel='noreferrer' target='_blank'
+            aria-label='Email, abre um site externo em uma nova janela' class='rede email'>
             <i class='icon-email'></i>
           </a>
         </li>
       </ul>
     </nav>
 
-    <p class='texto'>Site feito por mim utilizando HTML e CSS escritos á mão, <i class='icon-heart'
-        aria-label='amor'></i>, e um pouco de café</p>
+    <p class='texto'>Site feito por mim utilizando HTML e CSS escritos á mão, <span hidden>amor</span> <i
+        class='icon-heart'></i>, e um pouco de café</p>
 
     <p class='texto'>Curiosidade de como esse site foi feito? <a
-        href='https://github.com/jonathan-santos/jonathan-santos.github.io' rel='noreferrer' target='_blank'>Acesse o
+        href='https://github.com/jonathan-santos/jonathan-santos.github.io' rel='noreferrer' target='_blank'
+        aria-label='Repositório do projeto, abre um site externo em uma nova janela'>Acesse o
         repositório do projeto</a></p>
   </footer>
 </body>
