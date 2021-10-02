@@ -1,144 +1,146 @@
 /* #region estrutura da página */
 .secao.instrucoes {
-    margin-bottom: calc(var(--espacamento-entre-secoes) * -1);
-    padding-bottom: calc(var(--espacamento-entre-secoes) - 1rem);
+  margin-bottom: calc(var(--espacamento-entre-secoes) * -1);
+  padding-bottom: calc(var(--espacamento-entre-secoes) - 1rem);
 }
 
 .secao.formulario .conteudo {
-    margin: 0.4rem;
-    border-radius: 1.2rem;
-    padding: 2.4rem;
-    background-color: var(--cor-fundo-variavel);
-    color: var(--cor-texto-variavel);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin: 0.4rem;
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+  background-color: var(--cor-fundo-variavel);
+  color: var(--cor-texto-variavel);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 /* #endregion */
 
 /* #region instrucoes */
 .instrucoes {
-    background-color: var(--cor-principal);
-    padding: 1.6rem;
+  background-color: var(--cor-principal);
+  padding: 1.6rem;
 }
 
 .instrucoes a {
-    border: 0.3rem solid transparent;
-    border-radius: 0.8rem;
-    padding: 0.4rem;
+  border: 0.3rem solid transparent;
+  border-radius: 0.8rem;
+  padding: 0.4rem;
 }
 
 .instrucoes a:hover,
 .instrucoes a:active,
 .instrucoes a:focus {
-    border-color: var(--cor-texto-claro);
+  border-color: var(--cor-texto-claro);
 }
 
-
 .instrucoes .introducao {
-    margin: 1.8rem;
-    font-size: 1.8rem;
+  margin: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .instrucoes .opcoes {
-    padding: 0 3.6rem;
-    list-style: decimal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding: 0 3.6rem;
+  list-style: decimal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .instrucoes .opcao {
-    margin-bottom: 1.6rem;
-    text-align: center;
-    line-height: 2.4rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  line-height: 2.4rem;
 }
 
-    @media (min-width: 768px) {
-        .instrucoes .opcao {
-        width: 50%;
-        }
-    }
+@media (min-width: 768px) {
+  .instrucoes .opcao {
+    width: 50%;
+  }
+}
+
 /* #endregion */
 
 /* #region formulário */
 .formulario .titulo {
-    color: var(--cor-texto-variavel);
-    font-size: 2.2rem;
+  color: var(--cor-texto-variavel);
+  font-size: 2.2rem;
 }
 
 .formulario .campo {
-    margin: 0.75rem 0 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-items: flex-start;
+  margin: 0.75rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: flex-start;
 }
 
 .formulario .atencao {
-    margin: 1.6rem 0;
-    font-weight: 600;
+  margin: 1.6rem 0;
+  font-weight: 600;
 }
 
 .formulario .atencao {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .formulario label {
-    margin: 0 0 0.5rem 0;
-    cursor: pointer;
+  margin: 0 0 0.5rem 0;
+  cursor: pointer;
 }
 
 .formulario input,
 .formulario textarea {
-    width: 100%;
-    margin-bottom: 0.8rem;
-    border: 0.2rem solid var(--cor-desabilitado);
-    padding: 0.8rem;
-    border-radius: 0.5rem;
-    background-color: var(--cor-fundo-variavel);
-    color: var(--cor-texto-variavel);
+  width: 100%;
+  margin-bottom: 0.8rem;
+  border: 0.2rem solid var(--cor-desabilitado);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--cor-fundo-variavel);
+  color: var(--cor-texto-variavel);
 }
 
-    .formulario input::placeholder,
-    .formulario textarea::placeholder {
-        color: inherit;
-        opacity: 0.5;
-    }
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
 
-    .formulario input:hover,
-    .formulario input:active,
-    .formulario input:focus,
-    .formulario textarea:hover,
-    .formulario textarea:active,
-    .formulario textarea:focus {
-        border-color: 0.2rem solid var(--cor-texto-variavel);
-    }
+.formulario input:hover,
+.formulario input:active,
+.formulario input:focus,
+.formulario textarea:hover,
+.formulario textarea:active,
+.formulario textarea:focus {
+  border-color: 0.2rem solid var(--cor-texto-variavel);
+}
 
 .formulario input {
-    height: 4rem;
+  height: 4rem;
 }
 
 .formulario textarea {
-    height: 12rem;
+  height: 12rem;
 }
 
 .formulario .botao {
-    margin-top: 1.6rem;
-    border: none;
-    padding: 0.6rem 1.4rem;
-    border: 0.4rem solid transparent;
-    border-radius: 2rem;
-    align-self: center;
-    background-color: var(--cor-principal);
-    color: var(--cor-texto-claro);
-    font-size: 1.8rem;
-    font-weight: 600;
+  margin-top: 1.6rem;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border: 0.4rem solid transparent;
+  border-radius: 2rem;
+  align-self: center;
+  background-color: var(--cor-principal);
+  color: var(--cor-texto-claro);
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
-    .formulario .botao:hover,
-    .formulario .botao:active,
-    .formulario .botao:focus {
-        filter: brightness(90%);
-        border-color: var(--cor-texto-variavel);
-    }
+.formulario .botao:hover,
+.formulario .botao:active,
+.formulario .botao:focus {
+  filter: brightness(90%);
+  border-color: var(--cor-texto-variavel);
+}
+
 /* #endregion */
