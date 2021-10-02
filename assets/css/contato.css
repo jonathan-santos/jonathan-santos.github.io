@@ -33,9 +33,8 @@
   border-color: var(--cor-texto-claro);
 }
 
-.instrucoes .introducao {
-  margin: 1.8rem;
-  font-size: 1.8rem;
+.instrucoes .titulo {
+  margin: 1.6rem 0 2.4rem 0;
 }
 
 .instrucoes .opcoes {
