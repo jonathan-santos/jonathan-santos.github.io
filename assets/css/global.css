@@ -47,6 +47,7 @@ html, body {
   position: relative;
   min-height: 100vh;
   scroll-behavior: smooth;
+  background-color: var(--color-background-dark);
 }
 
 body,
