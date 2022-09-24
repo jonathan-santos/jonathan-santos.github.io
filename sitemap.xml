@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>http://jhow.io</loc>
-  <changefreq>monthly</changefreq>
-  <priority>1.0</priority>
+  <loc>http://jhow.io/index.html</loc>
 </url>
 <url>
-  <loc>http://jhow.io/contato</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://jhow.io/contact/index.html</loc>
 </url>
 <url>
-  <loc>http://jhow.io/en</loc>
-  <changefreq>monthly</changefreq>
-  <priority>1.0</priority>
+  <loc>http://jhow.io/pt-BR/index.html</loc>
 </url>
 <url>
-  <loc>http://jhow.io/en/contact</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://jhow.io/pt-BR/contato/index.html</loc>
 </url>
 </urlset>
