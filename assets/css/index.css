@@ -16,8 +16,8 @@
   margin: 0.4rem;
   border-radius: 1.2rem;
   padding: 1.6rem;
-  background-color: var(--cor-fundo-variavel);
-  color: var(--cor-principal-escura);
+  background-color: var(--color-background-dynamic);
+  color: var(--color-main-dark);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -25,7 +25,7 @@
 
 /* #region apresentação */
 .apresentacao {
-  background-color: var(--cor-principal);
+  background-color: var(--color-main);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +43,7 @@
   width: 16rem;
   height: 16rem;
   margin-right: 2rem;
-  border: 0.2rem solid var(--cor-texto-claro);
+  border: 0.2rem solid var(--color-text-light);
   border-radius: 100%;
   object-fit: cover;
 }
@@ -77,7 +77,7 @@
   margin-bottom: 2.4rem;
   font-size: 2.4rem;
   font-weight: 600;
-  color: var(--cor-texto-variavel);
+  color: var(--color-text-dynamic);
 }
 
 .competencias .titulo:last-of-type {
@@ -107,31 +107,31 @@
 .competencias .linguagem:active .icone,
 .competencias .linguagem:focus .icone,
 .competencias .linguagem:hover .icone {
-  border-color: var(--cor-texto-variavel);
+  border-color: var(--color-text-dynamic);
 }
 
 .competencias .linguagem.javascript {
-  color: var(--cor-javascript);
+  color: var(--color-javascript);
 }
 
 .competencias .linguagem.typescript {
-  color: var(--cor-typescript);
+  color: var(--color-typescript);
 }
 
 .competencias .linguagem.python {
-  color: var(--cor-python);
+  color: var(--color-python);
 }
 
 .competencias .linguagem.csharp {
-  color: var(--cor-csharp);
+  color: var(--color-csharp);
 }
 
 .competencias .linguagem.c {
-  color: var(--cor-c);
+  color: var(--color-c);
 }
 
 .competencias .linguagem.cpp {
-  color: var(--cor-cpp);
+  color: var(--color-cpp);
 }
 
 .competencias .campo .icone {
@@ -145,7 +145,7 @@
 }
 
 .competencias .campo .lista {
-  color: var(--cor-texto-variavel);
+  color: var(--color-text-dynamic);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,7 +157,7 @@
 }
 
 .competencias .campo-front-end {
-  color: var(--cor-front-end);
+  color: var(--color-front-end);
 }
 
 .competencias .campo-front-end .lista > *::marker {
@@ -165,27 +165,27 @@
 }
 
 .competencias .campo-back-end {
-  color: var(--cor-back-end);
+  color: var(--color-back-end);
 }
 
 .competencias .campo-back-end .lista > *::marker {
-  color: var(--cor-back-end);
+  color: var(--color-back-end);
 }
 
 .competencias .campo-jogos {
-  color: var(--cor-jogos);
+  color: var(--color-jogos);
 }
 
 .competencias .campo-jogos .lista > *::marker {
-  color: var(--cor-jogos);
+  color: var(--color-jogos);
 }
 
 .competencias .campo-design {
-  color: var(--cor-design);
+  color: var(--color-design);
 }
 
 .competencias .campo-design .lista > *::marker {
-  color: var(--cor-design);
+  color: var(--color-design);
 }
 
 @media (max-width: 600px) {
@@ -232,7 +232,7 @@
 .experiencias {
   display: flex;
   flex-direction: column;
-  background-color: var(--cor-principal);
+  background-color: var(--color-main);
 }
 
 .experiencias .experiencia:last-of-type > a {
@@ -259,7 +259,7 @@
 }
 
 .experiencias .filtro {
-  border: 0.2rem solid var(--cor-texto-claro);
+  border: 0.2rem solid var(--color-text-light);
   border-radius: 2rem;
   padding: 0.4rem 0.8rem;
   opacity: 70%;
@@ -268,7 +268,7 @@
 
 .experiencias .filtro:hover,
 .experiencias .filtro:focus {
-  background-color: var(--cor-principal-escura);
+  background-color: var(--color-main-dark);
 }
 
 .experiencias #profissional:checked ~ .filtros .filtro[for='profissional'],
@@ -297,13 +297,13 @@
 }
 
 .experiencias .lista-interno {
-  border-left: 0.2rem solid var(--cor-texto-claro);
+  border-left: 0.2rem solid var(--color-text-light);
 }
 
 .lista .ano {
   width: calc(50% + 1.6rem);
   margin: 1.6rem 0;
-  border-top: 0.2rem solid var(--cor-texto-claro);
+  border-top: 0.2rem solid var(--color-text-light);
   padding: 0.4rem 1.6rem 0 0;
   font-size: 1.8rem;
   text-align: end;
@@ -324,7 +324,7 @@
   height: 8rem;
   margin-left: -4.1rem;
   margin-right: 1rem;
-  border: 0.3rem solid var(--cor-primaria-escura);
+  border: 0.3rem solid var(--color-primary-dark);
   border-radius: 100%;
   object-fit: contain;
 }
@@ -356,7 +356,7 @@
 .lista .experiencia .titulo a:hover,
 .lista .experiencia .titulo a:active,
 .lista .experiencia .titulo a:focus {
-  border-color: var(--cor-texto-claro);
+  border-color: var(--color-text-light);
 }
 
 /* #endregion */
@@ -374,23 +374,23 @@
   margin-bottom: 1.6rem;
   font-size: 2.4rem;
   font-weight: 600;
-  color: var(--cor-texto-variavel);
+  color: var(--color-text-dynamic);
 }
 
 .trabalho {
   width: 30rem;
   height: 30rem;
   margin: 1.6rem;
-  border: 0.4rem solid var(--cor-fundo-escuro);
+  border: 0.4rem solid var(--color-background-dark);
   position: relative;
   border-radius: 5%;
   z-index: 1;
-  background-color: var(--cor-fundo-escuro);
+  background-color: var(--color-background-dark);
   overflow: hidden;
 }
 
 .trabalho:focus {
-  border-color: var(--cor-texto-variavel);
+  border-color: var(--color-text-dynamic);
 }
 
 .trabalho .imagem {
@@ -405,7 +405,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--cor-texto-claro);
+  color: var(--color-text-light);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -429,7 +429,7 @@
 .link-portfolio {
   flex-basis: 100%;
   margin-top: 0.8rem;
-  color: var(--cor-texto-variavel);
+  color: var(--color-text-dynamic);
 }
 
 .link-portfolio a {
@@ -441,7 +441,7 @@
 .link-portfolio a:hover,
 .link-portfolio a:active,
 .link-portfolio a:focus {
-  border-color: var(--cor-texto-variavel);
+  border-color: var(--color-text-dynamic);
 }
 
 /* #endregion */

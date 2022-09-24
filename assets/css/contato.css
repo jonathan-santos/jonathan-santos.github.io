@@ -8,8 +8,8 @@
   margin: 0.4rem;
   border-radius: 1.2rem;
   padding: 2.4rem;
-  background-color: var(--cor-fundo-variavel);
-  color: var(--cor-texto-variavel);
+  background-color: var(--color-background-dynamic);
+  color: var(--color-text-dynamic);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -17,7 +17,7 @@
 
 /* #region instrucoes */
 .instrucoes {
-  background-color: var(--cor-principal);
+  background-color: var(--color-main);
   padding: 1.6rem;
 }
 
@@ -30,7 +30,7 @@
 .instrucoes a:hover,
 .instrucoes a:active,
 .instrucoes a:focus {
-  border-color: var(--cor-texto-claro);
+  border-color: var(--color-text-light);
 }
 
 .instrucoes .titulo {
@@ -62,7 +62,7 @@
 
 /* #region formulário */
 .formulario .titulo {
-  color: var(--cor-texto-variavel);
+  color: var(--color-text-dynamic);
   font-size: 2.2rem;
 }
 
@@ -92,11 +92,11 @@
 .formulario textarea {
   width: 100%;
   margin-bottom: 0.8rem;
-  border: 0.2rem solid var(--cor-desabilitado);
+  border: 0.2rem solid var(--color-disabled);
   padding: 0.8rem;
   border-radius: 0.5rem;
-  background-color: var(--cor-fundo-variavel);
-  color: var(--cor-texto-variavel);
+  background-color: var(--color-background-dynamic);
+  color: var(--color-text-dynamic);
 }
 
 .formulario input::placeholder,
@@ -111,7 +111,7 @@
 .formulario textarea:hover,
 .formulario textarea:active,
 .formulario textarea:focus {
-  border-color: 0.2rem solid var(--cor-texto-variavel);
+  border-color: 0.2rem solid var(--color-text-dynamic);
 }
 
 .formulario input {
@@ -129,8 +129,8 @@
   border: 0.4rem solid transparent;
   border-radius: 2rem;
   align-self: center;
-  background-color: var(--cor-principal);
-  color: var(--cor-texto-claro);
+  background-color: var(--color-main);
+  color: var(--color-text-light);
   font-size: 1.8rem;
   font-weight: 600;
 }
@@ -139,7 +139,7 @@
 .formulario .botao:active,
 .formulario .botao:focus {
   filter: brightness(90%);
-  border-color: var(--cor-texto-variavel);
+  border-color: var(--color-text-dynamic);
 }
 
 /* #endregion */
