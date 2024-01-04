@@ -216,7 +216,7 @@
 
 @media (min-width: 769px) {
   .competencias .campo {
-    flex-basis: 25%;
+    flex-basis: 33%;
     border-bottom: none;
     padding: 1.6rem;
   }
