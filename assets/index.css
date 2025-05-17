@@ -343,11 +343,18 @@ a:focus {
   }
 
   .menu-lateral .link .icone {
+    display: none;
     margin-right: 0.6rem;
   }
-
-  .menu-lateral .link:not(.com-icone) .icone {
-    display: none;
+  
+  @media (min-width: 768px) {
+    .menu-lateral .link .icone {
+      display: flex;
+    }
+    
+    .menu-lateral .link.so-icone span {
+      display: none;
+    }
   }
 
   .menu-lateral .link .icone.icon-language {
