@@ -942,12 +942,11 @@ a:focus {
 }
 
 .lista .ano {
-  width: calc(50% + 1.6rem);
-  margin: 1.6rem 0;
+  margin: 2.4rem 0;
   border-top: 0.2rem solid var(--color-text-light);
   padding: 0.4rem 1.6rem 0 0;
   font-size: 1.8rem;
-  text-align: end;
+  text-align: center;
 }
 
 .lista .ano:first-of-type {
@@ -955,7 +954,7 @@ a:focus {
 }
 
 .lista .experiencia {
-  margin-bottom: 3.2rem;
+  margin-bottom: 6.4rem;
   align-items: start;
   z-index: 1;
 }
