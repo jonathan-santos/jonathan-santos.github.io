@@ -348,7 +348,7 @@ a:focus {
   }
   
   @media (min-width: 768px) {
-    .menu-lateral .link .icone {
+    .menu-lateral .link.so-icone .icone {
       display: flex;
     }
     
