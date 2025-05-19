@@ -17,76 +17,68 @@
 </head>
 
 <body>
-  <input id='modo-escuro' name='modo-escuro' type='checkbox' hidden aria-hidden='true'>
+  <input id='dark-mode' name='dark-mode' type='checkbox' hidden aria-hidden='true'>
 
-  <header class='barra-navegacao'>
+  <header class='navigation-bar'>
     <a href='/pt-br/' class='logo' aria-hidden='true' tabindex='-1'>
       <img src='../assets/img/logo.png' width='150' height='150' alt='uma imagem de pipoca com café'>
     </a>
 
-    <span class='titulo' aria-hidden='true'>Jonathan Santos</span>
+    <span class='title' aria-hidden='true'>Jonathan Santos</span>
 
-    <label for='input-menu-lateral' class='botao-hamburguer' aria-hidden='true' tabindex='-1'>
+    <label for='input-side-menu' class='menu-button' aria-hidden='true' tabindex='-1'>
       <i class='icon-menu'></i>
     </label>
 
-    <input id='input-menu-lateral' type='checkbox' hidden aria-hidden='true' />
+    <input id='input-side-menu' type='checkbox' hidden aria-hidden='true' />
 
-    <div class='menu-lateral'>
-      <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
+    <div class='side-menu'>
+      <label for='input-side-menu' class='close-background' tabindex='-1' aria-hidden='true'></label>
 
-      <nav class='conteudo'>
+      <nav class='content'>
         <div class='logo' aria-hidden='true'>
           <img src='../assets/img/logo.png' width='150' height='150' alt='uma imagem de pipoca com café'>
         </div>
 
         <ul class='links'>
           <li>
-            <a href='/pt-br/' class='link selecionado'>
-              <i class='icone icon-home'></i>
-
-              <span class='texto'>Início</span>
-            </a>
-          </li>
-
-          <li>
             <a href='https://docs.google.com/document/d/1zMW3t3LB_T5I0xAwI_elW4KgEfk2jL46TQWtDM6UYIo' class='link'
               rel='noreferrer' target='_blank' aria-label='Currículo, abre um site externo em uma nova janela'>
-              <i class='icone icon-cv'></i>
+              <i class='icon icon-cv'></i>
 
-              <span class='texto'>Currículo</span>
+              <span class='text'>Currículo</span>
             </a>
           </li>
 
           <li>
             <a href='/portfolio/pt-br/' class='link' rel='noreferrer' target='_blank'
               aria-label='Portfólio, abre um site externo em uma nova janela'>
-              <i class='icone icon-portfolio'></i>
+              <i class='icon icon-portfolio'></i>
 
-              <span class='texto'>Portfólio</span>
+              <span class='text'>Portfólio</span>
             </a>
           </li>
 
           <li>
             <a href='/' class='link ' lang='en' aria-label='Change language to english'>
-              <i class='icone icon-language'></i>
+              <i class='icon icon-language'></i>
 
-              <span class='texto'>English</span>
+              <span class='text'>English</span>
             </a>
           </li>
 
-          <div class='escolha-modo-escuro' aria-hidden='true'>
-            <label for='modo-escuro' class='link so-icone'>
-              <div class='modo-escuro'>
-                <i class='icone icon-light-off'></i>
+          <div class='choice-dark-mode' aria-hidden='true'>
+            <label for='dark-mode' class='link icon-only'>
+              <div class='dark-mode'>
+                <i class='icon icon-light-on'></i>
 
-                <span class='texto'>Modo escuro</span>
+                <span class='text'>Modo escuro</span>
               </div>
 
-              <div class='modo-claro' hidden>
-                <i class='icone icon-light-on'></i>
+              <div class='light-mode' hidden>
+                <i class='icon icon-light-off'></i>
 
-                <span class='texto'>Modo claro</span>
+                <span class='text'>Modo claro</span>
               </div>
             </label>
           </div>
@@ -95,64 +87,64 @@
     </div>
   </header>
 
-  <main class='conteudo-principal'>
-    <section class='secao apresentacao'>
+  <main class='main-content'>
+    <section class='section presentation'>
       <img src='/assets/img/photo.jpg' alt='Foto do Jonathan Santos' width='150' height='150' class='foto'>
 
-      <div class='informacoes'>
-        <h1 class='titulo' aria-label='Jonathan Santos, Desevolvedor Wev Full Stack'>
+      <div class='information'>
+        <h1 class='title' aria-label='Jonathan Santos, Desevolvedor Wev Full Stack'>
           Desenvolvedor Web Full Stack</h1>
 
-        <p class='texto'>Olá, me chamo Jonathan Santos vulgo Jhow, sou uma pessoa apaixonada por tecnologia que adora
+        <p class='text'>Olá, me chamo Jonathan Santos vulgo Jhow, sou uma pessoa apaixonada por tecnologia que adora
           aprender e criar coisas novas. Tenho experiência em desenvolvimento de aplicações Web Front-End e Back-End,
           desenvolvimento de aplicativos Mobile multi-plataforma, desenvolvimento de jogos Desktop e Mobile, Robótica e
           até ensino desses assuntos para crianças e adolescentes.</p>
 
-        <p class='texto'>Também sou um entusiasta de software open source e além de desenvolvimento de software eu
+        <p class='text'>Também sou um entusiasta de software open source e além de desenvolvimento de software eu
           também faço modelagem/animação 3D, edição de imagens e vetores, prototipação com Figma e sempre animado para
           ajudar no que der e vier.</p>
       </div>
     </section>
 
-    <section class='secao competencias'>
-      <div class='conteudo'>
-        <h2 class='titulo' aria-label='Linguagens de programação com que trabalho'>Linguagens de programação</h2>
+    <section class='section skills'>
+      <div class='content'>
+        <h2 class='title' aria-label='Linguagens de programação com que trabalho'>Linguagens de programação</h2>
 
-        <div class='linguagens'>
-          <a class='linguagem javascript'
+        <div class='languages'>
+          <a class='language javascript'
             href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=javascript' rel='noreferrer'
             target='_blank'
             aria-label='Meus projetos feitos com Java íscripti, abre um site externo em uma nova janela'>
-            <i class='icone icon-javascript'></i>
+            <i class='icon icon-javascript'></i>
           </a>
 
-          <a class='linguagem typescript'
+          <a class='language typescript'
             href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=typescript' rel='noreferrer'
             target='_blank' aria-label='Meus projetos feitos com táip scripti, abre um site externo em uma nova janela'>
-            <i class='icone icon-typescript'></i>
+            <i class='icon icon-typescript'></i>
           </a>
 
-          <a class='linguagem python'
+          <a class='language python'
             href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=python' rel='noreferrer'
             target='_blank' aria-label='Meus projetos feitos com páiton, abre um site externo em uma nova janela'>
-            <i class='icone icon-python'></i>
+            <i class='icon icon-python'></i>
           </a>
 
-          <a class='linguagem csharp' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=c%23'
+          <a class='language csharp' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=c%23'
             rel='noreferrer' target='_blank'
             aria-label='Meus projetos feitos com C Sharp, abre um site externo em uma nova janela'>
-            <i class='icone icon-csharp'></i>
+            <i class='icon icon-csharp'></i>
           </a>
         </div>
 
-        <h2 class='titulo' aria-label='Ferramentas de desenvolvimento com que trabalho'>Tecnologias</h2>
+        <h2 class='title' aria-label='Ferramentas de desenvolvimento com que trabalho'>Tecnologias</h2>
 
-        <div class='campo campo-front-end'>
-          <i class='icone icon-frontend'></i>
+        <div class='field field-front-end'>
+          <i class='icon icon-frontend'></i>
 
-          <h3 class='nome' aria-label='Ferramentas de desenvolvimento Front-End'>Front-End</h3>
+          <h3 class='name' aria-label='Ferramentas de desenvolvimento Front-End'>Front-End</h3>
 
-          <ul class='lista'>
+          <ul class='list'>
             <li>React</li>
             <li>React Native</li>
             <li>Next.js</li>
@@ -161,12 +153,12 @@
           </ul>
         </div>
 
-        <div class='campo campo-back-end'>
-          <i class='icone icon-backend'></i>
+        <div class='field field-back-end'>
+          <i class='icon icon-backend'></i>
 
-          <h3 class='nome' aria-label='Ferramentas de desenvolvimento Back-End'>Back-End</h3>
+          <h3 class='name' aria-label='Ferramentas de desenvolvimento Back-End'>Back-End</h3>
 
-          <ul class='lista'>
+          <ul class='list'>
             <li>Node</li>
             <li>SQL</li>
             <li>MongoDB</li>
@@ -175,12 +167,12 @@
           </ul>
         </div>
 
-        <div class='campo campo-design'>
-          <i class='icone icon-magic'></i>
+        <div class='field field-design'>
+          <i class='icon icon-magic'></i>
 
-          <h3 class='nome' aria-label='Ferramentas de design'>Design</h3>
+          <h3 class='name' aria-label='Ferramentas de design'>Design</h3>
 
-          <ul class='lista'>
+          <ul class='list'>
             <li>Figma</li>
             <li>Blender</li>
             <li>Krita</li>
@@ -190,33 +182,33 @@
       </div>
     </section>
 
-    <section class='secao experiencias'>
-      <h2 class='titulo'>Experiências</h2>
+    <section class='section experiences'>
+      <h2 class='title'>Experiências</h2>
 
-      <input id='profissional' name='profissional' type='checkbox' checked hidden aria-hidden='true'>
+      <input id='professional' name='professional' type='checkbox' checked hidden aria-hidden='true'>
 
-      <input id='educacional' name='educacional' type='checkbox' checked hidden aria-hidden='true'>
+      <input id='educational' name='educational' type='checkbox' checked hidden aria-hidden='true'>
 
-      <div class='filtros' aria-hidden='true'>
-        <label class='filtro' for='profissional'>Profissional</label>
+      <div class='filters' aria-hidden='true'>
+        <label class='filter' for='professional'>Profissional</label>
 
-        <label class='filtro' for='educacional'>Educacional</label>
+        <label class='filter' for='educational'>Educacional</label>
       </div>
 
-      <div class='lista'>
-        <div class='lista-interno'>
-          <h3 class='ano profissional educacional'>
+      <div class='list'>
+        <div class='list-internal'>
+          <h3 class='year professional educational'>
             <time datetime='2022'>2022</time>
           </h3>
 
-          <div class='experiencia profissional'>
+          <div class='experience professional'>
             <a href='https://getninjas.com.br' rel='noreferrer' target='_blank' tabindex='-1' aria-hidden='true'>
               <img src='../assets/img/experiences/getninjas.png' alt='Logo do GetNinjas' width='150' height='150'
-                loading='lazy' class='imagem'>
+                loading='lazy' class='image'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://getninjas.com.br/' rel='noreferrer' target='_blank'
                   aria-label='GetNinjas, experiência profissional de Março de 2021 até o momento, abre um site externo em uma nova janela sobre a empresa'>
                   GetNinjas
@@ -228,7 +220,7 @@
                 </span>
               </h4>
 
-              <p class='descricao'>
+              <p class='description'>
                 Atuando na manutenção e desenvolvimento de sistemas de Front-End na empresa, utilizando React, Next.js,
                 Sass, Google Tag Manager, Docker e GraphQL. Participei na criação da nova página inicial do site, nova
                 página de avaliação e colaborei na criação e evolução da nova arquitetura do site focado em clientes
@@ -237,15 +229,15 @@
             </div>
           </div>
 
-          <div class='experiencia educacional'>
+          <div class='experience educational'>
             <a href='https://cs50.harvard.edu/x/2022/' rel='noreferrer' target='_blank' tabindex='-1'
               aria-hidden='true'>
               <img src='../assets/img/experiences/harvardx.jpg' alt='HarvardX Logo' width='150' height='150'
-                loading='lazy' class='imagem'>
+                loading='lazy' class='image'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://cs50.harvard.edu/x/2022/' rel='noreferrer' target='_blank'
                   aria-label='Learn to test Javascript Applications, Educational experience at Game programming from July of 2021 to December of 2021, opens an external link in a new window about the course'>
                   CS50X
@@ -257,7 +249,7 @@
                 </span>
               </h4>
 
-              <p class='descricao'>
+              <p class='description'>
                 Uma introdução completa a Ciência da Computação, cobrindo assuntos como
                 Memória, Estrutura de dados, desenvolvimento web, programas de baixo nível e mais.
                 Além dos fundamentos, o curso também cobre assuntos mais práticos, como C,
@@ -266,18 +258,18 @@
             </div>
           </div>
 
-          <h3 class='ano profissional educacional'>
+          <h3 class='year professional educational'>
             <time datetime='2021'>2021</time>
           </h3>
 
-          <div class='experiencia educacional'>
+          <div class='experience educational'>
             <a href='https://javascript.tv.br' rel='noreferrer' target='_blank' tabindex='-1' aria-hidden='true'>
               <img src='../assets/img/experiences/javascript-tv-br.png' alt='Logo Javascript TV' width='150'
-                height='150' loading='lazy' class='imagem'>
+                height='150' loading='lazy' class='image'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://javascript.tv.br' rel='noreferrer' target='_blank'
                   aria-label='Aprenda a testar Aplicações Javascript, experiência educacional de Julho de 2021 até o Dezembro de 2021, abre um site externo em uma nova janela sobre o curso'>
                   Aprenda a testar Aplicações Javascript
@@ -289,7 +281,7 @@
                 </span>
               </h4>
 
-              <p class='descricao'>
+              <p class='description'>
                 Um curso abrangente sobre testes no ecossistema Javascript. Aprendi sobre testes unitários e testes de
                 integração usando Jest, testes End to End com Cypress, TDD, boas práticas em testes, Configuração de CI
                 e CD com o Github Actions e mais.
@@ -297,18 +289,18 @@
             </div>
           </div>
 
-          <h3 class='ano profissional'>
+          <h3 class='year professional'>
             <time datetime='2020'>2020</time>
           </h3>
 
-          <div class='experiencia profissional'>
+          <div class='experience professional'>
             <a href='http://megahack.com.br/' rel='noreferrer' target='_blank' tabindex='-1' aria-hidden='true'>
               <img src='../assets/img/experiences/megahack.png' alt='Logo da Megahack' width='150' height='150'
-                loading='lazy' class='imagem' style='background-color: black'>
+                loading='lazy' class='image' style='background-color: black'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='http://megahack.com.br/' rel='noreferrer' target='_blank' aria-label='Megahack 5.0'
                   aria-label='Megahack 5.0, experiência profissional em novembro de 2020, abre um site externo em uma nova janela sobre o evento'>
                   Megahack 5.0
@@ -319,20 +311,20 @@
                 </span>
               </h4>
 
-              <p class='descricao'>Eu participei do Megahack realizado online, participando do desafio do Mercado Pago
+              <p class='description'>Eu participei do Megahack realizado online, participando do desafio do Mercado Pago
               </p>
             </div>
           </div>
 
-          <div class='experiencia educacional'>
+          <div class='experience educational'>
             <a href='https://erickwendel.teachable.com/p/node-js-para-iniciantes-nodebr' rel='noreferrer'
               target='_blank' tabindex='-1' aria-hidden='true'>
               <img src='../assets/img/experiences/ew.it.jpg' alt='EW.IT logo' width='150' height='150' loading='lazy'
-                class='imagem'>
+                class='image'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://erickwendel.teachable.com/p/node-js-para-iniciantes-nodebr' rel='noreferrer'
                   target='_blank'
                   aria-label='Imersão em desenvolvimento de APIs com Node.js By #NodeBR!, experiência educacional de Julho de 2021 até o Dezembro de 2021, abre um site externo em uma nova janela sobre o curso'>
@@ -345,26 +337,26 @@
                 </span>
               </h4>
 
-              <p class='descricao'>
+              <p class='description'>
                 Feito durante a quarentena, eu decidi aprender sobre desenvolvimento Back-End Web com Node.js e com este
                 curso eu aprendi sobre Node.js, Hapi, SQL com PostgreSQL, NOSQL com MongoDB, Docker, TDD e mais.
               </p>
             </div>
           </div>
 
-          <h3 class='ano profissional'>
+          <h3 class='year professional'>
             <time datetime='2018'>2018</time>
           </h3>
 
-          <div class='experiencia profissional'>
+          <div class='experience professional'>
             <a href='https://br.linkedin.com/company/supergeeks-brasil' rel='noreferrer' target='_blank' tabindex='-1'
               aria-hidden='true'>
               <img src='../assets/img/experiences/supergeeks.png' alt='Logo da Supergeeks' width='150' height='150'
-                loading='lazy' class='imagem'>
+                loading='lazy' class='image'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://br.linkedin.com/company/supergeeks-brasil' rel='noreferrer' target='_blank'
                   aria-label='Supergeeks, experiência profissional como instrutor de Novembro de 2018 até Julho de 2020 , abre um site externo em uma nova janela sobre a empresa'>
                   <span aria-label='Super guiquis'>Supergeeks</span>
@@ -383,19 +375,19 @@
             </div>
           </div>
 
-          <h3 class='ano profissional educacional'>
+          <h3 class='year professional educational'>
             <time datetime='2017'>2017</time>
           </h3>
 
-          <div class='experiencia profissional'>
+          <div class='experience professional'>
             <a href='https://pt-br.facebook.com/events/107860659744974/' rel='noreferrer' target='_blank' tabindex='-1'
               aria-hidden='true'>
               <img src='../assets/img/experiences/bluehack.png' alt='Logo da Bluehack' width='150' height='150'
-                loading='lazy' class='imagem' style='background-color: white'>
+                loading='lazy' class='image' style='background-color: white'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://pt-br.facebook.com/events/107860659744974/' rel='noreferrer' target='_blank'
                   aria-label='Bluehack, experiência profissional de Março de 2017, abre um site externo em uma nova janela sobre o evento'>
                   <span aria-label='Blue hack 2017'>
@@ -415,15 +407,15 @@
             </div>
           </div>
 
-          <div class='experiencia educacional'>
+          <div class='experience educational'>
             <a href='https://www.linkedin.com/school/mastertech.tech/' rel='noreferrer' target='_blank' tabindex='-1'
               aria-hidden='true'>
               <img src='../assets/img/experiences/mastertech.png' alt='Logo da Mastertech' width='150' height='150'
-                loading='lazy' class='imagem' style='background-color: white'>
+                loading='lazy' class='image' style='background-color: white'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://www.linkedin.com/school/mastertech.tech/' rel='noreferrer' target='_blank'
                   aria-label='Mastertech, experiência educacional em um Bootcamp de Front-End Web de Maio até Julho de 2017, abre um site externo em uma nova janela sobre a escola'>
                   Mastertech
@@ -442,15 +434,15 @@
             </div>
           </div>
 
-          <div class='experiencia profissional'>
+          <div class='experience professional'>
             <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem' rel='noreferrer'
               target='_blank' tabindex='-1' aria-hidden='true'>
               <img src='../assets/img/experiences/ecomanda.png' alt='Logo da eComanda' width='150' height='150'
-                loading='lazy' class='imagem' style='background-color: white'>
+                loading='lazy' class='image' style='background-color: white'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem'
                   rel='noreferrer' target='_blank'
                   aria-label='eComanda, experiência profissional como Desenvolvedor de software de Janeiro de 2017 até Setembro de 2018, abre um site externo em uma nova janela sobre a empresa'>
@@ -472,22 +464,22 @@
             </div>
           </div>
 
-          <h3 class='ano profissional educacional'>
+          <h3 class='year professional educational'>
             <time datetime='2016'>2016</time>
           </h3>
 
-          <div class='experiencia profissional'>
+          <div class='experience professional'>
             <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem' rel='noreferrer'
               target='_blank' tabindex='-1' aria-hidden='true'>
               <img src='../assets/img/experiences/ecomanda.png' alt='Logo da eComanda' width='150' height='150'
-                loading='lazy' class='imagem' style='background-color: white'>
+                loading='lazy' class='image' style='background-color: white'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem'
                   rel='noreferrer' target='_blank'
-                  aria-label='eComanda, xperiência profissional como Desenvolvedor de software de Janeiro de 2017 até Setembro de 2018, abre um site externo em uma nova janela sobre a empresa'>
+                  aria-label='eComanda, experiência profissional como Desenvolvedor de software de Janeiro de 2017 até Setembro de 2018, abre um site externo em uma nova janela sobre a empresa'>
                   eComanda
                 </a>
 
@@ -504,15 +496,15 @@
             </div>
           </div>
 
-          <div class='experiencia educacional'>
+          <div class='experience educational'>
             <a href='https://www.cps.sp.gov.br/category/etec/' rel='noreferrer' target='_blank' tabindex='-1'
               aria-hidden='true'>
               <img src='../assets/img/experiences/etec.png' alt='Logo da Etec' width='150' height='150' loading='lazy'
-                class='imagem' style='background-color: white'>
+                class='image' style='background-color: white'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://www.cps.sp.gov.br/category/etec/' rel='noreferrer' target='_blank'
                   aria-label='Etec, experiência educacional de ensino técnico em programação de jogos digitais de Agosto de 2015 até Dezembro de 2016, abre um site externo em uma nova janela sobre a escola'>
                   ETEC
@@ -534,58 +526,58 @@
       </div>
     </section>
 
-    <section class='secao trabalhos'>
-      <div class='conteudo'>
-        <h2 class='titulo' aria-label='Meus Trabalhos anteriores'>Trabalhos anteriores</h2>
+    <section class='section previous-works'>
+      <div class='content'>
+        <h2 class='title' aria-label='Meus Trabalhos anteriores'>Trabalhos anteriores</h2>
 
-        <a class='trabalho' href='/portfolio/pt-br/projects/0/' target='_blank' rel='noreferrer'
+        <a class='previous-work' href='/portfolio/pt-br/projects/0/' target='_blank' rel='noreferrer'
           aria-label='Pedir Comida PWA, abre um site externo em uma nova janela sobre o projeto'>
-          <img class='imagem' src='../assets/img/works/pedir-comida-pwa.jpg' width='280' height='280'
+          <img class='image' src='../assets/img/works/pedir-comida-pwa.jpg' width='280' height='280'
             alt='Imagem do Pedir Comida PWA' loading='lazy'>
 
-          <figcaption class='detalhes'>
-            <h3 class='nome'>Pedir Comida PWA</h3>
+          <figcaption class='details'>
+            <h3 class='name'>Pedir Comida PWA</h3>
 
-            <p class='texto'>Projeto que participei no meu tempo na eComanda, feito com React JS e Typescript, meu
+            <p class='text'>Projeto que participei no meu tempo na eComanda, feito com React JS e Typescript, meu
               primeiro PWA</p>
           </figcaption>
         </a>
 
-        <a class='trabalho' href='/portfolio/pt-br/projects/1/' target='_blank' rel='noreferrer'
+        <a class='previous-work' href='/portfolio/pt-br/projects/1/' target='_blank' rel='noreferrer'
           aria-label='Pague Zé, abre um site externo em uma nova janela sobre o projeto'>
-          <img class='imagem' src='../assets/img/works/pague-ze.jpg' alt='Imagem do Pague Zé' width='280' height='280'
+          <img class='image' src='../assets/img/works/pague-ze.jpg' alt='Imagem do Pague Zé' width='280' height='280'
             loading='lazy'>
 
-          <figcaption class='detalhes'>
-            <h3 class='nome'>Pague Zé</h3>
+          <figcaption class='details'>
+            <h3 class='name'>Pague Zé</h3>
 
-            <p class='texto'>Projeto que criei durante o Megahack 5.0, feito com React.js e CSS escrito á mão por mim
+            <p class='text'>Projeto que criei durante o Megahack 5.0, feito com React.js e CSS escrito á mão por mim
             </p>
           </figcaption>
         </a>
 
-        <a class='trabalho' href='/portfolio/pt-br/projects/10/' target='_blank' rel='noreferrer'
+        <a class='previous-work' href='/portfolio/pt-br/projects/10/' target='_blank' rel='noreferrer'
           aria-label='Unicórnio Adivinha, abre um site externo em uma nova janela sobre o projeto'>
-          <img class='imagem' src='../assets/img/works/unicornio-adivinha-app.jpg'
+          <img class='image' src='../assets/img/works/unicornio-adivinha-app.jpg'
             alt='Imagem do Unicórnio Adivinha App' width='280' height='280' loading='lazy'>
 
-          <figcaption class='detalhes'>
-            <h3 class='nome'>Unicórnio Adivinha App</h3>
+          <figcaption class='details'>
+            <h3 class='name'>Unicórnio Adivinha App</h3>
 
-            <p class='texto'>App feito totalmente por mim usando React Native e com prototipação de design usando o
+            <p class='text'>App feito totalmente por mim usando React Native e com prototipação de design usando o
               Figma. Reconhece as emoções de uma pessoa a partir de uma foto</p>
           </figcaption>
         </a>
 
-        <a class='trabalho' href='/portfolio/pt-br/projects/5/' target='_blank' rel='noreferrer'
+        <a class='previous-work' href='/portfolio/pt-br/projects/5/' target='_blank' rel='noreferrer'
           aria-label='Portfolio Generator, abre um site externo em uma nova janela sobre o projeto'>
-          <img class='imagem' src='../assets/img/works/portfolio-generator.jpg' alt='Imagem do portfolio generator'
+          <img class='image' src='../assets/img/works/portfolio-generator.jpg' alt='Imagem do portfolio generator'
             width='280' height='280' loading='lazy'>
 
-          <figcaption class='detalhes'>
-            <h3 class='nome'>Portfolio <span aria-label='dienereitor'>generator</span></h3>
+          <figcaption class='details'>
+            <h3 class='name'>Portfolio <span aria-label='dienereitor'>generator</span></h3>
 
-            <p class='texto'>Um gerador de portfólios constrúido com Eleventy e um tema feito a mão por mim</p>
+            <p class='text'>Um gerador de portfólios constrúido com Eleventy e um tema feito a mão por mim</p>
           </figcaption>
         </a>
 
@@ -597,65 +589,65 @@
     </section>
   </main>
 
-  <footer class='rodape'>
+  <footer class='footer'>
     <nav>
-      <ul class='redes-sociais'>
+      <ul class='social-media-list'>
         <li>
           <a href='https://twitter.com/pipocaCafeinada' rel='noreferrer' target='_blank'
-            aria-label='Meu Twitter, abre um site externo em uma nova janela' class='rede twitter'>
+            aria-label='Meu Twitter, abre um site externo em uma nova janela' class='social-media twitter'>
             <i class='icon-twitter'></i>
           </a>
         </li>
 
         <li>
           <a href='https://linkedin.com/in/jonathan-santos-dev' rel='noreferrer' target='_blank'
-            aria-label='Meu Linkedin, abre um site externo em uma nova janela' class='rede linkedin'>
+            aria-label='Meu Linkedin, abre um site externo em uma nova janela' class='social-media linkedin'>
             <i class='icon-linkedin'></i>
           </a>
         </li>
 
         <li>
           <a href='https://github.com/jonathan-santos' rel='noreferrer' target='_blank'
-            aria-label='Meu Guitirâbi, abre um site externo em uma nova janela' class='rede github'>
+            aria-label='Meu Guitirâbi, abre um site externo em uma nova janela' class='social-media github'>
             <i class='icon-github'></i>
           </a>
         </li>
 
         <li>
           <a href='https://caffeinatedpopcorn.itch.io' rel='noreferrer' target='_blank'
-            aria-label='Meu Itch.io, abre um site externo em uma nova janela' class='rede itchio'>
+            aria-label='Meu Itch.io, abre um site externo em uma nova janela' class='social-media itchio'>
             <i class='icon-itchio'></i>
           </a>
         </li>
 
-        <div class='quebra-linha' aria-hidden='true'></div>
+        <div class='break-line' aria-hidden='true'></div>
 
         <li>
           <a href='https://figma.com/@jhow' rel='noreferrer' target='_blank'
-            aria-label='Meu perfil do Figma, abre um site externo em uma nova janela' class='rede figma'>
+            aria-label='Meu perfil do Figma, abre um site externo em uma nova janela' class='social-media figma'>
             <i class='icon-figma'></i>
           </a>
         </li>
 
         <li>
           <a href='https://meetup.com/pt-br/members/233061469/' rel='noreferrer' target='_blank'
-            aria-label='Meu perfil Meetup, abre um site externo em uma nova janela' class='rede meetup'>
+            aria-label='Meu perfil Meetup, abre um site externo em uma nova janela' class='social-media meetup'>
             <i class='icon-meetup'></i>
           </a>
         </li>
 
         <li>
-          <a href='mailto:jonathan.santosaugusto@gmail.com' rel='noreferrer' aria-label='Meu Email' class='rede email'>
+          <a href='mailto:jonathan.santosaugusto@gmail.com' rel='noreferrer' aria-label='Meu Email' class='social-media email'>
             <i class='icon-email'></i>
           </a>
         </li>
       </ul>
     </nav>
 
-    <p class='texto'>Site feito por mim utilizando HTML e CSS escritos á mão, <span hidden>amor</span> <i
+    <p class='text'>Site feito por mim utilizando HTML e CSS escritos á mão, <span hidden>amor</span> <i
         class='icon-heart'></i>, e um pouco de café</p>
 
-    <p class='texto'>Curiosidade de como esse site foi feito? <a
+    <p class='text'>Curiosidade de como esse site foi feito? <a
         href='https://github.com/jonathan-santos/jonathan-santos.github.io' rel='noreferrer' target='_blank'
         aria-label='Repositório do projeto do site que está acessando, abre um site externo em uma nova janela'>Acesse o
         repositório do projeto</a></p>

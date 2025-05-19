@@ -17,76 +17,68 @@
 </head>
 
 <body>
-  <input id='modo-escuro' name='modo-escuro' type='checkbox' hidden aria-hidden='true'>
+  <input id='dark-mode' name='dark-mode' type='checkbox' hidden aria-hidden='true'>
 
-  <header class='barra-navegacao'>
+  <header class='navigation-bar'>
     <a href='/' class='logo' aria-hidden='true' tabindex='-1'>
       <img src='./assets/img/logo.png' width='150' height='150' alt='An image of popcorn with coffee'>
     </a>
 
-    <span class='titulo' aria-hidden='true'>Jonathan Santos</span>
+    <span class='title' aria-hidden='true'>Jonathan Santos</span>
 
-    <label for='input-menu-lateral' class='botao-hamburguer' aria-hidden='true' tabindex='-1'>
+    <label for='input-side-menu' class='menu-button' aria-hidden='true' tabindex='-1'>
       <i class='icon-menu'></i>
     </label>
 
-    <input id='input-menu-lateral' type='checkbox' hidden aria-hidden='true' />
+    <input id='input-side-menu' type='checkbox' hidden aria-hidden='true' />
 
-    <div class='menu-lateral'>
-      <label for='input-menu-lateral' class='fundo-fechar' tabindex='-1' aria-hidden='true'></label>
+    <div class='side-menu'>
+      <label for='input-side-menu' class='close-background' tabindex='-1' aria-hidden='true'></label>
 
-      <nav class='conteudo'>
+      <nav class='content'>
         <div class='logo' aria-hidden='true'>
           <img src='./assets/img/logo.png' width='150' height='150' alt='An image of popcorn with coffee'>
         </div>
 
         <ul class='links'>
           <li>
-            <a href='/' class='link selecionado'>
-              <i class='icone icon-home'></i>
-
-              <span class='texto'>Home</span>
-            </a>
-          </li>
-
-          <li>
             <a href='https://docs.google.com/document/d/12bvHOhJgv0NTik-sEsc8CPpOEGtk1NYaC2vLkmgbFqQ' class='link' rel='noreferrer'
               target='_blank' aria-label='Resume, opens an external link in a new window'>
-              <i class='icone icon-cv'></i>
+              <i class='icon icon-cv'></i>
 
-              <span class='texto'>Resume</span>
+              <span class='text'>Resume</span>
             </a>
           </li>
 
           <li>
             <a href='/portfolio' class='link' rel='noreferrer' target='_blank'
               aria-label='Portfolio, opens an external link in a new window'>
-              <i class='icone icon-portfolio'></i>
+              <i class='icon icon-portfolio'></i>
 
-              <span class='texto'>Portfolio</span>
+              <span class='text'>Portfolio</span>
             </a>
           </li>
 
           <li>
             <a href='/pt-br/' class='link' lang='pt-br' aria-label='Mudar língua para Português'>
-              <i class='icone icon-language'></i>
+              <i class='icon icon-language'></i>
 
-              <span class='texto'>Português<span>
+              <span class='text'>Português<span>
             </a>
           </li>
 
-          <div class='escolha-modo-escuro' aria-hidden='true'>
-            <label for='modo-escuro' class='link so-icone'>
-              <div class='modo-escuro'>
-                <i class='icone icon-light-on'></i>
+          <div class='choice-dark-mode' aria-hidden='true'>
+            <label for='dark-mode' class='link icon-only'>
+              <div class='dark-mode'>
+                <i class='icon icon-light-on'></i>
 
-                <span class='texto'>Dark mode</span>
+                <span class='text'>Dark mode</span>
               </div>
 
-              <div class='modo-claro' hidden>
-                <i class='icone icon-light-off'></i>
+              <div class='light-mode' hidden>
+                <i class='icon icon-light-off'></i>
 
-                <span class='texto'>Light mode</span>
+                <span class='text'>Light mode</span>
               </div>
             </label>
           </div>
@@ -95,63 +87,63 @@
     </div>
   </header>
 
-  <main class='conteudo-principal'>
-    <section class='secao apresentacao'>
+  <main class='main-content'>
+    <section class='section presentation'>
       <img src='./assets/img/photo.jpg' alt='Jonathan Santos photo' width='150' height='150' class='foto'>
 
-      <div class='informacoes'>
-        <h1 class='titulo' aria-label='Jonathan Santos, Full Stack Web Developer'>Full Stack Web
+      <div class='information'>
+        <h1 class='title' aria-label='Jonathan Santos, Full Stack Web Developer'>Full Stack Web
           developer</h1>
 
-        <p class='texto'>Hello there! I'm Jonathan Santos also known as <span aria-label='Joe'>Jhow</span> by
+        <p class='text'>Hello there! I'm Jonathan Santos also known as <span aria-label='Joe'>Jhow</span> by
           some, a person who is in love with technology, and loves to learn and develop new things. I have
           experience in the development of Front-End and Back-End Web applications, mobile apps,
           mobile/desktop games, robotics, and even teaching of these subjects to children and teenagers.</p>
 
-        <p class='texto'>I'm also an open-source enthusiast, and beyond software development, I also do 3D
+        <p class='text'>I'm also an open-source enthusiast, and beyond software development, I also do 3D
           Modeling/Animation, image/vector editing, prototyping in Figma, and I'm always happy to help in what
           I can.</p>
       </div>
     </section>
 
-    <section class='secao competencias'>
-      <div class='conteudo'>
-        <h2 class='titulo' aria-label='Programming languages I work with'>Programming languages</h2>
+    <section class='section skills'>
+      <div class='content'>
+        <h2 class='title' aria-label='Programming languages I work with'>Programming languages</h2>
 
-        <div class='linguagens'>
-          <a class='linguagem javascript'
+        <div class='languages'>
+          <a class='language javascript'
             href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=javascript' rel='noreferrer'
             target='_blank' aria-label='My projects made with Java script, opens an external link in a new window'>
-            <i class='icone icon-javascript'></i>
+            <i class='icon icon-javascript'></i>
           </a>
 
-          <a class='linguagem typescript'
+          <a class='language typescript'
             href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=typescript' rel='noreferrer'
             target='_blank' aria-label='My projects made with Typescript, opens an external link in a new window'>
-            <i class='icone icon-typescript'></i>
+            <i class='icon icon-typescript'></i>
           </a>
 
-          <a class='linguagem python'
+          <a class='language python'
             href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=python' rel='noreferrer'
             target='_blank' aria-label='My projects made with Python, opens an external link in a new window'>
-            <i class='icone icon-python'></i>
+            <i class='icon icon-python'></i>
           </a>
 
-          <a class='linguagem csharp' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=c%23'
+          <a class='language csharp' href='https://github.com/jonathan-santos?tab=repositories&q=&type=&language=c%23'
             rel='noreferrer' target='_blank'
             aria-label='My projects made with C Sharp, opens an external link in a new window'>
-            <i class='icone icon-csharp'></i>
+            <i class='icon icon-csharp'></i>
           </a>
         </div>
 
-        <h2 class='titulo' aria-label='Development tools I work with'>Technologies</h2>
+        <h2 class='title' aria-label='Development tools I work with'>Technologies</h2>
 
-        <div class='campo campo-front-end'>
-          <i class='icone icon-frontend'></i>
+        <div class='field field-front-end'>
+          <i class='icon icon-frontend'></i>
 
-          <h3 class='nome' aria-label='Front-End tools'>Front-End</h3>
+          <h3 class='name' aria-label='Front-End tools'>Front-End</h3>
 
-          <ul class='lista'>
+          <ul class='list'>
             <li>React</li>
             <li>Next.js</li>
             <li>11ty</li>
@@ -160,12 +152,12 @@
           </ul>
         </div>
 
-        <div class='campo campo-back-end'>
-          <i class='icone icon-backend'></i>
+        <div class='field field-back-end'>
+          <i class='icon icon-backend'></i>
 
-          <h3 class='nome' aria-label='Back-End tools'>Back-End</h3>
+          <h3 class='name' aria-label='Back-End tools'>Back-End</h3>
 
-          <ul class='lista'>
+          <ul class='list'>
             <li>Node</li>
             <li>SQL</li>
             <li>Flask</li>
@@ -174,12 +166,12 @@
           </ul>
         </div>
 
-        <div class='campo campo-design'>
-          <i class='icone icon-magic'></i>
+        <div class='field field-design'>
+          <i class='icon icon-magic'></i>
 
-          <h3 class='nome' aria-label='Design tools'>Design</h3>
+          <h3 class='name' aria-label='Design tools'>Design</h3>
 
-          <ul class='lista'>
+          <ul class='list'>
             <li>Figma</li>
             <li>Blender</li>
             <li>Krita</li>
@@ -189,34 +181,34 @@
       </div>
     </section>
 
-    <section class='secao experiencias'>
-      <h2 class='titulo'>Experiences</h2>
+    <section class='section experiences'>
+      <h2 class='title'>Experiences</h2>
 
-      <input id='profissional' name='profissional' type='checkbox' checked hidden aria-hidden='true'>
+      <input id='professional' name='professional' type='checkbox' checked hidden aria-hidden='true'>
 
-      <input id='educacional' name='educacional' type='checkbox' checked hidden aria-hidden='true'>
+      <input id='educational' name='educational' type='checkbox' checked hidden aria-hidden='true'>
 
-      <div class='filtros' aria-hidden='true'>
-        <label class='filtro' for='profissional'>Professional</label>
+      <div class='filters' aria-hidden='true'>
+        <label class='filter' for='professional'>Professional</label>
 
-        <label class='filtro' for='educacional'>Educational</label>
+        <label class='filter' for='educational'>Educational</label>
       </div>
 
-      <div class='lista'>
-        <div class='lista-interno'>
-          <h3 class='ano educacional'>
+      <div class='list'>
+        <div class='list-internal'>
+          <h3 class='year educational'>
             <time datetime='2023'>2023</time>
           </h3>
 
-          <div class='experiencia educacional'>
+          <div class='experience educational'>
             <a href='https://www.khanacademy.org/math' rel='noreferrer' target='_blank' tabindex='-1'
               aria-hidden='true'>
               <img src='./assets/img/experiences/khan-academy.png' alt='Khan Academy Logo' width='150' height='150'
-                loading='lazy' class='imagem'>
+                loading='lazy' class='image'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://www.khanacademy.org/math' rel='noreferrer' target='_blank'
                   aria-label='Khan Academy Math Course, from January of 2023 until the moment, opens an external link in a new window about the course'>
                   Khan Academy - Math
@@ -228,24 +220,24 @@
                 </span>
               </h4>
 
-              <p class='descricao'>
+              <p class='description'>
                 Complete deep dive to the World of Math, presenting essential subjects such as Arithmetic, Geometry, Algebra, Probability, and many others
               </p>
             </div>
           </div>
           
-          <h3 class='ano profissional educacional'>
+          <h3 class='year professional educational'>
             <time datetime='2022'>2022</time>
           </h3>
 
-          <div class='experiencia profissional'>
+          <div class='experience professional'>
             <a href='https://getninjas.com.br' rel='noreferrer' target='_blank' tabindex='-1' aria-hidden='true'>
               <img src='./assets/img/experiences/getninjas.png' alt='GetNinjas logo' width='150' height='150'
-                loading='lazy' class='imagem'>
+                loading='lazy' class='image'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://getninjas.com.br/' rel='noreferrer' target='_blank'
                   aria-label='Getninjas, professional experience from March of 2021 until the moment, opens an external link in a new window about the company'>
                   GetNinjas
@@ -257,7 +249,7 @@
                 </span>
               </h4>
 
-              <p class='descricao'>
+              <p class='description'>
                 Working in the maintanance and development of Front-End systems, utilizing React, Next.js, Sass, Google
                 Tag Manager, Docker and GraphQL. I worked in the creation of the new home page, new survey pages and
                 helped in the creation and evolution of the architecture of the website focused in the final clients of
@@ -266,15 +258,15 @@
             </div>
           </div>
 
-          <div class='experiencia educacional'>
+          <div class='experience educational'>
             <a href='https://cs50.harvard.edu/x/2022/' rel='noreferrer' target='_blank' tabindex='-1'
               aria-hidden='true'>
               <img src='./assets/img/experiences/harvardx.jpg' alt='HarvardX Logo' width='150' height='150'
-                loading='lazy' class='imagem'>
+                loading='lazy' class='image'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://cs50.harvard.edu/x/2022/' rel='noreferrer' target='_blank'
                   aria-label='Learn to test Javascript Applications, Educational experience at Game programming from July of 2021 to December of 2021, opens an external link in a new window about the course'>
                   CS50X
@@ -286,7 +278,7 @@
                 </span>
               </h4>
 
-              <p class='descricao'>
+              <p class='description'>
                 A complete introduction to Computer Science, covering subjects such as Memory, Data
                 Structures, Web Development, Low level programs and more. Beyond the
                 fundamental subjects, the course also covers some practical knowledge, like C, Python, Flask,
@@ -295,18 +287,18 @@
             </div>
           </div>
 
-          <h3 class='ano profissional educacional'>
+          <h3 class='year professional educational'>
             <time datetime='2021'>2021</time>
           </h3>
 
-          <div class='experiencia educacional'>
+          <div class='experience educational'>
             <a href='https://javascript.tv.br' rel='noreferrer' target='_blank' tabindex='-1' aria-hidden='true'>
               <img src='./assets/img/experiences/javascript-tv-br.png' alt='Javascript TV Logo' width='150' height='150'
-                loading='lazy' class='imagem'>
+                loading='lazy' class='image'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://javascript.tv.br' rel='noreferrer' target='_blank'
                   aria-label='Learn to test Javascript Applications, Educational experience at Game programming from July of 2021 to December of 2021, opens an external link in a new window about the course'>
                   Learn to test Javascript Applications
@@ -318,7 +310,7 @@
                 </span>
               </h4>
 
-              <p class='descricao'>
+              <p class='description'>
                 A deep course about testing in the Javascript ecosystem. I learned about unit and integration tests
                 using Jest, End-to-End tests with Cypress, TDD, tests good practices, CI and CD with Github Actions, and
                 more.
@@ -326,18 +318,18 @@
             </div>
           </div>
 
-          <h3 class='ano profissional'>
+          <h3 class='year professional'>
             <time datetime='2020'>2020</time>
           </h3>
 
-          <div class='experiencia profissional'>
+          <div class='experience professional'>
             <a href='http://megahack.com.br/' rel='noreferrer' target='_blank' tabindex='-1' aria-hidden='true'>
               <img src='/assets/img/experiences/megahack.png' alt='Megahack logo' width='150' height='150'
-                loading='lazy' class='imagem' style='background-color: black'>
+                loading='lazy' class='image' style='background-color: black'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='http://megahack.com.br/' rel='noreferrer' target='_blank'
                   aria-label='Megahack 5.0, professional experience from November of 2020, opens an external link in a new window about the event'>
                   Megahack 5.0
@@ -348,21 +340,21 @@
                 </span>
               </h4>
 
-              <p class='descricao'>I participated in the online Megahack jointly organized by various
+              <p class='description'>I participated in the online Megahack jointly organized by various
                 companies, like Uber, Renner, Orama, etc. I participated in the challenge from the
                 fintech Mercado Pago</p>
             </div>
           </div>
 
-          <div class='experiencia educacional'>
+          <div class='experience educational'>
             <a href='https://erickwendel.teachable.com/p/node-js-para-iniciantes-nodebr' rel='noreferrer'
               target='_blank' tabindex='-1' aria-hidden='true'>
               <img src='./assets/img/experiences/ew.it.jpg' alt='EW.IT logo' width='150' height='150' loading='lazy'
-                class='imagem'>
+                class='image'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://erickwendel.teachable.com/p/node-js-para-iniciantes-nodebr' rel='noreferrer'
                   target='_blank'
                   aria-label='Imersion in API development with Node.js By #NodeBR!, Educational experience at Game programming from July of 2021 to December of 2021, opens an external link in a new window about the course'>
@@ -375,7 +367,7 @@
                 </span>
               </h4>
 
-              <p class='descricao'>
+              <p class='description'>
                 Done during the Quarantine, I decided to learn about Back-End Web development with Node.js, and with
                 this course, I've learned about Node.js, Hapi, SQL with PostgreSQL, NoSQL with MongoDB, Docker, TDD, and
                 more.
@@ -383,19 +375,19 @@
             </div>
           </div>
 
-          <h3 class='ano profissional'>
+          <h3 class='year professional'>
             <time datetime='2018'>2018</time>
           </h3>
 
-          <div class='experiencia profissional'>
+          <div class='experience professional'>
             <a href='https://br.linkedin.com/company/supergeeks-brasil' rel='noreferrer' target='_blank' tabindex='-1'
               aria-hidden='true'>
               <img src='/assets/img/experiences/supergeeks.png' alt='Supergeeks logo' width='150' height='150'
-                loading='lazy' class='imagem'>
+                loading='lazy' class='image'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://br.linkedin.com/company/supergeeks-brasil' rel='noreferrer' target='_blank'
                   aria-label='Supergeeks, professional experience as instructor from November of 2018 to July of 2020, opens an external link in a new window about the company'>
                   Supergeeks
@@ -407,25 +399,25 @@
                 </span>
               </h4>
 
-              <p class='descricao'>As an instructor for kids and teenagers, teaching about programming,
+              <p class='description'>As an instructor for kids and teenagers, teaching about programming,
                 web development, game development, AI, CG, robotics, and more
               <p>
             </div>
           </div>
 
-          <h3 class='ano profissional educacional'>
+          <h3 class='year professional educational'>
             <time datetime='2017'>2017</time>
           </h3>
 
-          <div class='experiencia profissional'>
+          <div class='experience professional'>
             <a href='https://pt-br.facebook.com/events/107860659744974/' rel='noreferrer' target='_blank' tabindex='-1'
               aria-hidden='true'>
               <img src='/assets/img/experiences/bluehack.png' alt='Bluehack logo' width='150' height='150'
-                loading='lazy' class='imagem' style='background-color: white'>
+                loading='lazy' class='image' style='background-color: white'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://pt-br.facebook.com/events/107860659744974/' rel='noreferrer' target='_blank'
                   aria-label='Bluehack 2017, professional experience from March of 2017, opens an external link in a new window about the event'>
                   Bluehack <time datetime='2017'>2017</time>
@@ -443,15 +435,15 @@
             </div>
           </div>
 
-          <div class='experiencia educacional'>
+          <div class='experience educational'>
             <a href='https://www.linkedin.com/school/mastertech.tech/' rel='noreferrer' target='_blank' tabindex='-1'
               aria-hidden='true'>
               <img src='/assets/img/experiences/mastertech.png' alt='Mastertech logo' width='150' height='150'
-                loading='lazy' class='imagem' style='background-color: white'>
+                loading='lazy' class='image' style='background-color: white'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://www.linkedin.com/school/mastertech.tech/' rel='noreferrer' target='_blank'
                   aria-label='Mastertech, educational experience in a Web Front-End Bootcamp from May of 2017 to June of 2017, opens an external link in a new window about the school'>
                   Mastertech
@@ -470,15 +462,15 @@
             </div>
           </div>
 
-          <div class='experiencia profissional'>
+          <div class='experience professional'>
             <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem' rel='noreferrer'
               target='_blank' tabindex='-1' aria-hidden='true'>
               <img src='/assets/img/experiences/ecomanda.png' alt='eComanda logo' width='150' height='150'
-                loading='lazy' class='imagem' style='background-color: white'>
+                loading='lazy' class='image' style='background-color: white'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem'
                   rel='noreferrer' target='_blank'
                   aria-label='eComanda, professional experience as a Software developer from January of 2017 to September of 2018, opens an external link in a new window about the company'>
@@ -499,19 +491,19 @@
             </div>
           </div>
 
-          <h3 class='ano profissional educacional'>
+          <h3 class='year professional educational'>
             <time datetime='2016'>2016</time>
           </h3>
 
-          <div class='experiencia profissional'>
+          <div class='experience professional'>
             <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem' rel='noreferrer'
               target='_blank' tabindex='-1' aria-hidden='true'>
               <img src='/assets/img/experiences/ecomanda.png' alt='eComanda logo' width='150' height='150'
-                loading='lazy' class='imagem' style='background-color: white'>
+                loading='lazy' class='image' style='background-color: white'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://br.linkedin.com/company/ecomanda---automa%C3%A7%C3%A3o-comercial-em-nuvem'
                   rel='noreferrer' target='_blank'
                   aria-label='eComanda, professional experience as a Software developer from January of 2017 to September of 2018, opens an external link in a new window about the company'>
@@ -532,15 +524,15 @@
             </div>
           </div>
 
-          <div class='experiencia educacional'>
+          <div class='experience educational'>
             <a href='https://www.cps.sp.gov.br/category/etec/' rel='noreferrer' target='_blank' tabindex='-1'
               aria-hidden='true'>
               <img src='/assets/img/experiences/etec.png' alt='Etec logo' width='150' height='150' loading='lazy'
-                class='imagem' style='background-color: white'>
+                class='image' style='background-color: white'>
             </a>
 
-            <div class='informacoes'>
-              <h4 class='titulo'>
+            <div class='information'>
+              <h4 class='title'>
                 <a href='https://www.cps.sp.gov.br/category/etec/' rel='noreferrer' target='_blank'
                   aria-label='ETEC, Educational experience at Game programming from August of 2015 to December of 2016, opens an external link in a new window about the school'>
                   ETEC
@@ -562,58 +554,58 @@
       </div>
     </section>
 
-    <section class='secao trabalhos'>
-      <div class='conteudo'>
-        <h2 class='titulo' aria-label='My previous Works'>Previous works</h2>
+    <section class='section previous-works'>
+      <div class='content'>
+        <h2 class='title' aria-label='My previous Works'>Previous works</h2>
 
-        <a class='trabalho' href='/portfolio/projects/0/' target='_blank' rel='noreferrer'
+        <a class='previous-work' href='/portfolio/projects/0/' target='_blank' rel='noreferrer'
           aria-label='Pedir Comida PWA, opens an external link in a new window about the project'>
-          <img class='imagem' src='./assets/img/works/pedir-comida-pwa.jpg' alt='Imagem do Pedir Comida PWA' width='280'
+          <img class='image' src='./assets/img/works/pedir-comida-pwa.jpg' alt='Pedir Comida PWA image' width='280'
             height='280' loading='lazy'>
 
-          <figcaption class='detalhes'>
-            <h3 class='nome'>Pedir Comida PWA</h3>
+          <figcaption class='details'>
+            <h3 class='name'>Pedir Comida PWA</h3>
 
-            <p class='texto'>Project I participated at my time in eComanda, made with React, Typescript. My
+            <p class='text'>Project I participated at my time in eComanda, made with React, Typescript. My
               first PWA</p>
           </figcaption>
         </a>
 
-        <a class='trabalho' href='/portfolio/projects/1/' target='_blank' rel='noreferrer'
+        <a class='previous-work' href='/portfolio/projects/1/' target='_blank' rel='noreferrer'
           aria-label='Pague Zé, opens an external link in a new window about the project'>
-          <img class='imagem' src='./assets/img/works/pague-ze.jpg' alt='Imagem do Pague Zé' width='280' height='280'
+          <img class='image' src='./assets/img/works/pague-ze.jpg' alt='Pague Zé image' width='280' height='280'
             loading='lazy'>
 
-          <figcaption class='detalhes'>
-            <h3 class='nome'>Pague Zé</h3>
+          <figcaption class='details'>
+            <h3 class='name'>Pague Zé</h3>
 
-            <p class='texto'>Project I created during the Megahack 5.0, made with React.js and CSS writen by
+            <p class='text'>Project I created during the Megahack 5.0, made with React.js and CSS writen by
               hand</p>
           </figcaption>
         </a>
 
-        <a class='trabalho' href='/portfolio/projects/10/' target='_blank' rel='noreferrer'
+        <a class='previous-work' href='/portfolio/projects/10/' target='_blank' rel='noreferrer'
           aria-label='Unicórnio Adivinha, opens an external link in a new window about the project'>
-          <img class='imagem' src='./assets/img/works/unicornio-adivinha-app.jpg' alt='Imagem do Unicórnio Adivinha App'
+          <img class='image' src='./assets/img/works/unicornio-adivinha-app.jpg' alt='image do Unicórnio Adivinha App'
             width='280' height='280' loading='lazy'>
 
-          <figcaption class='detalhes'>
-            <h3 class='nome'>Unicórnio Adivinha App</h3>
+          <figcaption class='details'>
+            <h3 class='name'>Unicórnio Adivinha App</h3>
 
-            <p class='texto'>Mobile app made by me using React Native and prototyping in Figma. Recognize
+            <p class='text'>Mobile app made by me using React Native and prototyping in Figma. Recognize
               the emotion of a person with a photo</p>
           </figcaption>
         </a>
 
-        <a class='trabalho' href='/portfolio/projects/5/' target='_blank' rel='noreferrer'
+        <a class='previous-work' href='/portfolio/projects/5/' target='_blank' rel='noreferrer'
           aria-label='Portfolio Generator, opens an external link in a new window about the project'>
-          <img class='imagem' src='./assets/img/works/portfolio-generator.jpg' alt='Imagem do portfolio generator'
+          <img class='image' src='./assets/img/works/portfolio-generator.jpg' alt='Portfolio generator image'
             width='280' height='280' loading='lazy'>
 
-          <figcaption class='detalhes'>
-            <h3 class='nome'>Portfolio generator</h3>
+          <figcaption class='details'>
+            <h3 class='name'>Portfolio generator</h3>
 
-            <p class='texto'>A portfolio website gererator built with 11ty</p>
+            <p class='text'>A portfolio website gererator built with 11ty</p>
           </figcaption>
         </a>
 
@@ -624,65 +616,65 @@
     </section>
   </main>
 
-  <footer class='rodape'>
+  <footer class='footer'>
     <nav>
-      <ul class='redes-sociais'>
+      <ul class='social-media-list'>
         <li>
           <a href='https://twitter.com/pipocaCafeinada' rel='noreferrer' target='_blank'
-            aria-label='My Twitter, opens an external link in a new window' class='rede twitter'>
+            aria-label='My Twitter, opens an external link in a new window' class='social-media twitter'>
             <i class='icon-twitter'></i>
           </a>
         </li>
 
         <li>
           <a href='https://linkedin.com/in/jonathan-santos-dev' rel='noreferrer' target='_blank'
-            aria-label='My Linkedin, opens an external link in a new window' class='rede linkedin'>
+            aria-label='My Linkedin, opens an external link in a new window' class='social-media linkedin'>
             <i class='icon-linkedin'></i>
           </a>
         </li>
 
         <li>
           <a href='https://github.com/jonathan-santos' rel='noreferrer' target='_blank'
-            aria-label='My Github, opens an external link in a new window' class='rede github'>
+            aria-label='My Github, opens an external link in a new window' class='social-media github'>
             <i class='icon-github'></i>
           </a>
         </li>
 
         <li>
           <a href='https://caffeinatedpopcorn.itch.io' rel='noreferrer' target='_blank'
-            aria-label='My Itch.io, opens an external link in a new window' class='rede itchio'>
+            aria-label='My Itch.io, opens an external link in a new window' class='social-media itchio'>
             <i class='icon-itchio'></i>
           </a>
         </li>
 
         <li>
           <a href='https://figma.com/@jhow' rel='noreferrer' target='_blank'
-            aria-label='My Figma account, opens an external link in a new window' class='rede figma'>
+            aria-label='My Figma account, opens an external link in a new window' class='social-media figma'>
             <i class='icon-figma'></i>
           </a>
         </li>
 
-        <div class='quebra-linha' aria-hidden='true'></div>
+        <div class='break-line' aria-hidden='true'></div>
 
         <li>
           <a href='https://meetup.com/pt-br/members/233061469/' rel='noreferrer' target='_blank'
-            aria-label='My Meetup account, opens an external link in a new window' class='rede meetup'>
+            aria-label='My Meetup account, opens an external link in a new window' class='social-media meetup'>
             <i class='icon-meetup'></i>
           </a>
         </li>
 
         <li>
-          <a href='mailto:jonathan.santosaugusto@gmail.com' rel='noreferrer' aria-label='My Email' class='rede email'>
+          <a href='mailto:jonathan.santosaugusto@gmail.com' rel='noreferrer' aria-label='My Email' class='social-media email'>
             <i class='icon-email'></i>
           </a>
         </li>
       </ul>
     </nav>
 
-    <p class='texto'>Website built my me using HTML and CSS written by hand, <span hidden>love</span> <i
+    <p class='text'>Website built my me using HTML and CSS written by hand, <span hidden>love</span> <i
         class='icon-heart'></i>, and a bit of coffee</p>
 
-    <p class='texto'>Curious about how this website was made? <a
+    <p class='text'>Curious about how this website was made? <a
         href='https://github.com/jonathan-santos/jonathan-santos.github.io' rel='noreferrer' target='_blank'
         aria-label="Repository of the project of of website you're acessing, opens an external link in a new window">Access
         the repository of the project</a></p>
