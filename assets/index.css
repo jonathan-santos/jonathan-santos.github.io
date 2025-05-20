@@ -82,7 +82,7 @@ a:focus {
 
 /* #region dark mode */
 #dark-mode:not(:checked) ~ .navigation-bar .dark-mode,
-#dark-mode:checked ~ .navigation-bar .modo-claro {
+#dark-mode:checked ~ .navigation-bar .light-mode {
   display: flex;
 }
 
@@ -100,7 +100,7 @@ a:focus {
 
 @media (prefers-color-scheme: dark) {
   .navigation-bar .choice-dark-mode,
-  .navigation-bar .choice-modo-claro {
+  .navigation-bar .choice-light-mode {
     display: none;
   }
 
@@ -140,7 +140,7 @@ a:focus {
 
 /* #endregion */
 
-/* #region .navigation-bar */
+/* #region navigation-bar */
 .navigation-bar {
   position: fixed;
   top: 0;
@@ -153,6 +153,12 @@ a:focus {
   align-items: center;
   justify-content: space-between;
   z-index: 2;
+}
+
+@media (min-width: 900px) {
+  .navigation-bar {
+    padding: 1.6rem 15%;
+  }
 }
 
 .navigation-bar .logo,
@@ -277,7 +283,7 @@ a:focus {
 }
 
 .side-menu .choice-dark-mode .dark-mode,
-.side-menu .choice-dark-mode .modo-claro {
+.side-menu .choice-dark-mode .light-mode {
   align-items: center;
 }
 
@@ -479,7 +485,7 @@ a:focus {
   font-weight: 600;
 }
 
-.skills .language {
+.skills .languages {
   width: 100%;
   margin-bottom: 2.4rem;
 }
