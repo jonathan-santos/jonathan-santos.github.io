@@ -411,13 +411,14 @@ a:focus {
 
 .section.experiences {
   margin-top: calc(var(--section-spacing) * -1);
+  margin-bottom: calc(var(--section-spacing) * -1);
   padding-top: calc(var(--section-spacing) + 1rem);
   padding-bottom: calc(var(--section-spacing) - 1rem);
 }
 
 @media (max-width: 720px) {
   .section.experiences {
-    margin-bottom: calc(var(--section-spacing) * -1);
+    padding-bottom: calc(var(--section-spacing) - 4.8rem);
   }
 }
 
@@ -645,8 +646,8 @@ a:focus {
   background-color: var(--color-main);
 }
 
-.experiences .experience:last-of-type > a {
-  height: 0;
+.experiences a {
+  z-index: inherit;
 }
 
 .experiences a:hover,
@@ -708,6 +709,7 @@ a:focus {
 
 .experiences .list-internal {
   border-left: 0.2rem solid var(--color-text-light);
+  position: relative;
 }
 
 .list .year {
@@ -768,6 +770,21 @@ a:focus {
   border-color: var(--color-text-light);
 }
 
+/* Hides the white list-internal line from last item */
+.experiences .experience:last-of-type > a {
+  height: 0;
+}
+
+.experiences .list-internal::after {
+  content: '';
+  width: 0.2rem;
+  height: 12rem;
+  background-color: var(--color-main);
+  position: absolute;
+  bottom: 0;
+  left: -0.1rem;
+  z-index: 0;
+}
 /* #endregion */
 
 /* #region previous-works */
