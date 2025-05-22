@@ -80,6 +80,13 @@ a:focus {
 
 /* #endregion */
 
+/* #region utility classes */
+.hide {
+  visibility: hidden;
+  height: 0;
+}
+/* #endregion */
+
 /* #region dark mode */
 #dark-mode:not(:checked) ~ .navigation-bar .dark-mode,
 #dark-mode:checked ~ .navigation-bar .light-mode {
