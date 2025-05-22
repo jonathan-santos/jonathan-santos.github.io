@@ -128,9 +128,9 @@ a:focus {
   text-align: center;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .main-content > .section {
-    padding: 1.5rem 15% 1rem 15%;
+    padding: 1.5rem 20% 1rem 20%;
   }
 }
 
@@ -157,7 +157,7 @@ a:focus {
 
 @media (min-width: 900px) {
   .navigation-bar {
-    padding: 1.6rem 15%;
+    padding: 1.6rem 20%;
   }
 }
 
