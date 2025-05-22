@@ -29,9 +29,9 @@
   --color-figma: #f24e1e;
   --color-meetup: #ED1C40;
   --color-email: var(--color-main);
-  --tamanho-navigation-bar: 4.8rem;
-  --tamanho-footer: 20rem;
-  --espacamento-entre-secoes: 7rem;
+  --navigation-bar-size: 4.8rem;
+  --footer-size: 20rem;
+  --section-spacing: 7rem;
 }
 
 /* #region default tag values */
@@ -125,8 +125,8 @@ a:focus {
 /* #region main-content */
 .main-content {
   min-height: 100%;
-  padding-top: var(--tamanho-navigation-bar);
-  padding-bottom: var(--tamanho-footer);
+  padding-top: var(--navigation-bar-size);
+  padding-bottom: var(--footer-size);
   background-color: var(--color-background-light);
 }
 
@@ -152,7 +152,7 @@ a:focus {
   position: fixed;
   top: 0;
   width: 100%;
-  height: var(--tamanho-navigation-bar);
+  height: var(--navigation-bar-size);
   padding: 1.6rem 0.8rem;
   background-color: var(--color-background-dark);
   font-size: 2.4rem;
@@ -405,15 +405,20 @@ a:focus {
 
 /* #region page structure */
 .section.presentation {
-  margin-bottom: calc(var(--espacamento-entre-secoes) * -1);
-  padding-bottom: calc(var(--espacamento-entre-secoes) - 1rem);
+  margin-bottom: calc(var(--section-spacing) * -1);
+  padding-bottom: calc(var(--section-spacing) - 1rem);
 }
 
 .section.experiences {
-  margin-top: calc(var(--espacamento-entre-secoes) * -1);
-  padding-top: calc(var(--espacamento-entre-secoes) + 1rem);
-  margin-bottom: calc(var(--espacamento-entre-secoes) * -1);
-  padding-bottom: calc(var(--espacamento-entre-secoes) - 1rem);
+  margin-top: calc(var(--section-spacing) * -1);
+  padding-top: calc(var(--section-spacing) + 1rem);
+  padding-bottom: calc(var(--section-spacing) - 1rem);
+}
+
+@media (max-width: 720px) {
+  .section.experiences {
+    margin-bottom: calc(var(--section-spacing) * -1);
+  }
 }
 
 .section.skills .content,
@@ -855,7 +860,7 @@ a:focus {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: var(--tamanho-footer);
+  height: var(--footer-size);
   padding: 2rem;
   background-color: var(--color-background-dark);
   color: var(--color-text-light);
@@ -867,7 +872,7 @@ a:focus {
 
 @media (min-width: 768px) {
   :root {
-    --tamanho-footer: 16rem;
+    --footer-size: 16rem;
   }
 }
 
