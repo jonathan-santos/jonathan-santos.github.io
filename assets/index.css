@@ -82,7 +82,6 @@ a:focus {
 
 /* #region utility classes */
 .hide {
-  visibility: hidden;
   height: 0;
 }
 /* #endregion */
@@ -472,6 +471,8 @@ a:focus {
 }
 
 .presentation .title {
+  font-size: 2.4rem;
+  margin-block: 1rem;
   font-weight: 700;
 }
 
