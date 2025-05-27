@@ -501,6 +501,9 @@ a:focus {
 .skills .languages {
   width: 100%;
   margin-bottom: 2.4rem;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
 .skills .language {
@@ -513,12 +516,6 @@ a:focus {
   border-radius: 0.5rem;
   padding: 0.5rem;
   font-size: 2.8rem;
-}
-
-.skills .language:active .icon,
-.skills .language:focus .icon,
-.skills .language:hover .icon {
-  border-color: var(--color-text-dynamic);
 }
 
 .skills .language.javascript {
